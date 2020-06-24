@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+
+// ~~~~~~~~~~~~~~~ GLOBAL ~~~~~~~~~~~~~~~~~~ //
+html {
+  scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+// FONTS //
+
+p{
+  margin-bottom:30px!important;
+}
+
+
+
+// COLOURS //
+
+$purple:#7364FF;
+$dark-blue:#161F35;
+$white:#fff;
+$black: #000;
+
+// SWUP ANIMATION //
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+
+// NAVIGATION //
+
+
+.menu{
+  width:100%;
+  height:235px;
+  padding:50px 5%;
+  position:fixed;
+  top:0;
+}
+
+.menu-items { 
+ float:right;
+ text-align: right;
+  width:50%;
+    li{display:inline-block;}
+    a{
+      color:$white; 
+      text-transform:uppercase;
+      line-height: 135px;
+      margin-right:20px;
+      font-size:18px;
+      transition: 0.3s ease-out;
+    }
+    a:hover{
+      color:$purple;
+      transition: 0.3s ease-in;
+    }
+}
+
+.logo{
+  display:block;
+  float:left;
+  width:100%;
+  max-width:225px;
+  height:135px;
+  background-image:url('/public/assets/esc_logo_white.svg');
+  background-repeat:no-repeat;
+  background-size:100%;
+  display:inline-block;
+}
+
+
+// SECTIONS //
+
+.main-content{
+  margin-top:240px;
+  overflow:scroll;
+}
+
+
+
+// ~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~ //
+
+.banner{
+    min-height:65px;
+    background-color:white;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    z-index:1;
+
+    .social{
+      width:100%;
+      display:flex;
+      align-items: center;
+
+    span{
+      width:20px;
+      height:20px;
+      display:block;
+      margin-right:20px;
+    }
+
+    .instagram{
+      background-image: url('/public/assets/esc_global_instagram-dark.svg');
+      background-repeat: no-repeat;
+      background-size:100%;
+    }
+
+    .twitter{
+      background-image: url('/public/assets/esc_global_twitter-dark.svg');
+      background-repeat: no-repeat;
+      background-size:100%;
+    }
+
+    .linkedin{
+      background-image: url('/public/assets/esc_global_linkedin-dark.svg');
+      background-repeat: no-repeat;
+      background-size:100%;
+    }
+
+  }
+
+  .banner-meta{
+    display:block;
+    font-size:40px;
+    text-transform:uppercase;
+    color:$dark-blue;
+    text-align: center;
+  }
+
+  .button{
+    border:4px solid $purple;
+    border-radius:0;
+    color:$purple;
+    text-transform:uppercase;
+    float:right;
+    min-width:140px;
+  }
+
+
+
+
+  }
+
+
+
+
+.landing{
+  
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height:calc(100vh - 65px);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+#heroVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index:-1;
+}
+
+.introduction{
+  text-align: center;
+
+  h1{
+    font-size:130px;
+    color:$white;
+  }
+
+  h2{
+    font-size:25px;
+    color:$white;
+  }
+}
+
+
+// ~~~~~~~~~~~~~~~ MEDIA ~~~~~~~~~~~~~~~~~~ //
+
+body.media_page{
+
+  .logo{
+    background-image:url('/public/assets/esc_logo_colour.svg');
+  }
+
+  .menu-items { 
+    float:right;
+    text-align: right;
+    width:50%;
+
+      li{display:inline-block;}
+
+      a{
+        color:$dark-blue; 
+        text-transform:uppercase;
+        line-height: 135px;
+        margin-right:20px;
+        font-size:18px;
+        transition: 0.3s ease-out;
+      }
+
+      a:hover{
+        color:$purple;
+        transition: 0.3s ease-in;
+      }
+  }
+
+  .banner{
+    background-color: $purple;
+
+    .banner-meta{
+      color:$white;
+    
+    }
+
+    .button{
+      border:4px solid $white;
+      color:$white;
+      background-color: $purple;
+    }
+  }
+
+
+}
+
+
+.background-graphic-01{
+  transform:translateY(-265px);
+  width:50%;
+  position:fixed;
+  z-index: -1;
+  top:0;
+  left:0;
+  background:url('/public/assets/esc_global_graphic-01.svg');
+  background-size:100%;
+  background-repeat: no-repeat;
+  height:calc(100vh + 265px);
+}
+
+
+.sticky{
+  position:sticky;
+  top:0;
+}
+
+.title-container{
+  position:sticky;
+  top:0;
+
+  span{
+    display: block;
+    font-weight: 700;
+  }
+  h1{
+    font-size:4vw;
+    line-height:45px;
+    text-transform: uppercase;
+    margin-bottom:30px;
+  }
+
+  h2{
+    font-size:25px;
+    line-height: 20px;
+    margin-bottom:30px;
+  }
+
+  .button{
+    border:4px solid $purple;
+    border-radius:0;
+    color:$purple;
+    text-transform:uppercase;
+    min-width:140px;
+    font-size:14px;
+    padding:20px 30px;
+    margin-bottom:30px;
+  }
+
+}
+
+
+
+
+@import "../node_modules/bulma/bulma.sass";
