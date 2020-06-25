@@ -2,20 +2,20 @@
 
 @font-face {
   font-family: 'FSSinclairRegular';
-  src: url('../public/fonts/FSSinclairWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+  src: url('/public/fonts/FSSinclairWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('/public/fonts/FSSinclairWeb-Regular.woff') format('woff'), /* Pretty Modern Browsers */
 }
 
 @font-face {
   font-family: 'FSSinclairMedium';
-  src: url('../public/fonts/FSSinclairWeb-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+  src: url('/public/fonts/FSSinclairWeb-Medium.woff2') format('woff2'), /* Super Modern Browsers */
        url('/public/fonts/FSSinclairWeb-Medium.woff') format('woff'), /* Pretty Modern Browsers */
 }
 
 
 @font-face {
   font-family: 'FSSinclairBold';
-  src: url('../public/fonts/FSSinclairWeb-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+  src: url('/public/fonts/FSSinclairWeb-Bold.woff2') format('woff2'), /* Super Modern Browsers */
        url('/public/fonts/FSSinclairWeb-Bold.woff') format('woff'), /* Pretty Modern Browsers */
 }
 
@@ -26,6 +26,7 @@
 // COLOURS //
 
 $purple:#7364FF;
+$dark-purple:#6158D6;
 $dark-blue:#182733;
 $white:#fff;
 $black: #000;
@@ -85,10 +86,12 @@ html.is-animating .transition-fade {
 
 .menu{
   width:100%;
-  height:235px;
+  height:200px;
   padding:50px 5%;
   position:fixed;
   top:0;
+  background-color: $white;
+  z-index: 9;
 }
 
   .menu-items { 
@@ -96,23 +99,56 @@ html.is-animating .transition-fade {
     text-align: right;
     width:50%;
 
-      li{display:inline-block;}
+      li{display:inline-block;margin-right:20px;}
+
+      li:after{
+        content:'';
+        display:block;
+        border-radius:1px;
+        height:3px;
+        width:0;
+        background-color:$purple;
+        transition: all 0.3s ease-out;
+      }
+
+      li:hover:after{
+        width:100%;
+        transition: all 0.3s ease-in;
+      }
 
       a{
         color:$dark-blue; 
         text-transform:uppercase;
-        line-height: 135px;
-        margin-right:20px;
+        line-height: 35px;
         font-size:18px;
         transition: 0.3s ease-out;
         font-family: 'FSSinclairBold';
       }
+      li:hover{
+        cursor: pointer;
 
-      a:hover{
+      }
+
+      li:hover a{
         color:$purple;
         transition: 0.3s ease-in;
+    
       }
-  }
+
+
+
+    .active:after{
+      content:'';
+      display:block;
+      border-radius:1px;
+      height:3px;
+      width:100%;
+      background-color:$purple;
+
+    }
+
+  
+    }
 
 
 .logo{
@@ -128,16 +164,62 @@ html.is-animating .transition-fade {
 }
 
 
+
 // SECTIONS //
 
 .main-content{
   margin-top:240px;
 }
 
+footer.footer-banner{
+  height:45px;
+  width:100%;
+  background-color:$dark-purple;
+  position:fixed;
+  bottom:0;
+  z-index:99 ;
+
+
+.copyright {
+  float:right;
+  text-align: right;
+
+  span{
+    line-height:45px;
+    display: inline-block;
+    font-size:12px;
+    font-family: 'FSSinclairMedium';
+    color:$white;
+  }
+
+}
+
+ul{
+  float:left;
+}
+
+  ul>li{
+    display:inline-block;
+    line-height:45px;
+    margin-right:30px;
+    
+    a{
+      color:$white;
+      text-decoration:underline;
+       font-family: 'FSSinclairBold';
+       font-size:12px;
+    }
+  }
+}
+
+
 
 
 // ~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~ //
 body.home{
+  .menu{
+  background-color:transparent;
+  }
 
   h1,h2,h3,h4,h5{
       color:$white!important;
@@ -147,20 +229,62 @@ body.home{
  float:right;
  text-align: right;
   width:50%;
-    li{display:inline-block;}
+    li{display:inline-block; margin-right:20px;}
     a{
       color:$white; 
       text-transform:uppercase;
-      line-height: 135px;
-      margin-right:20px;
+      line-height: 35px;
       font-size:18px;
       transition: 0.3s ease-out;
       
     }
+    li:after{
+      content:'';
+      display:block;
+      border-radius:1px;
+      height:3px;
+      width:0;
+      background-color:$purple;
+    }
+
+     li:hover:after{
+        width:100%;
+        transition: all 0.3s ease-in;
+      }
+
+
     a:hover{
       color:$purple;
       transition: 0.3s ease-in;
+     
     }
+     li:hover{
+      cursor: pointer;
+
+    }
+
+    li:hover a{
+      color:$purple;
+      transition: 0.3s ease-in;
+  
+    }
+
+    .active:after{
+      content:'';
+      display:block;
+      border-radius:1px;
+      height:3px;
+      width:100%;
+      background-color:$purple;
+    }
+
+     
+
+
+
+
+
+
 }
 
   .logo{
@@ -176,7 +300,7 @@ body.home{
     background-color:white;
     width:100%;
     position:fixed;
-    bottom:0;
+    bottom:45px;
     z-index:1;
 
     .social{
@@ -257,11 +381,6 @@ body.home{
 
   }
 
-
-
-
-
-
 }
 
 
@@ -315,7 +434,7 @@ body.home{
     background-color:$purple;
     width:100%;
     position:fixed;
-    bottom:0;
+    bottom:45px;
     z-index:1;
 
     .social{
@@ -498,7 +617,10 @@ body.media_page{
 
 
 // ~~~~~~~~~~~~~~~ OUR TEAM ~~~~~~~~~~~~~~~~~~ //
-
+.spacer{
+  width: 100%;
+  height: 200px;
+}
 
 
 body.our_team{
@@ -506,20 +628,19 @@ body.our_team{
   background-image: url(/public/assets/esc_global_graphic-02.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-  // height:calc(100vh - 300px) ;
   background-position: bottom  left -100px;
 
 
-  .main-content {
-    margin-top:0;
-    padding-top: 240px;
-    height:100vh;
+.main-content {
+  margin-bottom:10%;
+  margin-top:5%;
 }
 
   
 
   .team{
     width:70%;
+
     h2{
       font-size: 25px;
       line-height:30px;
@@ -634,4 +755,359 @@ body.our_team{
 
  }
 
+
+
+// ~~~~~~~~~~~~~~~ LEGAL ~~~~~~~~~~~~~~~~~~ //
+
+body.legal{
+
+  .title-container{
+
+   ul>li>a{
+     text-transform: uppercase;
+     color:$purple;
+     font-size:25px;
+     line-height:30px;
+     text-decoration: underline;
+   }
+
+  }
+
+  h3{
+         font-family: 'FSSinclairBold';
+         margin-bottom:20px;
+         font-size:18px;
+   }
+
+}
+
+
+
+
+
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\////////           TABLET               ////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\////////           MOBILE               ////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+
+
+@media only screen and (max-width: 780px) {
+
+footer.footer-banner{
+  height:80px;
+  width:100%;
+  background-color:$dark-purple;
+  position:fixed;
+  bottom:0;
+  z-index:99 ;
+  padding:20px 5%;
+
+
+.copyright {
+  float:right;
+  text-align: left;
+
+  span{
+    line-height:initial;
+    display: block;
+    font-size:12px;
+    font-family: 'FSSinclairMedium';
+    color:$white;
+  }
+
+}
+
+ul{
+  float:left;
+}
+
+  ul>li{
+    display:block;
+    line-height:initial;
+    margin-right:30px;
+    
+    a{
+      color:$white;
+      text-decoration:underline;
+       font-family: 'FSSinclairBold';
+       font-size:12px;
+    }
+  }
+}
+
+
+
+
+section{
+  padding:0 5%;
+}
+
+.mobile-hide{
+  display:none;
+}
+
+
+.logo{
+  width:45%;
+}
+
+.menu-items { 
+  li{
+    display:block;
+  }
+
+  a{
+      line-height: 30px;     
+    }
+  }
+
+
+// ~~~~~~~~ HOME ~~~~~~~~~ //
+
+
+.introduction{
+
+  h1{
+    font-size:45px;
+  }
+
+  h2{
+    font-size:20px;
+    line-height:25px;
+    color:$white;
+    font-family: 'FSSinclairMedium';
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+}
+
+body.home{
+
+  h1,h2,h3,h4,h5{
+      color:$white!important;
+}
+
+.menu-items { 
+
+  li{
+    display:block;
+  }
+    a{
+      line-height: 30px;     
+    }
+  }
+
+
+.banner{
+  height:80px;
+   padding:23px 5%; 
+   bottom:80px;  
+    .button{
+          font-size:14px;
+    }
+
+  }
+
+}
+
+
+
+
+
+// ~~~~~~~~~~~~~~~ MEDIA ~~~~~~~~~~~~~~~~~~ //
+.main-content{
+  margin-top:180px;
+}
+.banner{
+  height:80px;
+  padding:23px 5%; 
+  bottom:80px;  
+    .button{
+          font-size:14px;
+    }
+  }
+    
+
+body.media_page{
+  overflow:hidden!important;
+  height:100vh;
+  
+  .main-content{
+    height:70vh;
+    overflow:scroll;
+    position:relative;
+  }
+
+  h3{
+         font-family: 'FSSinclairBold';
+         margin-bottom:20px;
+         font-size:18px;
+   }
+
+
+}
+
+
+.background-graphic-01{
+  display:none;
+}
+
+
+.article{
+  padding-bottom:5%;
+}
+
+.title-container{
+  position:initial;
+  width:100%;
+  max-width:500px;
+ 
+
+  span{
+    display: block;
+    color:$purple;
+    font-family: 'FSSinclairBold';
+  }
+
+  ul>li{
+    color:$purple;
+    font-family: 'FSSinclairMedium';
+  }
+  h1{
+    font-size:35px;
+    line-height:30px;
+    text-transform: uppercase;
+    margin-bottom:20px;
+    font-family: 'FSSinclairBold';
+  }
+
+  h2{
+    font-size:20px;
+    line-height: 25px;
+    margin-bottom:30px;
+    font-family: 'FSSinclairMedium';
+  }
+
+  .button{
+    width:100%;
+
+  }
+
+}
+
+
+
+
+// ~~~~~~~~~~~~~~~ OUR TEAM ~~~~~~~~~~~~~~~~~~ //
+
+
+
+body.our_team{
+
+  background:none;
+
+  
+  .team{
+    width:80%;
+
+    p{
+      margin-bottom:10px!important;
+    }
+
+    .profiles{
+
+      span{
+        width:20px;
+        height:20px;
+        display:inline-block;
+        margin-right:10px;
+      }
+
+
+      .linkedin{
+        background-image: url('/public/assets/esc_global_linkedin-dark.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+      .instagram{
+        background-image: url('/public/assets/esc_global_instagram-dark.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+
+
+    }
+
+
+
+  }
+
+}
+
+
+
+
+
+
+  
+}
+
+
+
+
+
 @import "../node_modules/bulma/bulma.sass";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
