@@ -1,11 +1,41 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: 'FSSinclairRegular';
+  src: url('../public/fonts/FSSinclairWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/public/fonts/FSSinclairWeb-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'FSSinclairMedium';
+  src: url('../public/fonts/FSSinclairWeb-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/public/fonts/FSSinclairWeb-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
+
+@font-face {
+  font-family: 'FSSinclairBold';
+  src: url('../public/fonts/FSSinclairWeb-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/public/fonts/FSSinclairWeb-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
+
 
 // ~~~~~~~~~~~~~~~ GLOBAL ~~~~~~~~~~~~~~~~~~ //
+
+// COLOURS //
+
+$purple:#7364FF;
+$dark-blue:#182733;
+$white:#fff;
+$black: #000;
+
+
 html {
   scroll-behavior: smooth;
 }
 body{
+  font-family: 'FSSinclairRegular'!important;
     margin:0;
     padding:0;
 }
@@ -14,16 +44,29 @@ body{
 
 p{
   margin-bottom:30px!important;
+  font-size:18px!important;
+  color:$dark-blue!important;
+  line-height:25px!important;
+}
+
+h1,h2,h3,h4,h5{
+      color:$dark-blue!important;
+}
+
+a{
+  color:$dark-blue;
+}
+
+a:hover{
+  color:$purple;
 }
 
 
+b{
+    font-family: 'FSSinclairBold'!important;
+}
 
-// COLOURS //
 
-$purple:#7364FF;
-$dark-blue:#161F35;
-$white:#fff;
-$black: #000;
 
 // SWUP ANIMATION //
 
@@ -48,6 +91,58 @@ html.is-animating .transition-fade {
   top:0;
 }
 
+  .menu-items { 
+    float:right;
+    text-align: right;
+    width:50%;
+
+      li{display:inline-block;}
+
+      a{
+        color:$dark-blue; 
+        text-transform:uppercase;
+        line-height: 135px;
+        margin-right:20px;
+        font-size:18px;
+        transition: 0.3s ease-out;
+        font-family: 'FSSinclairBold';
+      }
+
+      a:hover{
+        color:$purple;
+        transition: 0.3s ease-in;
+      }
+  }
+
+
+.logo{
+  display:block;
+  float:left;
+  width:100%;
+  max-width:225px;
+  height:135px;
+  background-image:url('/public/assets/esc_logo_colour.svg');
+  background-repeat:no-repeat;
+  background-size:100%;
+  display:inline-block;
+}
+
+
+// SECTIONS //
+
+.main-content{
+  margin-top:240px;
+}
+
+
+
+// ~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~ //
+body.home{
+
+  h1,h2,h3,h4,h5{
+      color:$white!important;
+}
+
 .menu-items { 
  float:right;
  text-align: right;
@@ -60,6 +155,7 @@ html.is-animating .transition-fade {
       margin-right:20px;
       font-size:18px;
       transition: 0.3s ease-out;
+      
     }
     a:hover{
       color:$purple;
@@ -67,29 +163,13 @@ html.is-animating .transition-fade {
     }
 }
 
-.logo{
-  display:block;
-  float:left;
-  width:100%;
-  max-width:225px;
-  height:135px;
-  background-image:url('/public/assets/esc_logo_white.svg');
-  background-repeat:no-repeat;
-  background-size:100%;
-  display:inline-block;
-}
-
-
-// SECTIONS //
-
-.main-content{
-  margin-top:240px;
-  overflow:scroll;
-}
+  .logo{
+    
+      background-image:url('/public/assets/esc_logo_white.svg');
+  }
 
 
 
-// ~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~ //
 
 .banner{
     min-height:65px;
@@ -100,58 +180,90 @@ html.is-animating .transition-fade {
     z-index:1;
 
     .social{
-      width:100%;
-      display:flex;
-      align-items: center;
+        width:100%;
+        display:flex;
+        align-items: center;
 
-    span{
-      width:20px;
-      height:20px;
-      display:block;
-      margin-right:20px;
+      span{
+        width:20px;
+        height:20px;
+        display:block;
+        margin-right:20px;
+      }
+
+      .instagram{
+        background-image: url('/public/assets/esc_global_instagram-dark.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+      .twitter{
+        background-image: url('/public/assets/esc_global_twitter-dark.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+      .linkedin{
+        background-image: url('/public/assets/esc_global_linkedin-dark.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+
+      .youtube{
+        background-image: url('/public/assets/esc_global_youtube-dark.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+      .facebook{
+        background-image: url('/public/assets/esc_global_facebook-dark.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+
+
     }
-
-    .instagram{
-      background-image: url('/public/assets/esc_global_instagram-dark.svg');
-      background-repeat: no-repeat;
-      background-size:100%;
-    }
-
-    .twitter{
-      background-image: url('/public/assets/esc_global_twitter-dark.svg');
-      background-repeat: no-repeat;
-      background-size:100%;
-    }
-
-    .linkedin{
-      background-image: url('/public/assets/esc_global_linkedin-dark.svg');
-      background-repeat: no-repeat;
-      background-size:100%;
-    }
-
-  }
 
   .banner-meta{
     display:block;
     font-size:40px;
+    line-height:65px;
     text-transform:uppercase;
     color:$dark-blue;
     text-align: center;
+    font-family: 'FSSinclairBold';
   }
 
   .button{
     border:4px solid $purple;
     border-radius:0;
+    background-color: $white;
     color:$purple;
     text-transform:uppercase;
     float:right;
     min-width:140px;
+    font-family: 'FSSinclairBold';
+  }
+
+
+  .button:hover{
+    border:4px solid $purple;
+    background-color: $purple;
+    color:$white;
+    transition:all 0.3s ease-in;
+  }
+
   }
 
 
 
 
-  }
+
+
+}
+
 
 
 
@@ -180,105 +292,182 @@ html.is-animating .transition-fade {
 .introduction{
   text-align: center;
 
+
   h1{
     font-size:130px;
     color:$white;
+    font-family: 'FSSinclairBold';
   }
 
   h2{
     font-size:25px;
     color:$white;
+    font-family: 'FSSinclairMedium';
+    max-width: 650px;
+    margin: 0 auto;
   }
 }
 
 
 // ~~~~~~~~~~~~~~~ MEDIA ~~~~~~~~~~~~~~~~~~ //
+.banner{
+    min-height:65px;
+    background-color:$purple;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    z-index:1;
 
-body.media_page{
+    .social{
+        width:100%;
+        display:flex;
+        align-items: center;
 
-  .logo{
-    background-image:url('/public/assets/esc_logo_colour.svg');
-  }
-
-  .menu-items { 
-    float:right;
-    text-align: right;
-    width:50%;
-
-      li{display:inline-block;}
-
-      a{
-        color:$dark-blue; 
-        text-transform:uppercase;
-        line-height: 135px;
+      span{
+        width:20px;
+        height:20px;
+        display:block;
         margin-right:20px;
-        font-size:18px;
-        transition: 0.3s ease-out;
       }
 
-      a:hover{
-        color:$purple;
-        transition: 0.3s ease-in;
+      .instagram{
+        background-image: url('/public/assets/esc_global_instagram-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
       }
-  }
 
-  .banner{
-    background-color: $purple;
+      .twitter{
+        background-image: url('/public/assets/esc_global_twitter-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+      .linkedin{
+        background-image: url('/public/assets/esc_global_linkedin-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+
+      .youtube{
+        background-image: url('/public/assets/esc_global_youtube-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+      .facebook{
+        background-image: url('/public/assets/esc_global_facebook-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+
+    }
 
     .banner-meta{
       color:$white;
-    
+      display:block;
+      font-size:40px;
+      line-height:65px;
+      text-transform:uppercase;
+      text-align: center;
+      font-family: 'FSSinclairBold';
     }
 
     .button{
       border:4px solid $white;
-      color:$white;
+      border-radius:0;
       background-color: $purple;
+      color:$white;
+      text-transform:uppercase;
+      float:right;
+      min-width:140px;
+      font-family: 'FSSinclairBold';
     }
+
+     .button:hover{
+      border:4px solid $white;
+      color:$purple;
+      background-color: $white;
+      transition: all 0.3s ease-in;
+    }
+
+    
   }
 
+
+
+
+body.media_page{
+  overflow:hidden!important;
+  height:100vh;
+  
+  .main-content{
+    height:70vh;
+    overflow:scroll;
+    position:relative;
+  }
 
 }
 
 
 .background-graphic-01{
   transform:translateY(-265px);
-  width:50%;
+  width:60%;
   position:fixed;
   z-index: -1;
   top:0;
   left:0;
   background:url('/public/assets/esc_global_graphic-01.svg');
-  background-size:100%;
+  background-size:cover;
+  background-position: bottom left;
   background-repeat: no-repeat;
   height:calc(100vh + 265px);
 }
 
 
 .sticky{
-  position:sticky;
+  position:fixed;
   top:0;
 }
 
+.article{
+  // height:70vh;
+  // overflow:scroll;
+  padding-bottom:5%;
+}
+
 .title-container{
-  position:sticky;
-  top:0;
+  position:fixed;
+  top:240px;
+  width:35%;
+  max-width:500px;
+ 
 
   span{
     display: block;
     font-weight: 700;
+    color:$purple;
+    font-family: 'FSSinclairBold';
+  }
+
+  ul>li{
+    color:$purple;
+    font-family: 'FSSinclairMedium';
   }
   h1{
-    font-size:4vw;
+    font-size:50px;
     line-height:45px;
     text-transform: uppercase;
     margin-bottom:30px;
+    font-family: 'FSSinclairBold';
   }
 
   h2{
     font-size:25px;
     line-height: 20px;
     margin-bottom:30px;
+    font-family: 'FSSinclairMedium';
   }
 
   .button{
@@ -290,11 +479,159 @@ body.media_page{
     font-size:14px;
     padding:20px 30px;
     margin-bottom:30px;
+    font-family: 'FSSinclairBold';
+    transition:all 0.3s ease-out;
   }
+
+
+  .button:hover{
+    border:4px solid $purple;
+    background-color: $purple;
+    color:$white;
+    transition:all 0.3s ease-in;
+  }
+
+
 
 }
 
 
 
+// ~~~~~~~~~~~~~~~ OUR TEAM ~~~~~~~~~~~~~~~~~~ //
+
+
+
+body.our_team{
+
+  background-image: url(/public/assets/esc_global_graphic-02.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  // height:calc(100vh - 300px) ;
+  background-position: bottom  left -100px;
+
+
+  .main-content {
+    margin-top:0;
+    padding-top: 240px;
+    height:100vh;
+}
+
+  
+
+  .team{
+    width:70%;
+    h2{
+      font-size: 25px;
+      line-height:30px;
+      font-family: 'FSSinclairBold';
+      text-transform:uppercase;
+      margin:20px 0 5px 0!important;
+    }
+
+
+    .profiles{
+
+      span{
+        width:20px;
+        height:20px;
+        display:inline-block;
+        margin-right:10px;
+      }
+
+
+      .linkedin{
+        background-image: url('/public/assets/esc_global_linkedin-dark.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+      .instagram{
+        background-image: url('/public/assets/esc_global_instagram-dark.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+
+
+    }
+
+
+
+  }
+
+
+}
+
+
+
+
+
+// ~~~~~~~~~~~~~ MEDIA ACCESS ~~~~~~~~~~~~~~ //
+
+
+ body.media_access{
+
+  .main-content {
+    margin-top:0;
+    padding-top: 240px;
+    height:100vh;
+}
+
+
+
+  background-image: url(/public/assets/esc_global_graphic-03.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  // height:calc(100vh - 300px) ;
+  background-position: bottom left;
+
+  h1{
+    font-size:60px;
+    line-height:45px;
+    font-family: 'FSSinclairBold';
+    margin-bottom:30px;
+  }
+
+  h2{
+    font-size:25px;
+    line-height:30px;
+  }
+
+  .input{
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    border-bottom:3px $purple solid;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    font-size:25px;
+    font-family: 'FSSinclairMedium';
+    padding-top:3px;
+    padding-bottom:0;
+    line-height:20px;
+    height:43px;
+    color:$dark-blue;
+  }
+
+  .input::after{
+    content:'';
+    display:block;
+    height:3px;
+    border-radius:2px;
+    width:100%;
+    background-color:$purple;
+  }
+
+  .label{
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'FSSinclairBold';
+    font-size:18px;
+    width:150px;
+    color:$dark-blue;
+  }
+
+ }
 
 @import "../node_modules/bulma/bulma.sass";

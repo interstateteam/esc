@@ -1,14 +1,49 @@
+@font-face {
+  font-family: 'FSSinclairRegular';
+  src: url("../public/fonts/FSSinclairWeb-Regular.woff2") format("woff2"), url("/public/fonts/FSSinclairWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'FSSinclairMedium';
+  src: url("../public/fonts/FSSinclairWeb-Medium.woff2") format("woff2"), url("/public/fonts/FSSinclairWeb-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'FSSinclairBold';
+  src: url("../public/fonts/FSSinclairWeb-Bold.woff2") format("woff2"), url("/public/fonts/FSSinclairWeb-Bold.woff") format("woff");
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  font-family: "FSSinclairRegular" !important;
   margin: 0;
   padding: 0;
 }
 
 p {
   margin-bottom: 30px !important;
+  font-size: 18px !important;
+  color: #182733 !important;
+  line-height: 25px !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #182733 !important;
+}
+
+a {
+  color: #182733;
+}
+
+a:hover {
+  color: #7364FF;
+}
+
+b {
+  font-family: "FSSinclairBold" !important;
 }
 
 .transition-fade {
@@ -39,12 +74,13 @@ html.is-animating .transition-fade {
 }
 
 .menu-items a {
-  color: #fff;
+  color: #182733;
   text-transform: uppercase;
   line-height: 135px;
   margin-right: 20px;
   font-size: 18px;
   transition: 0.3s ease-out;
+  font-family: 'FSSinclairBold';
 }
 
 .menu-items a:hover {
@@ -58,7 +94,7 @@ html.is-animating .transition-fade {
   width: 100%;
   max-width: 225px;
   height: 135px;
-  background-image: url("/public/assets/esc_logo_white.svg");
+  background-image: url("/public/assets/esc_logo_colour.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   display: inline-block;
@@ -66,10 +102,41 @@ html.is-animating .transition-fade {
 
 .main-content {
   margin-top: 240px;
-  overflow: scroll;
 }
 
-.banner {
+body.home h1, body.home h2, body.home h3, body.home h4, body.home h5 {
+  color: #fff !important;
+}
+
+body.home .menu-items {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+body.home .menu-items li {
+  display: inline-block;
+}
+
+body.home .menu-items a {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 135px;
+  margin-right: 20px;
+  font-size: 18px;
+  transition: 0.3s ease-out;
+}
+
+body.home .menu-items a:hover {
+  color: #7364FF;
+  transition: 0.3s ease-in;
+}
+
+body.home .logo {
+  background-image: url("/public/assets/esc_logo_white.svg");
+}
+
+body.home .banner {
   min-height: 65px;
   background-color: white;
   width: 100%;
@@ -78,52 +145,75 @@ html.is-animating .transition-fade {
   z-index: 1;
 }
 
-.banner .social {
+body.home .banner .social {
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.banner .social span {
+body.home .banner .social span {
   width: 20px;
   height: 20px;
   display: block;
   margin-right: 20px;
 }
 
-.banner .social .instagram {
+body.home .banner .social .instagram {
   background-image: url("/public/assets/esc_global_instagram-dark.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-.banner .social .twitter {
+body.home .banner .social .twitter {
   background-image: url("/public/assets/esc_global_twitter-dark.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-.banner .social .linkedin {
+body.home .banner .social .linkedin {
   background-image: url("/public/assets/esc_global_linkedin-dark.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-.banner .banner-meta {
-  display: block;
-  font-size: 40px;
-  text-transform: uppercase;
-  color: #161F35;
-  text-align: center;
+body.home .banner .social .youtube {
+  background-image: url("/public/assets/esc_global_youtube-dark.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-.banner .button {
+body.home .banner .social .facebook {
+  background-image: url("/public/assets/esc_global_facebook-dark.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+body.home .banner .banner-meta {
+  display: block;
+  font-size: 40px;
+  line-height: 65px;
+  text-transform: uppercase;
+  color: #182733;
+  text-align: center;
+  font-family: 'FSSinclairBold';
+}
+
+body.home .banner .button {
   border: 4px solid #7364FF;
   border-radius: 0;
+  background-color: #fff;
   color: #7364FF;
   text-transform: uppercase;
   float: right;
   min-width: 140px;
+  font-family: 'FSSinclairBold';
+}
+
+body.home .banner .button:hover {
+  border: 4px solid #7364FF;
+  background-color: #7364FF;
+  color: #fff;
+  transition: all 0.3s ease-in;
 }
 
 .landing {
@@ -152,94 +242,163 @@ html.is-animating .transition-fade {
 .introduction h1 {
   font-size: 130px;
   color: #fff;
+  font-family: 'FSSinclairBold';
 }
 
 .introduction h2 {
   font-size: 25px;
   color: #fff;
+  font-family: 'FSSinclairMedium';
+  max-width: 650px;
+  margin: 0 auto;
 }
 
-body.media_page .logo {
-  background-image: url("/public/assets/esc_logo_colour.svg");
+.banner {
+  min-height: 65px;
+  background-color: #7364FF;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
 }
 
-body.media_page .menu-items {
-  float: right;
-  text-align: right;
-  width: 50%;
+.banner .social {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-body.media_page .menu-items li {
-  display: inline-block;
-}
-
-body.media_page .menu-items a {
-  color: #161F35;
-  text-transform: uppercase;
-  line-height: 135px;
+.banner .social span {
+  width: 20px;
+  height: 20px;
+  display: block;
   margin-right: 20px;
-  font-size: 18px;
-  transition: 0.3s ease-out;
 }
 
-body.media_page .menu-items a:hover {
-  color: #7364FF;
-  transition: 0.3s ease-in;
+.banner .social .instagram {
+  background-image: url("/public/assets/esc_global_instagram-light.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-body.media_page .banner {
-  background-color: #7364FF;
+.banner .social .twitter {
+  background-image: url("/public/assets/esc_global_twitter-light.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-body.media_page .banner .banner-meta {
+.banner .social .linkedin {
+  background-image: url("/public/assets/esc_global_linkedin-light.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.banner .social .youtube {
+  background-image: url("/public/assets/esc_global_youtube-light.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.banner .social .facebook {
+  background-image: url("/public/assets/esc_global_facebook-light.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.banner .banner-meta {
   color: #fff;
+  display: block;
+  font-size: 40px;
+  line-height: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'FSSinclairBold';
 }
 
-body.media_page .banner .button {
+.banner .button {
   border: 4px solid #fff;
-  color: #fff;
+  border-radius: 0;
   background-color: #7364FF;
+  color: #fff;
+  text-transform: uppercase;
+  float: right;
+  min-width: 140px;
+  font-family: 'FSSinclairBold';
+}
+
+.banner .button:hover {
+  border: 4px solid #fff;
+  color: #7364FF;
+  background-color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+body.media_page {
+  overflow: hidden !important;
+  height: 100vh;
+}
+
+body.media_page .main-content {
+  height: 70vh;
+  overflow: scroll;
+  position: relative;
 }
 
 .background-graphic-01 {
   transform: translateY(-265px);
-  width: 50%;
+  width: 60%;
   position: fixed;
   z-index: -1;
   top: 0;
   left: 0;
   background: url("/public/assets/esc_global_graphic-01.svg");
-  background-size: 100%;
+  background-size: cover;
+  background-position: bottom left;
   background-repeat: no-repeat;
   height: calc(100vh + 265px);
 }
 
 .sticky {
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 
+.article {
+  padding-bottom: 5%;
+}
+
 .title-container {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 240px;
+  width: 35%;
+  max-width: 500px;
 }
 
 .title-container span {
   display: block;
   font-weight: 700;
+  color: #7364FF;
+  font-family: 'FSSinclairBold';
+}
+
+.title-container ul > li {
+  color: #7364FF;
+  font-family: 'FSSinclairMedium';
 }
 
 .title-container h1 {
-  font-size: 4vw;
+  font-size: 50px;
   line-height: 45px;
   text-transform: uppercase;
   margin-bottom: 30px;
+  font-family: 'FSSinclairBold';
 }
 
 .title-container h2 {
   font-size: 25px;
   line-height: 20px;
   margin-bottom: 30px;
+  font-family: 'FSSinclairMedium';
 }
 
 .title-container .button {
@@ -251,6 +410,119 @@ body.media_page .banner .button {
   font-size: 14px;
   padding: 20px 30px;
   margin-bottom: 30px;
+  font-family: 'FSSinclairBold';
+  transition: all 0.3s ease-out;
+}
+
+.title-container .button:hover {
+  border: 4px solid #7364FF;
+  background-color: #7364FF;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+body.our_team {
+  background-image: url(/public/assets/esc_global_graphic-02.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom  left -100px;
+}
+
+body.our_team .main-content {
+  margin-top: 0;
+  padding-top: 240px;
+  height: 100vh;
+}
+
+body.our_team .team {
+  width: 70%;
+}
+
+body.our_team .team h2 {
+  font-size: 25px;
+  line-height: 30px;
+  font-family: 'FSSinclairBold';
+  text-transform: uppercase;
+  margin: 20px 0 5px 0 !important;
+}
+
+body.our_team .team .profiles span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+body.our_team .team .profiles .linkedin {
+  background-image: url("/public/assets/esc_global_linkedin-dark.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+body.our_team .team .profiles .instagram {
+  background-image: url("/public/assets/esc_global_instagram-dark.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+body.media_access {
+  background-image: url(/public/assets/esc_global_graphic-03.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+body.media_access .main-content {
+  margin-top: 0;
+  padding-top: 240px;
+  height: 100vh;
+}
+
+body.media_access h1 {
+  font-size: 60px;
+  line-height: 45px;
+  font-family: 'FSSinclairBold';
+  margin-bottom: 30px;
+}
+
+body.media_access h2 {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+body.media_access .input {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 3px #7364FF solid;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  font-size: 25px;
+  font-family: 'FSSinclairMedium';
+  padding-top: 3px;
+  padding-bottom: 0;
+  line-height: 20px;
+  height: 43px;
+  color: #182733;
+}
+
+body.media_access .input::after {
+  content: '';
+  display: block;
+  height: 3px;
+  border-radius: 2px;
+  width: 100%;
+  background-color: #7364FF;
+}
+
+body.media_access .label {
+  text-transform: uppercase;
+  text-align: left;
+  font-family: 'FSSinclairBold';
+  font-size: 18px;
+  width: 150px;
+  color: #182733;
 }
 
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
