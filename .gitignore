@@ -1,1 +1,11 @@
-
+node_modules
+package.json
+.DS_Store
+main.min.css.map
+main.css.map
+package-lock.json
+.DS_Store
+node_modules/.DS_Store
+node_modules/bulma/.DS_Store
+*.css
+*.css

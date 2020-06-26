@@ -68,11 +68,15 @@ html.is-animating .transition-fade {
   float: right;
   text-align: right;
   width: 50%;
+  background: white;
+  max-width: 300px;
+  border-radius: 30px;
 }
 
 .menu-items li {
   display: inline-block;
   margin-right: 20px;
+  padding-top: 6px;
 }
 
 .menu-items li:after {
@@ -184,6 +188,9 @@ body.home .menu-items {
   float: right;
   text-align: right;
   width: 50%;
+  background: transparent;
+  max-width: initial;
+  border-radius: 0;
 }
 
 body.home .menu-items li {
@@ -294,7 +301,7 @@ body.home .banner .social .facebook {
 
 body.home .banner .banner-meta {
   display: block;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 65px;
   text-transform: uppercase;
   color: #182733;
@@ -324,7 +331,7 @@ body.home .banner .button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 65px);
+  min-height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -355,6 +362,25 @@ body.home .banner .button:hover {
   font-family: 'FSSinclairMedium';
   max-width: 650px;
   margin: 0 auto;
+}
+
+.introduction .button {
+  border: 3px solid #fff;
+  background: transparent;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0;
+  margin-top: 50px;
+  font-family: 'FSSinclairBold';
+  padding: 20px 30px;
+  transition: all 0.3s ease-out;
+}
+
+.introduction .button:hover {
+  background-color: #fff;
+  color: #182733;
+  border: 3px solid #fff;
+  transition: all 0.3s ease-in;
 }
 
 .banner {
@@ -412,7 +438,7 @@ body.home .banner .button:hover {
 .banner .banner-meta {
   color: #fff;
   display: block;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 65px;
   text-transform: uppercase;
   text-align: center;
@@ -437,12 +463,12 @@ body.home .banner .button:hover {
   transition: all 0.3s ease-in;
 }
 
-body.media_page {
+body.media_page, body.about {
   overflow: hidden !important;
   height: 100vh;
 }
 
-body.media_page .main-content {
+body.media_page .main-content, body.about .main-content {
   height: 70vh;
   overflow: scroll;
   position: relative;
@@ -471,6 +497,21 @@ body.media_page .main-content {
   margin-bottom: 65px;
 }
 
+.article h1 {
+  font-size: 60px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: 'FSSinclairBold';
+}
+
+.image-container {
+  position: fixed;
+  top: 240px;
+  width: 35%;
+  max-width: 500px;
+}
+
 .title-container {
   position: fixed;
   top: 240px;
@@ -494,10 +535,10 @@ body.media_page .main-content {
 }
 
 .title-container h1 {
-  font-size: 50px;
+  font-size: 60px;
   line-height: 45px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: 'FSSinclairBold';
 }
 
@@ -727,10 +768,24 @@ body.legal h3 {
   footer {
     padding: 0 5%;
   }
+  .introduction h1 {
+    font-size: 45px;
+  }
+  .introduction h2 {
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    font-family: 'FSSinclairMedium';
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .introduction .button {
+    width: 100%;
+  }
   body.home .banner {
     height: 80px;
     padding: 23px 5%;
-    bottom: 80px;
+    bottom: 45px;
   }
   body.home .banner .button {
     font-size: 14px;
@@ -845,6 +900,9 @@ body.legal h3 {
     max-width: 250px;
     margin: 0 auto;
   }
+  .introduction .button {
+    width: 100%;
+  }
   body.home h1, body.home h2, body.home h3, body.home h4, body.home h5 {
     color: #fff !important;
   }
@@ -879,16 +937,16 @@ body.legal h3 {
   .banner .banner-meta {
     display: none;
   }
-  body.media_page {
+  body.media_page, body.about {
     overflow: hidden !important;
     height: 100vh;
   }
-  body.media_page .main-content {
+  body.media_page .main-content, body.about .main-content {
     height: 70vh;
     overflow: scroll;
     position: relative;
   }
-  body.media_page h3 {
+  body.media_page h3, body.about h3 {
     font-family: 'FSSinclairBold';
     margin-bottom: 20px;
     font-size: 18px;
@@ -898,6 +956,11 @@ body.legal h3 {
   }
   .article {
     padding-bottom: 5%;
+  }
+  .image-container {
+    position: initial;
+    width: 100%;
+    max-width: 500px;
   }
   .title-container {
     position: initial;

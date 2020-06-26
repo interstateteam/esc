@@ -97,8 +97,11 @@ html.is-animating .transition-fade {
     float:right;
     text-align: right;
     width:50%;
+    background: white;
+    max-width: 300px;
+    border-radius: 30px;
 
-      li{display:inline-block;margin-right:20px;}
+      li{display:inline-block;margin-right:20px; padding-top: 6px;}
 
       li:after{
         content:'';
@@ -227,7 +230,13 @@ body.home{
 .menu-items { 
  float:right;
  text-align: right;
-  width:50%;
+width:50%;
+
+    background: transparent;
+    max-width: initial;
+    border-radius: 0;
+
+  
     li{display:inline-block; margin-right:20px;}
     a{
       color:$white; 
@@ -351,7 +360,7 @@ body.home{
 
   .banner-meta{
     display:block;
-    font-size:40px;
+    font-size:30px;
     line-height:65px;
     text-transform:uppercase;
     color:$dark-blue;
@@ -391,7 +400,8 @@ body.home{
   display:flex;
   justify-content: center;
   align-items: center;
-  min-height:calc(100vh - 65px);
+  // min-height:calc(100vh - 65px);
+  min-height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -423,6 +433,25 @@ body.home{
     font-family: 'FSSinclairMedium';
     max-width: 650px;
     margin: 0 auto;
+  }
+
+  .button{
+    border:3px solid $white;
+    background: transparent;
+    text-transform:uppercase;
+    color:$white;
+    border-radius:0;
+    margin-top:50px;
+    font-family: 'FSSinclairBold';
+    padding:20px 30px;
+    transition: all 0.3s ease-out;
+  }
+
+  .button:hover{
+    background-color: $white;
+    color:$dark-blue;
+    border: 3px solid $white;
+    transition: all 0.3s ease-in;
   }
 }
 
@@ -478,14 +507,12 @@ body.home{
         background-repeat: no-repeat;
         background-size:100%;
       }
-
-
     }
 
     .banner-meta{
       color:$white;
       display:block;
-      font-size:40px;
+      font-size:30px;
       line-height:65px;
       text-transform:uppercase;
       text-align: center;
@@ -516,7 +543,7 @@ body.home{
 
 
 
-body.media_page{
+body.media_page, body.about{
   overflow:hidden!important;
   height:100vh;
   
@@ -551,6 +578,21 @@ body.media_page{
 
 .article{
   margin-bottom:65px;
+
+    h1{
+    font-size:60px;
+    line-height:45px;
+    text-transform: uppercase;
+    margin-bottom:20px;
+    font-family: 'FSSinclairBold';
+  }
+}
+
+.image-container{
+  position:fixed;
+  top:240px;
+  width:35%;
+  max-width:500px;
 }
 
 .title-container{
@@ -574,14 +616,14 @@ body.media_page{
     color:$purple;
     font-family: 'FSSinclairMedium';
   }
-  h1{
-    font-size:50px;
+
+    h1{
+    font-size:60px;
     line-height:45px;
     text-transform: uppercase;
-    margin-bottom:30px;
+    margin-bottom:20px;
     font-family: 'FSSinclairBold';
   }
-
   h2{
     font-size:25px;
     line-height: 20px;
@@ -885,12 +927,37 @@ footer{
   padding:0 5%;
 }
 
+
+// HOME //
+
+.introduction{
+
+  h1{
+    font-size:45px;
+  }
+
+  h2{
+    font-size:20px;
+    line-height:25px;
+    color:$white;
+    font-family: 'FSSinclairMedium';
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+    .button{
+      width:100%;
+    }
+
+}
+
+
 body.home{
 
 .banner{
   height:80px;
    padding:23px 5%; 
-   bottom:80px;  
+   bottom:45px;  
     .button{
           font-size:14px;
     }
@@ -1091,6 +1158,10 @@ section{
     margin: 0 auto;
   }
 
+    .button{
+      width:100%;
+    }
+
 }
 
 body.home{
@@ -1148,7 +1219,7 @@ body.home{
   }
     
 
-body.media_page{
+body.media_page, body.about{
   overflow:hidden!important;
   height:100vh;
   
@@ -1175,6 +1246,12 @@ body.media_page{
 
 .article{
   padding-bottom:5%;
+}
+
+.image-container{
+  position:initial;
+  width:100%;
+  max-width:500px;
 }
 
 .title-container{
