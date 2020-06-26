@@ -39,6 +39,3 @@ function unload() {
 swup.on("willReplaceContent", unload);
 
 
-
-
-AOS.init();

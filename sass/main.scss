@@ -90,7 +90,6 @@ html.is-animating .transition-fade {
   padding:50px 5%;
   position:fixed;
   top:0;
-  background-color: $white;
   z-index: 9;
 }
 
@@ -551,9 +550,7 @@ body.media_page{
 }
 
 .article{
-  // height:70vh;
-  // overflow:scroll;
-  padding-bottom:5%;
+  margin-bottom:65px;
 }
 
 .title-container{
@@ -561,6 +558,9 @@ body.media_page{
   top:240px;
   width:35%;
   max-width:500px;
+  padding-bottom:165px;
+  overflow:scroll;
+  height:450px;
  
 
   span{
@@ -613,6 +613,12 @@ body.media_page{
 
 
 }
+
+.title-container::-webkit-scrollbar {
+  display: none;
+}
+
+
 
 
 
@@ -755,6 +761,142 @@ body.our_team{
 
  }
 
+// ~~~~~~~~~~~~~  NEWSLETTER & MEDIA SIGN UP ~~~~~~~~~~~~~~ //
+
+
+ body.newsletter,  body.media_access{
+
+  .main-content {
+    margin-top:0;
+    padding-top: 240px;
+    height:100vh;
+}
+
+  background-image: url(/public/assets/esc_global_graphic-03.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+
+  h1{
+    font-size:60px;
+    line-height:45px;
+    font-family: 'FSSinclairBold';
+    margin-bottom:30px;
+  }
+
+  h2{
+    font-size:25px;
+    line-height:30px;
+    margin-bottom:30px;
+  }
+
+  h3{
+    font-size:18px;
+    font-family: 'FSSinclairMedium';
+    text-decoration: underline;
+    margin-bottom:60px;
+  }
+
+  span {
+    color:$dark-blue;
+    font-size: 16px;
+    a{
+      font-family: 'FSSinclairBold';
+      text-transform: uppercase;
+      color:$purple;
+      text-decoration:underline;
+    }
+
+  }
+  
+
+  .input{
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    border-bottom:0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    font-size:25px;
+    font-family: 'FSSinclairRegular';
+    padding-top:0;
+    padding-bottom:0;
+    padding-left:10px;
+    line-height:20px;
+    height:43px;
+    color:$dark-blue;
+    overflow-x:scroll;
+  }
+
+
+
+  .label{
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'FSSinclairBold';
+    font-size:18px;
+    width:200px;
+    color:$dark-blue;
+    line-height:20px;
+    padding-top:8px;
+  }
+
+  .button{
+    border-radius:0;
+    border: 4px solid $purple;
+    color:$purple;
+    font-family: 'FSSinclairBold';
+    text-transform: uppercase;
+    padding:20px 30px;
+    font-size: 14px;
+    transition: all 0.3s ease-out;
+  }
+
+  .button:hover{
+    background-color: $purple;
+    color:$white;
+    transition: all 0.3s ease-in;
+  }
+
+  .checkbox{
+   display:block;
+   color:$dark-blue;
+  font-family: 'FSSinclairMedium';
+  line-height:50px;
+  font-size:18px;
+  }
+
+  .underline{
+    display:block;
+    height:4px;
+    width:100%;
+    background-color: $purple;
+    border-radius: 4px;
+
+  }
+
+  .required{
+    color:red!important;
+    display:block!important;
+  }
+
+  .invalid{
+    float:left;
+    display:none;
+  }
+
+  span.required{
+    background-color:red;
+  }
+
+
+ }
+
+
+
+
+
 
 
 // ~~~~~~~~~~~~~~~ LEGAL ~~~~~~~~~~~~~~~~~~ //
@@ -801,6 +943,101 @@ body.legal{
 
 
 
+@media only screen and (max-width: 1080px) {
+
+section{
+  padding:5%;
+}
+
+footer{
+  padding:0 5%;
+}
+
+body.home{
+
+.banner{
+  height:80px;
+   padding:23px 5%; 
+   bottom:80px;  
+    .button{
+          font-size:14px;
+    }
+
+    .banner-meta{
+        display:none;
+    }
+
+  }
+
+}
+
+// MEDIA //
+
+.banner{
+  height:80px;
+  padding:23px 5%; 
+  bottom:45px;  
+    .button{
+          font-size:14px;
+    }
+
+    .banner-meta{
+      display:none;
+    }
+  }
+    
+
+
+  //~~~~~~~~~~~~ NEWSLETTER ~~~~~~~~~~~`//
+ body.newsletter,  body.media_access{
+
+    background:none;
+
+  .main-content {
+    margin-top:0;
+    padding-top: 220px;
+    height:100vh;
+}
+
+
+  h3{
+    font-size:18px;
+    font-family: 'FSSinclairMedium';
+    text-decoration: underline;
+    margin-bottom:30px;
+  }
+
+
+  .button{
+    width:100%;
+  }
+
+
+  .required{
+    color:red!important;
+    display:block!important;
+  }
+
+  .invalid{
+    float:left;
+    display:none;
+  }
+
+  span.required{
+    background-color:red;
+  }
+
+
+ }
+
+
+
+
+
+
+
+}
+
 
 
 
@@ -830,6 +1067,7 @@ body.legal{
 
 @media only screen and (max-width: 780px) {
 
+
 footer.footer-banner{
   height:80px;
   width:100%;
@@ -843,6 +1081,7 @@ footer.footer-banner{
 .copyright {
   float:right;
   text-align: left;
+  width: 60%;
 
   span{
     line-height:initial;
@@ -883,7 +1122,10 @@ section{
   display:none;
 }
 
-
+.menu{
+  background-color:$white;
+  height:210px;
+}
 .logo{
   width:45%;
 }
@@ -944,6 +1186,10 @@ body.home{
           font-size:14px;
     }
 
+    .banner-meta{
+        display:none;
+    }
+
   }
 
 }
@@ -962,6 +1208,10 @@ body.home{
   bottom:80px;  
     .button{
           font-size:14px;
+    }
+
+    .banner-meta{
+      display:none;
     }
   }
     
@@ -1046,7 +1296,7 @@ body.our_team{
 
   
   .team{
-    width:80%;
+    width:100%;
 
     p{
       margin-bottom:10px!important;
@@ -1081,6 +1331,72 @@ body.our_team{
 
 
   }
+
+}
+
+
+
+//~~~~~~~~~~~~ NEWSLETTER ~~~~~~~~~~~`//
+body.newsletter{
+
+    background:none;
+
+  .main-content{
+    height:auto!important;
+    margin-bottom:0;
+  }
+
+.spacer{
+  height:100px;
+}
+
+
+
+  h3{
+    font-size:18px;
+    font-family: 'FSSinclairMedium';
+    text-decoration: underline;
+    margin-bottom:30px;
+  }
+
+
+  .button{
+    width:100%;
+  }
+
+
+  .required{
+    color:red!important;
+    display:block!important;
+  }
+
+  .invalid{
+    float:left;
+    display:none;
+  }
+
+  span.required{
+    background-color:red;
+  }
+
+
+ }
+
+
+body.media_access {
+
+
+  background:none; 
+
+  .main-content{
+    height:auto!important;
+    margin-bottom:0;
+  }
+
+.spacer{
+  height:100px;
+}
+
 
 }
 
