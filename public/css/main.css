@@ -176,6 +176,31 @@ footer.footer-banner ul > li a {
   font-size: 12px;
 }
 
+#cookiescript_injected, #cookiescript_header {
+  font-family: "FSSinclairRegular" !important;
+}
+
+#cookiescript_readmore {
+  border-bottom: 1px solid #fff !important;
+}
+
+#cookiescript_accept, #cookiescript_reject, #cookiescript_save, #cookiescript_badgetext {
+  border-radius: 0px !important;
+  font-family: "FSSinclairBold" !important;
+}
+
+#cookiescript_accept {
+  line-height: 3.6 !important;
+}
+
+#cookiescript_reject {
+  border: 3px solid #FFFFFF !important;
+}
+
+#cookiescript_injected {
+  border-radius: 2px !important;
+}
+
 body.home .menu {
   background-color: transparent;
 }
@@ -1137,11 +1162,9 @@ body.blank .button:hover {
     background-repeat: no-repeat;
     background-size: 100%;
   }
+
   body.our_team .spacer {
     height: 150px;
-  }
-  body.newsletter, body.media_access {
-    background: none;
   }
   body.newsletter .main-content, body.media_access .main-content {
     height: auto !important;

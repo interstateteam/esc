@@ -1,6 +1,4 @@
-node_modules
-package.json
-.DS_Store
+
 main.min.css.map
 main.css.map
 package-lock.json

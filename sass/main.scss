@@ -215,8 +215,24 @@ ul{
 }
 
 
-
-
+// ~~~~~~~~~~~~~~~ COOKIES OVERRIDE ~~~~~~~~~~~~~~~~~~ //
+#cookiescript_injected, #cookiescript_header {
+  font-family: 'FSSinclairRegular'!important;
+}
+#cookiescript_readmore {
+  border-bottom: 1px solid #fff!important;
+}
+#cookiescript_accept, #cookiescript_reject, #cookiescript_save, #cookiescript_badgetext {
+    border-radius: 0px!important;
+    font-family: 'FSSinclairBold'!important;
+}
+#cookiescript_accept {line-height: 3.6!important;}
+#cookiescript_reject {
+    border: 3px solid #FFFFFF!important;
+}
+#cookiescript_injected {
+    border-radius: 2px!important;
+}
 // ~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~ //
 body.home{
   .menu{
@@ -1340,10 +1356,6 @@ body.home{
 
 }
 
-
-
-
-
 // ~~~~~~~~~~~~~~~ MEDIA ~~~~~~~~~~~~~~~~~~ //
 .main-content{
   margin-top:150px;
@@ -1500,9 +1512,6 @@ body.our_team{
 
 }
 
-
-
-//~~~~~~~~~~~~ NEWSLETTER ~~~~~~~~~~~//
 
 
 body.newsletter, body.media_access{

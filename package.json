@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "ESC Website 1.0",
   "main": "index.js",
-  "dependencies": {
-    "bulma": "^0.9.0"
-  },
   "devDependencies": {},
+  "description": "esc website v1.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/interstateteam/esc/issues"
   },
-  "homepage": "https://github.com/interstateteam/esc#readme"
+  "homepage": "https://github.com/interstateteam/esc#readme",
+  "dependencies": {
+    "bulma": "^0.9.0"
+  }
 }
