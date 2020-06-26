@@ -691,80 +691,12 @@ body.our_team{
 
 
 
-
-
-// ~~~~~~~~~~~~~ MEDIA ACCESS ~~~~~~~~~~~~~~ //
-
-
- body.media_access{
-
-  .main-content {
-    margin-top:0;
-    padding-top: 240px;
-    height:100vh;
-}
-
-
-
-  background-image: url(/public/assets/esc_global_graphic-03.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  // height:calc(100vh - 300px) ;
-  background-position: bottom left;
-
-  h1{
-    font-size:60px;
-    line-height:45px;
-    font-family: 'FSSinclairBold';
-    margin-bottom:30px;
-  }
-
-  h2{
-    font-size:25px;
-    line-height:30px;
-  }
-
-  .input{
-    border-top:0;
-    border-left:0;
-    border-right:0;
-    border-bottom:3px $purple solid;
-    border-radius: 0;
-    box-shadow: none;
-    background-color: transparent;
-    font-size:25px;
-    font-family: 'FSSinclairMedium';
-    padding-top:3px;
-    padding-bottom:0;
-    line-height:20px;
-    height:43px;
-    color:$dark-blue;
-  }
-
-  .input::after{
-    content:'';
-    display:block;
-    height:3px;
-    border-radius:2px;
-    width:100%;
-    background-color:$purple;
-  }
-
-  .label{
-    text-transform: uppercase;
-    text-align: left;
-    font-family: 'FSSinclairBold';
-    font-size:18px;
-    width:150px;
-    color:$dark-blue;
-  }
-
- }
-
 // ~~~~~~~~~~~~~  NEWSLETTER & MEDIA SIGN UP ~~~~~~~~~~~~~~ //
 
 
  body.newsletter,  body.media_access{
+
+  .spacer{display: none;}
 
   .main-content {
     margin-top:0;
@@ -1337,7 +1269,7 @@ body.our_team{
 
 
 //~~~~~~~~~~~~ NEWSLETTER ~~~~~~~~~~~`//
-body.newsletter{
+body.newsletter, body.media_access{
 
     background:none;
 
@@ -1347,6 +1279,7 @@ body.newsletter{
   }
 
 .spacer{
+  display: block;;
   height:100px;
 }
 

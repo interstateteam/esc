@@ -580,71 +580,15 @@ body.our_team .team .profiles .instagram {
   background-size: 100%;
 }
 
-body.media_access {
-  background-image: url(/public/assets/esc_global_graphic-03.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom left;
-}
-
-body.media_access .main-content {
-  margin-top: 0;
-  padding-top: 240px;
-  height: 100vh;
-}
-
-body.media_access h1 {
-  font-size: 60px;
-  line-height: 45px;
-  font-family: 'FSSinclairBold';
-  margin-bottom: 30px;
-}
-
-body.media_access h2 {
-  font-size: 25px;
-  line-height: 30px;
-}
-
-body.media_access .input {
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 3px #7364FF solid;
-  border-radius: 0;
-  box-shadow: none;
-  background-color: transparent;
-  font-size: 25px;
-  font-family: 'FSSinclairMedium';
-  padding-top: 3px;
-  padding-bottom: 0;
-  line-height: 20px;
-  height: 43px;
-  color: #182733;
-}
-
-body.media_access .input::after {
-  content: '';
-  display: block;
-  height: 3px;
-  border-radius: 2px;
-  width: 100%;
-  background-color: #7364FF;
-}
-
-body.media_access .label {
-  text-transform: uppercase;
-  text-align: left;
-  font-family: 'FSSinclairBold';
-  font-size: 18px;
-  width: 150px;
-  color: #182733;
-}
-
 body.newsletter, body.media_access {
   background-image: url(/public/assets/esc_global_graphic-03.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom left;
+}
+
+body.newsletter .spacer, body.media_access .spacer {
+  display: none;
 }
 
 body.newsletter .main-content, body.media_access .main-content {
@@ -1010,34 +954,35 @@ body.legal h3 {
     background-repeat: no-repeat;
     background-size: 100%;
   }
-  body.newsletter {
+  body.newsletter, body.media_access {
     background: none;
   }
-  body.newsletter .main-content {
+  body.newsletter .main-content, body.media_access .main-content {
     height: auto !important;
     margin-bottom: 0;
   }
-  body.newsletter .spacer {
+  body.newsletter .spacer, body.media_access .spacer {
+    display: block;
     height: 100px;
   }
-  body.newsletter h3 {
+  body.newsletter h3, body.media_access h3 {
     font-size: 18px;
     font-family: 'FSSinclairMedium';
     text-decoration: underline;
     margin-bottom: 30px;
   }
-  body.newsletter .button {
+  body.newsletter .button, body.media_access .button {
     width: 100%;
   }
-  body.newsletter .required {
+  body.newsletter .required, body.media_access .required {
     color: red !important;
     display: block !important;
   }
-  body.newsletter .invalid {
+  body.newsletter .invalid, body.media_access .invalid {
     float: left;
     display: none;
   }
-  body.newsletter span.required {
+  body.newsletter span.required, body.media_access span.required {
     background-color: red;
   }
   body.media_access {
