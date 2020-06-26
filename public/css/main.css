@@ -463,23 +463,31 @@ body.home .banner .button:hover {
   transition: all 0.3s ease-in;
 }
 
+body.about {
+  background: url("/public/assets/esc_global_graphic-04.svg");
+  background-size: 50%;
+  background-attachment: fixed;
+  background-position: top left -200px;
+  background-repeat: no-repeat;
+}
+
+body.media_page {
+  background: url("/public/assets/esc_global_graphic-01.svg");
+  background-size: 60%;
+  background-attachment: fixed;
+  background-position: top -400px left;
+  background-repeat: no-repeat;
+}
+
 body.media_page, body.about {
   overflow: hidden !important;
   height: 100vh;
 }
 
-.background-graphic-01 {
-  transform: translateY(-265px);
-  width: 60%;
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  background: url("/public/assets/esc_global_graphic-01.svg");
-  background-size: cover;
-  background-position: bottom left;
-  background-repeat: no-repeat;
-  height: calc(100vh + 265px);
+body.media_page .main-content, body.about .main-content {
+  height: 70vh;
+  overflow: scroll;
+  position: relative;
 }
 
 .sticky {
@@ -488,7 +496,7 @@ body.media_page, body.about {
 }
 
 .article {
-  margin-bottom: 65px;
+  padding-bottom: 200px;
 }
 
 .article h1 {
@@ -513,7 +521,6 @@ body.media_page, body.about {
   max-width: 500px;
   padding-bottom: 165px;
   overflow: scroll;
-  height: 450px;
 }
 
 .title-container span {
@@ -575,16 +582,21 @@ body.media_page, body.about {
 body.our_team {
   background-image: url(/public/assets/esc_global_graphic-02.svg);
   background-size: 100%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: bottom  left -100px;
+  background-position: bottom -100px left -100px;
 }
 
 body.our_team .main-content {
-  margin-bottom: 10%;
-  margin-top: 5%;
+  padding-bottom: 15%;
+  margin-top: 2%;
 }
 
 body.our_team .team {
+  width: 95%;
+}
+
+body.our_team .team img {
   width: 70%;
 }
 
@@ -594,6 +606,13 @@ body.our_team .team h2 {
   font-family: 'FSSinclairBold';
   text-transform: uppercase;
   margin: 20px 0 5px 0 !important;
+}
+
+body.our_team .team h3 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  font-family: 'FSSinclairMedium';
 }
 
 body.our_team .team .profiles span {
@@ -741,6 +760,25 @@ body.newsletter span.required, body.media_access span.required {
   background-color: red;
 }
 
+body.legal {
+  background-image: url("/public/assets/esc_global_graphic-03.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left -200px top 50px;
+  overflow: hidden !important;
+}
+
+body.legal .main-content {
+  position: relative;
+  margin-top: 0;
+}
+
+body.legal .article {
+  padding-top: 250px;
+  padding-bottom: 100px;
+}
+
 body.legal .title-container ul > li > a {
   text-transform: uppercase;
   color: #7364FF;
@@ -753,6 +791,52 @@ body.legal h3 {
   font-family: 'FSSinclairBold';
   margin-bottom: 20px;
   font-size: 18px;
+}
+
+body.blank {
+  background-image: url("/public/assets/esc_global_graphic-03.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left -200px top 50px;
+  overflow: hidden !important;
+  height: 100vh;
+}
+
+body.blank .title-container {
+  margin-top: 100px;
+}
+
+body.blank .title-container ul > li > a {
+  text-transform: uppercase;
+  color: #7364FF;
+  font-size: 25px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+body.blank h4 {
+  font-family: 'FSSinclairRegular';
+  font-size: 25px;
+  line-height: 30px;
+}
+
+body.blank .button {
+  border-radius: 0;
+  border: 4px solid #7364FF;
+  color: #7364FF;
+  font-family: 'FSSinclairBold';
+  text-transform: uppercase;
+  padding: 20px 30px;
+  font-size: 14px;
+  transition: all 0.3s ease-out;
+  margin-top: 20px;
+}
+
+body.blank .button:hover {
+  background-color: #7364FF;
+  color: #fff;
+  transition: all 0.3s ease-in;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -797,6 +881,22 @@ body.legal h3 {
   }
   .banner .banner-meta {
     display: none;
+  }
+  .title-container {
+    position: fixed;
+    top: 240px;
+    width: 50%;
+    max-width: 500px;
+    padding-bottom: 165px;
+    overflow: scroll;
+    height: 400px;
+  }
+  .title-container h1 {
+    font-size: 35px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'FSSinclairBold';
   }
   body.newsletter, body.media_access {
     background: none;
@@ -872,16 +972,27 @@ body.legal h3 {
   }
   .menu {
     background-color: #fff;
-    height: 210px;
+    height: 150px;
+    padding: 30px 5%;
   }
   .logo {
     width: 45%;
   }
   .menu-items li {
     display: block;
+    padding-top: 0;
   }
   .menu-items a {
     line-height: 30px;
+  }
+  .menu-items li:after {
+    visibility: hidden;
+  }
+  .menu-items li:hover:after {
+    visibility: hidden;
+  }
+  .menu-items li:hover a {
+    visibility: hidden;
   }
   .introduction h1 {
     font-size: 45px;
@@ -902,9 +1013,19 @@ body.legal h3 {
   }
   body.home .menu-items li {
     display: block;
+    padding-top: 0;
   }
   body.home .menu-items a {
     line-height: 30px;
+  }
+  body.home .menu-items li:after {
+    visibility: hidden;
+  }
+  body.home .menu-items li:hover:after {
+    visibility: hidden;
+  }
+  body.home .menu-items li:hover a {
+    visibility: hidden;
   }
   body.home .banner {
     height: 80px;
@@ -918,7 +1039,8 @@ body.legal h3 {
     display: none;
   }
   .main-content {
-    margin-top: 180px;
+    margin-top: 150px;
+    overflow: initial !important;
   }
   .banner {
     height: 80px;
@@ -955,11 +1077,15 @@ body.legal h3 {
     position: initial;
     width: 100%;
     max-width: 500px;
+    margin-top: 20px;
   }
   .title-container {
     position: initial;
     width: 100%;
     max-width: 500px;
+    height: initial;
+    overflow: auto;
+    padding-bottom: 0;
   }
   .title-container span {
     display: block;
@@ -1011,12 +1137,16 @@ body.legal h3 {
     background-repeat: no-repeat;
     background-size: 100%;
   }
+  body.our_team .spacer {
+    height: 150px;
+  }
   body.newsletter, body.media_access {
     background: none;
   }
   body.newsletter .main-content, body.media_access .main-content {
     height: auto !important;
     margin-bottom: 0;
+    padding-top: 180px;
   }
   body.newsletter .spacer, body.media_access .spacer {
     display: block;
@@ -1051,6 +1181,15 @@ body.legal h3 {
   }
   body.media_access .spacer {
     height: 100px;
+  }
+  body.legal {
+    background: none;
+  }
+  body.legal .title-container {
+    margin-top: 180px;
+  }
+  body.legal .article {
+    padding-top: 0;
   }
 }
 
