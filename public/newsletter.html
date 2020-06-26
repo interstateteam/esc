@@ -10,7 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="media_access">
+<body class="newsletter">
     <main id="swup" class="transition-fade">
 
         <nav class="menu" id="menu">
@@ -32,42 +32,58 @@
 
                         <h1>JOIN US FOR THE RIDE</h1>
                         <h2>Sign-up to our newsletter to stay updated on all the latest news and what we’re up getting up to.</h2>
-
+                        <h3 class="">* All marked fields are required</h3>
+                        <span>You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy
+                        practices, please visit our <a href="/public/privacy-policy.html">PRIVACY POLICY</a></span>
                     </div>
 
 
                     <div class="column is-offset-1 is-6">
-                        <form action="#">
+                        <form action="#" class="newsletter-form">
 
                             <div class="field is-horizontal">
                                 <div class="field-label is-normal">
-                                    <label class="label">Email:</label>
+                                    <label class="label ">* Email Address:</label>
+                                    <label class="invalid "> Invalid email</label>
                                 </div>
                                 <div class="field-body">
                                     <div class="field">
                                         <p class="control is-expanded">
-                                            <input class="input" type="email" placeholder="johnsmith@gmail.com">
+                                            <input class="input" type="email" required placeholder="johnsmith@gmail.com">
+                                            <span class="underline "></span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-    
-
-                            <div class="field is-horizontal">
-                                <div class="field-label">
-
+                             <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Marketing Permissions:</label>
                                 </div>
                                 <div class="field-body">
                                     <div class="field">
-                                        <div class="control">
-                                            <button class="button is-primary">
-                                              Sign up to our newsletter
-                                            </button>
-                                        </div>
+                                        <p class="control is-expanded">
+                                            Please select all the ways you would like to hear from WES Management Ltd.:
+                                            <label class="checkbox"><input type="checkbox"> Email</label>
+                                            <label class="checkbox">                      <input type="checkbox">
+                                                Direct Mail
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                Customised Online Advertising
+                                            </label>
+                                        </p>
+
+                                        <button class="button disabled">
+                                            Sign up to our newsletter
+                                        </button>
+
+
                                     </div>
                                 </div>
                             </div>
+
+         
 
                         </form>
                     </div>
@@ -80,6 +96,8 @@
         </section>
 
 
+        <div class="spacer">&nbsp; </div>
+        
         <footer class="footer-banner">
             <div class="container">
         
