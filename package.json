@@ -1,8 +1,10 @@
 {
   "name": "esc",
   "version": "1.0.0",
-  "description": "esc website v1.0",
+  "description": "ESC Website 1.0",
   "main": "index.js",
+  "devDependencies": {},
+  "description": "esc website v1.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
