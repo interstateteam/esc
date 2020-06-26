@@ -180,13 +180,21 @@ footer.footer-banner ul > li a {
   border-bottom: 1px solid #fff !important;
 }
 
-#cookiescript_accept, #cookiescript_reject, #cookiescript_save {
+#cookiescript_accept, #cookiescript_reject, #cookiescript_save, #cookiescript_badgetext {
   border-radius: 0px !important;
   font-family: "FSSinclairBold" !important;
 }
 
+#cookiescript_accept {
+  line-height: 3.6 !important;
+}
+
 #cookiescript_reject {
   border: 3px solid #FFFFFF !important;
+}
+
+#cookiescript_injected {
+  border-radius: 2px !important;
 }
 
 body.home .menu {
