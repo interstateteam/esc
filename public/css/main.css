@@ -172,6 +172,23 @@ footer.footer-banner ul > li a {
   font-size: 12px;
 }
 
+#cookiescript_injected, #cookiescript_header {
+  font-family: "FSSinclairRegular" !important;
+}
+
+#cookiescript_readmore {
+  border-bottom: 1px solid #fff !important;
+}
+
+#cookiescript_accept, #cookiescript_reject, #cookiescript_save {
+  border-radius: 0px !important;
+  font-family: "FSSinclairBold" !important;
+}
+
+#cookiescript_reject {
+  border: 3px solid #FFFFFF !important;
+}
+
 body.home .menu {
   background-color: transparent;
 }
