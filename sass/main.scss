@@ -916,6 +916,13 @@ body.our_team{
   }
 
 
+  .title-container{
+    span{
+      font-family: 'FSSinclairRegular'; 
+      font-weight: initial;
+    }
+  }
+
  }
 
 
@@ -1245,6 +1252,11 @@ body.home{
 
 @media only screen and (max-width: 780px) {
 
+.spacer{
+
+  height:180px;
+}
+
 
 footer.footer-banner{
   height:80px;
@@ -1442,13 +1454,15 @@ body.home{
     
 
 body.media_page, body.about{
-  overflow:hidden!important;
+  overflow:initial!important;
   height:100vh;
+
+  background:none;
 
   
   .main-content{
     height:70vh;
-    overflow:scroll;
+    overflow:initial!important;
     position:relative;
   }
 
@@ -1468,7 +1482,13 @@ body.media_page, body.about{
 
 
 .article{
-  padding-bottom:5%;
+ margin-bottom:5%;
+
+
+  h1{
+    font-size:35px;
+    line-height: 35px;
+  }
 }
 
 .image-container{
@@ -1530,6 +1550,10 @@ body.our_team{
 
   background:none;
 
+  .main-content{
+    margin-bottom:130px;
+  }
+
   
   .team{
     width:100%;
@@ -1584,11 +1608,6 @@ body.newsletter, body.media_access{
 
     background:none;
 
-  // .main-content{
-  //   height:auto!important;
-  //   margin-bottom:0;
-  //   padding-top:180px;
-  // }
 .main-content{
     height:auto!important;
 }
@@ -1623,7 +1642,7 @@ body.newsletter, body.media_access{
  }
 
 
-body.media_access {
+body.newsletter, body.media_access {
 
 
   background:none; 
@@ -1631,12 +1650,67 @@ body.media_access {
   .main-content{
     height:auto!important;
     margin-bottom:0;
+    overflow:initial !important;
   }
 
-.spacer{
-  height:100px;
-}
+  .spacer{
+    height:180px;
+  }
 
+  .newsletter-form{
+
+    margin-bottom:50px;
+  }
+
+  h1{
+    font-size:35px;
+    line-height:30px;
+    font-family: 'FSSinclairBold';
+    margin-bottom:20px;
+    max-width: 80%;
+  }
+
+  h2{
+    font-size:20px;
+    line-height:25px;
+  }
+
+
+  .label{
+    width:100%;
+    
+  }
+
+
+
+  .input{
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    border-bottom:0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    font-size:20px;
+    font-family: 'FSSinclairRegular';
+    padding-top:0;
+    padding-bottom:0;
+    padding-left:10px;
+    line-height:20px;
+    height:43px;
+    color:$dark-blue;
+    overflow-x:scroll;
+  }
+
+
+
+
+  .button{
+    padding:0;
+    height:50px;
+  }
+
+  .spacer-footer{height:80px;}
 
 }
 
@@ -1647,8 +1721,11 @@ body.media_access {
 body.legal{
   background: none;
 
+
+
   .title-container{
       margin-top: 180px;
+
   }
 
   .article{

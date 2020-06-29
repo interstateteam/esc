@@ -781,6 +781,11 @@ body.newsletter span.required, body.media_access span.required {
   background-color: red;
 }
 
+body.newsletter .title-container span, body.media_access .title-container span {
+  font-family: 'FSSinclairRegular';
+  font-weight: initial;
+}
+
 body.legal {
   background-image: url("/public/assets/esc_global_graphic-03.svg");
   background-size: 80%;
@@ -977,6 +982,9 @@ body.blank .button:hover {
 }
 
 @media only screen and (max-width: 780px) {
+  .spacer {
+    height: 180px;
+  }
   footer.footer-banner {
     height: 80px;
     width: 100%;
@@ -1106,12 +1114,13 @@ body.blank .button:hover {
     display: none;
   }
   body.media_page, body.about {
-    overflow: hidden !important;
+    overflow: initial !important;
     height: 100vh;
+    background: none;
   }
   body.media_page .main-content, body.about .main-content {
     height: 70vh;
-    overflow: scroll;
+    overflow: initial !important;
     position: relative;
   }
   body.media_page h3, body.about h3 {
@@ -1123,7 +1132,11 @@ body.blank .button:hover {
     display: none;
   }
   .article {
-    padding-bottom: 5%;
+    margin-bottom: 5%;
+  }
+  .article h1 {
+    font-size: 35px;
+    line-height: 35px;
   }
   .image-container {
     position: initial;
@@ -1166,6 +1179,9 @@ body.blank .button:hover {
   }
   body.our_team {
     background: none;
+  }
+  body.our_team .main-content {
+    margin-bottom: 130px;
   }
   body.our_team .team {
     width: 100%;
@@ -1218,15 +1234,58 @@ body.blank .button:hover {
   body.newsletter span.required, body.media_access span.required {
     background-color: red;
   }
-  body.media_access {
+  body.newsletter, body.media_access {
     background: none;
   }
-  body.media_access .main-content {
+  body.newsletter .main-content, body.media_access .main-content {
     height: auto !important;
     margin-bottom: 0;
+    overflow: initial !important;
   }
-  body.media_access .spacer {
-    height: 100px;
+  body.newsletter .spacer, body.media_access .spacer {
+    height: 180px;
+  }
+  body.newsletter .newsletter-form, body.media_access .newsletter-form {
+    margin-bottom: 50px;
+  }
+  body.newsletter h1, body.media_access h1 {
+    font-size: 35px;
+    line-height: 30px;
+    font-family: 'FSSinclairBold';
+    margin-bottom: 20px;
+    max-width: 80%;
+  }
+  body.newsletter h2, body.media_access h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  body.newsletter .label, body.media_access .label {
+    width: 100%;
+  }
+  body.newsletter .input, body.media_access .input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'FSSinclairRegular';
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    line-height: 20px;
+    height: 43px;
+    color: #182733;
+    overflow-x: scroll;
+  }
+  body.newsletter .button, body.media_access .button {
+    padding: 0;
+    height: 50px;
+  }
+  body.newsletter .spacer-footer, body.media_access .spacer-footer {
+    height: 80px;
   }
   body.legal {
     background: none;
