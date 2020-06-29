@@ -216,6 +216,8 @@ ul{
 
 
 // ~~~~~~~~~~~~~~~ COOKIES OVERRIDE ~~~~~~~~~~~~~~~~~~ //
+
+
 #cookiescript_injected, #cookiescript_header {
   font-family: 'FSSinclairRegular'!important;
 }
@@ -233,7 +235,97 @@ ul{
 #cookiescript_injected {
     border-radius: 2px!important;
 }
+
+
+// ~~~~~~~~~~~~~~~ BANNER ~~~~~~~~~~~~~~~~~~ //
+.banner{
+    min-height:65px;
+    background-color:$purple;
+    width:100%;
+    position:fixed;
+    bottom:45px;
+    z-index:1;
+
+    .social{
+        width:100%;
+        display:flex;
+        align-items: center;
+
+      span{
+        width:20px;
+        height:20px;
+        display:block;
+        margin-right:20px;
+      }
+
+      .instagram{
+        background-image: url('/public/assets/esc_global_instagram-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+      .twitter{
+        background-image: url('/public/assets/esc_global_twitter-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+      .linkedin{
+        background-image: url('/public/assets/esc_global_linkedin-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+
+      .youtube{
+        background-image: url('/public/assets/esc_global_youtube-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+      .facebook{
+        background-image: url('/public/assets/esc_global_facebook-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+    }
+
+    .banner-meta{
+      color:$white;
+      display:block;
+      font-size:30px;
+      line-height:65px;
+      text-transform:uppercase;
+      text-align: center;
+      font-family: 'FSSinclairBold';
+    }
+
+    .button{
+      border:4px solid $white;
+      border-radius:0;
+      background-color: $purple;
+      color:$white;
+      text-transform:uppercase;
+      float:right;
+      min-width:140px;
+      font-family: 'FSSinclairBold';
+    }
+
+     .button:hover{
+      border:4px solid $white;
+      color:$purple;
+      background-color: $white;
+      transition: all 0.3s ease-in;
+    }
+
+    
+  }
+
+
+
+
 // ~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~ //
+
 body.home{
   .menu{
   background-color:transparent;
@@ -246,7 +338,7 @@ body.home{
 .menu-items { 
  float:right;
  text-align: right;
-width:50%;
+  width:50%;
 
     background: transparent;
     max-width: initial;
@@ -472,89 +564,7 @@ width:50%;
 }
 
 
-// ~~~~~~~~~~~~~~~ GLOBAL ~~~~~~~~~~~~~~~~~~ //
-.banner{
-    min-height:65px;
-    background-color:$purple;
-    width:100%;
-    position:fixed;
-    bottom:45px;
-    z-index:1;
 
-    .social{
-        width:100%;
-        display:flex;
-        align-items: center;
-
-      span{
-        width:20px;
-        height:20px;
-        display:block;
-        margin-right:20px;
-      }
-
-      .instagram{
-        background-image: url('/public/assets/esc_global_instagram-light.svg');
-        background-repeat: no-repeat;
-        background-size:100%;
-      }
-
-      .twitter{
-        background-image: url('/public/assets/esc_global_twitter-light.svg');
-        background-repeat: no-repeat;
-        background-size:100%;
-      }
-
-      .linkedin{
-        background-image: url('/public/assets/esc_global_linkedin-light.svg');
-        background-repeat: no-repeat;
-        background-size:100%;
-      }
-
-
-      .youtube{
-        background-image: url('/public/assets/esc_global_youtube-light.svg');
-        background-repeat: no-repeat;
-        background-size:100%;
-      }
-
-      .facebook{
-        background-image: url('/public/assets/esc_global_facebook-light.svg');
-        background-repeat: no-repeat;
-        background-size:100%;
-      }
-    }
-
-    .banner-meta{
-      color:$white;
-      display:block;
-      font-size:30px;
-      line-height:65px;
-      text-transform:uppercase;
-      text-align: center;
-      font-family: 'FSSinclairBold';
-    }
-
-    .button{
-      border:4px solid $white;
-      border-radius:0;
-      background-color: $purple;
-      color:$white;
-      text-transform:uppercase;
-      float:right;
-      min-width:140px;
-      font-family: 'FSSinclairBold';
-    }
-
-     .button:hover{
-      border:4px solid $white;
-      color:$purple;
-      background-color: $white;
-      transition: all 0.3s ease-in;
-    }
-
-    
-  }
 
 
   // ABOUT OVERIDES //
@@ -617,7 +627,7 @@ body.media_page, body.about{
 .title-container{
   position:fixed;
   top:240px;
-  width:35%;
+  width:40%;
   max-width:500px;
   padding-bottom:165px;
   overflow:scroll;
@@ -1013,7 +1023,7 @@ body.blank{
 
 
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1240px) {
 
 section{
   padding:5%;
@@ -1085,7 +1095,7 @@ body.home{
   .title-container{
   position:fixed;
   top:240px;
-  width:50%;
+  width:40%;
   max-width:500px;
   padding-bottom:165px;
   overflow:scroll;
@@ -1254,26 +1264,23 @@ section{
     padding-top:0;
   }
 
+  li.active a{
+    color:$purple;
+  }
+ 
   a{
       line-height: 30px;     
     }
 
 
-      li:after{
-      visibility: hidden;
+      li.active:after{
+        color:$purple;
+        width:0;
       }
 
       li:hover:after{
-        visibility:hidden;
+        width:0;
       }
-
-
-      li:hover a{
-        visibility:hidden
-      }
-
-
-
 
   }
 
@@ -1283,7 +1290,10 @@ section{
 
 // ~~~~~~~~ HOME ~~~~~~~~~ //
 
-
+.landing{
+  min-height:calc(100vh - 160px);
+ 
+}
 .introduction{
 
   h1{
@@ -1324,11 +1334,16 @@ body.home{
 
 
       li:after{
-      visibility: hidden;
+      color:$purple;
+      width:0;
       }
+        
+    
+
+
 
       li:hover:after{
-        visibility:hidden;
+       width:0;
       }
 
 
