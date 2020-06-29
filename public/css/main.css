@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: "FSSinclairRegular" !important;
-  margin: 0;
+  margin-bottom: 110px;
   padding: 0;
 }
 
@@ -44,6 +44,16 @@ a:hover {
 
 b {
   font-family: "FSSinclairBold" !important;
+}
+
+.spacer {
+  width: 100%;
+  height: 235px;
+}
+
+.spacer-footer {
+  width: 100%;
+  height: 100px;
 }
 
 .transition-fade {
@@ -97,7 +107,7 @@ html.is-animating .transition-fade {
 .menu-items a {
   color: #182733;
   text-transform: uppercase;
-  line-height: 35px;
+  line-height: 25px;
   font-size: 18px;
   transition: 0.3s ease-out;
   font-family: 'FSSinclairBold';
@@ -131,10 +141,6 @@ html.is-animating .transition-fade {
   background-repeat: no-repeat;
   background-size: 100%;
   display: inline-block;
-}
-
-.main-content {
-  margin-top: 240px;
 }
 
 footer.footer-banner {
@@ -201,6 +207,86 @@ footer.footer-banner ul > li a {
   border-radius: 2px !important;
 }
 
+.banner {
+  min-height: 65px;
+  background-color: #7364FF;
+  width: 100%;
+  position: fixed;
+  bottom: 45px;
+  z-index: 1;
+}
+
+.banner .social {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.banner .social span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 20px;
+}
+
+.banner .social .instagram {
+  background-image: url("/public/assets/esc_global_instagram-light.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.banner .social .twitter {
+  background-image: url("/public/assets/esc_global_twitter-light.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.banner .social .linkedin {
+  background-image: url("/public/assets/esc_global_linkedin-light.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.banner .social .youtube {
+  background-image: url("/public/assets/esc_global_youtube-light.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.banner .social .facebook {
+  background-image: url("/public/assets/esc_global_facebook-light.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.banner .banner-meta {
+  color: #fff;
+  display: block;
+  font-size: 30px;
+  line-height: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'FSSinclairBold';
+}
+
+.banner .button {
+  border: 4px solid #fff;
+  border-radius: 0;
+  background-color: #7364FF;
+  color: #fff;
+  text-transform: uppercase;
+  float: right;
+  min-width: 140px;
+  font-family: 'FSSinclairBold';
+}
+
+.banner .button:hover {
+  border: 4px solid #fff;
+  color: #7364FF;
+  background-color: #fff;
+  transition: all 0.3s ease-in;
+}
+
 body.home .menu {
   background-color: transparent;
 }
@@ -226,7 +312,7 @@ body.home .menu-items li {
 body.home .menu-items a {
   color: #fff;
   text-transform: uppercase;
-  line-height: 35px;
+  line-height: 25px;
   font-size: 18px;
   transition: 0.3s ease-out;
 }
@@ -408,86 +494,6 @@ body.home .banner .button:hover {
   transition: all 0.3s ease-in;
 }
 
-.banner {
-  min-height: 65px;
-  background-color: #7364FF;
-  width: 100%;
-  position: fixed;
-  bottom: 45px;
-  z-index: 1;
-}
-
-.banner .social {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.banner .social span {
-  width: 20px;
-  height: 20px;
-  display: block;
-  margin-right: 20px;
-}
-
-.banner .social .instagram {
-  background-image: url("/public/assets/esc_global_instagram-light.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.banner .social .twitter {
-  background-image: url("/public/assets/esc_global_twitter-light.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.banner .social .linkedin {
-  background-image: url("/public/assets/esc_global_linkedin-light.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.banner .social .youtube {
-  background-image: url("/public/assets/esc_global_youtube-light.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.banner .social .facebook {
-  background-image: url("/public/assets/esc_global_facebook-light.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.banner .banner-meta {
-  color: #fff;
-  display: block;
-  font-size: 30px;
-  line-height: 65px;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: 'FSSinclairBold';
-}
-
-.banner .button {
-  border: 4px solid #fff;
-  border-radius: 0;
-  background-color: #7364FF;
-  color: #fff;
-  text-transform: uppercase;
-  float: right;
-  min-width: 140px;
-  font-family: 'FSSinclairBold';
-}
-
-.banner .button:hover {
-  border: 4px solid #fff;
-  color: #7364FF;
-  background-color: #fff;
-  transition: all 0.3s ease-in;
-}
-
 body.about {
   background: url("/public/assets/esc_global_graphic-04.svg");
   background-size: 50%;
@@ -500,7 +506,7 @@ body.media_page {
   background: url("/public/assets/esc_global_graphic-01.svg");
   background-size: 60%;
   background-attachment: fixed;
-  background-position: top -400px left;
+  background-position: bottom left;
   background-repeat: no-repeat;
 }
 
@@ -510,7 +516,7 @@ body.media_page, body.about {
 }
 
 body.media_page .main-content, body.about .main-content {
-  height: 70vh;
+  height: calc(100vh - 350px);
   overflow: scroll;
   position: relative;
 }
@@ -521,7 +527,7 @@ body.media_page .main-content, body.about .main-content {
 }
 
 .article {
-  padding-bottom: 200px;
+  padding-bottom: 130px;
 }
 
 .article h1 {
@@ -542,9 +548,8 @@ body.media_page .main-content, body.about .main-content {
 .title-container {
   position: fixed;
   top: 240px;
-  width: 35%;
+  width: 40%;
   max-width: 500px;
-  padding-bottom: 165px;
   overflow: scroll;
 }
 
@@ -597,11 +602,6 @@ body.media_page .main-content, body.about .main-content {
 
 .title-container::-webkit-scrollbar {
   display: none;
-}
-
-.spacer {
-  width: 100%;
-  height: 200px;
 }
 
 body.our_team {
@@ -662,18 +662,14 @@ body.our_team .team .profiles .instagram {
 body.newsletter, body.media_access {
   background-image: url(/public/assets/esc_global_graphic-03.svg);
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: bottom left;
+  min-height: 100vh;
 }
 
-body.newsletter .spacer, body.media_access .spacer {
-  display: none;
-}
-
-body.newsletter .main-content, body.media_access .main-content {
-  margin-top: 0;
-  padding-top: 240px;
-  height: 100vh;
+body.newsletter .title-container, body.media_access .title-container {
+  max-width: 400px;
 }
 
 body.newsletter h1, body.media_access h1 {
@@ -732,7 +728,7 @@ body.newsletter .label, body.media_access .label {
   text-align: left;
   font-family: 'FSSinclairBold';
   font-size: 18px;
-  width: 200px;
+  width: 155px;
   color: #182733;
   line-height: 20px;
   padding-top: 8px;
@@ -791,16 +787,15 @@ body.legal {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left -200px top 50px;
-  overflow: hidden !important;
 }
 
 body.legal .main-content {
   position: relative;
-  margin-top: 0;
+  height: 70vh;
+  overflow: scroll;
 }
 
 body.legal .article {
-  padding-top: 250px;
   padding-bottom: 100px;
 }
 
@@ -864,9 +859,39 @@ body.blank .button:hover {
   transition: all 0.3s ease-in;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-height: 880px) {
+  .title-container {
+    position: fixed;
+    top: 240px;
+    width: 40%;
+    max-width: 500px;
+    padding-bottom: 165px;
+    overflow: scroll;
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .title-container {
+    position: fixed;
+    top: 240px;
+    width: 40%;
+    max-width: 500px;
+    padding-bottom: 165px;
+    overflow: scroll;
+  }
+  .title-container h1 {
+    font-size: 40px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'FSSinclairBold';
+  }
+}
+
+@media only screen and (max-width: 1240px) {
   section {
-    padding: 5%;
+    padding: 0 5%;
   }
   footer {
     padding: 0 5%;
@@ -910,11 +935,11 @@ body.blank .button:hover {
   .title-container {
     position: fixed;
     top: 240px;
-    width: 50%;
-    max-width: 500px;
+    width: 40%;
+    max-width: 450px;
     padding-bottom: 165px;
     overflow: scroll;
-    height: 400px;
+    height: 50%;
   }
   .title-container h1 {
     font-size: 35px;
@@ -926,10 +951,8 @@ body.blank .button:hover {
   body.newsletter, body.media_access {
     background: none;
   }
-  body.newsletter .main-content, body.media_access .main-content {
-    margin-top: 0;
-    padding-top: 220px;
-    height: 100vh;
+  body.newsletter .newsletter-form, body.media_access .newsletter-form {
+    margin-bottom: 100px;
   }
   body.newsletter h3, body.media_access h3 {
     font-size: 18px;
@@ -1007,17 +1030,21 @@ body.blank .button:hover {
     display: block;
     padding-top: 0;
   }
+  .menu-items li.active a {
+    color: #7364FF;
+  }
   .menu-items a {
     line-height: 30px;
   }
-  .menu-items li:after {
-    visibility: hidden;
+  .menu-items li.active:after {
+    color: #7364FF;
+    width: 0;
   }
   .menu-items li:hover:after {
-    visibility: hidden;
+    width: 0;
   }
-  .menu-items li:hover a {
-    visibility: hidden;
+  .landing {
+    min-height: calc(100vh - 160px);
   }
   .introduction h1 {
     font-size: 45px;
@@ -1044,10 +1071,11 @@ body.blank .button:hover {
     line-height: 30px;
   }
   body.home .menu-items li:after {
-    visibility: hidden;
+    color: #7364FF;
+    width: 0;
   }
   body.home .menu-items li:hover:after {
-    visibility: hidden;
+    width: 0;
   }
   body.home .menu-items li:hover a {
     visibility: hidden;
@@ -1064,8 +1092,7 @@ body.blank .button:hover {
     display: none;
   }
   .main-content {
-    margin-top: 150px;
-    overflow: initial !important;
+    overflow: scroll !important;
   }
   .banner {
     height: 80px;
@@ -1162,18 +1189,14 @@ body.blank .button:hover {
     background-repeat: no-repeat;
     background-size: 100%;
   }
-
   body.our_team .spacer {
     height: 150px;
   }
+  body.newsletter, body.media_access {
+    background: none;
+  }
   body.newsletter .main-content, body.media_access .main-content {
     height: auto !important;
-    margin-bottom: 0;
-    padding-top: 180px;
-  }
-  body.newsletter .spacer, body.media_access .spacer {
-    display: block;
-    height: 100px;
   }
   body.newsletter h3, body.media_access h3 {
     font-size: 18px;

@@ -37,7 +37,7 @@ html {
 }
 body{
   font-family: 'FSSinclairRegular'!important;
-    margin:0;
+    margin-bottom:110px;
     padding:0;
 }
 
@@ -67,7 +67,19 @@ b{
     font-family: 'FSSinclairBold'!important;
 }
 
+// SPACER //
 
+.spacer{
+  width: 100%;
+  height: 235px;
+}
+
+
+
+.spacer-footer{
+  width: 100%;
+  height: 100px;
+}
 
 // SWUP ANIMATION //
 
@@ -121,7 +133,7 @@ html.is-animating .transition-fade {
       a{
         color:$dark-blue; 
         text-transform:uppercase;
-        line-height: 35px;
+        line-height: 25px;
         font-size:18px;
         transition: 0.3s ease-out;
         font-family: 'FSSinclairBold';
@@ -169,9 +181,9 @@ html.is-animating .transition-fade {
 
 // SECTIONS //
 
-.main-content{
-  margin-top:240px;
-}
+// .main-content{
+//   margin-top:240px;
+// }
 
 footer.footer-banner{
   height:45px;
@@ -216,6 +228,8 @@ ul{
 
 
 // ~~~~~~~~~~~~~~~ COOKIES OVERRIDE ~~~~~~~~~~~~~~~~~~ //
+
+
 #cookiescript_injected, #cookiescript_header {
   font-family: 'FSSinclairRegular'!important;
 }
@@ -233,7 +247,97 @@ ul{
 #cookiescript_injected {
     border-radius: 2px!important;
 }
+
+
+// ~~~~~~~~~~~~~~~ BANNER ~~~~~~~~~~~~~~~~~~ //
+.banner{
+    min-height:65px;
+    background-color:$purple;
+    width:100%;
+    position:fixed;
+    bottom:45px;
+    z-index:1;
+
+    .social{
+        width:100%;
+        display:flex;
+        align-items: center;
+
+      span{
+        width:20px;
+        height:20px;
+        display:block;
+        margin-right:20px;
+      }
+
+      .instagram{
+        background-image: url('/public/assets/esc_global_instagram-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+      .twitter{
+        background-image: url('/public/assets/esc_global_twitter-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+      .linkedin{
+        background-image: url('/public/assets/esc_global_linkedin-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+
+      .youtube{
+        background-image: url('/public/assets/esc_global_youtube-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+
+      .facebook{
+        background-image: url('/public/assets/esc_global_facebook-light.svg');
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+    }
+
+    .banner-meta{
+      color:$white;
+      display:block;
+      font-size:30px;
+      line-height:65px;
+      text-transform:uppercase;
+      text-align: center;
+      font-family: 'FSSinclairBold';
+    }
+
+    .button{
+      border:4px solid $white;
+      border-radius:0;
+      background-color: $purple;
+      color:$white;
+      text-transform:uppercase;
+      float:right;
+      min-width:140px;
+      font-family: 'FSSinclairBold';
+    }
+
+     .button:hover{
+      border:4px solid $white;
+      color:$purple;
+      background-color: $white;
+      transition: all 0.3s ease-in;
+    }
+
+    
+  }
+
+
+
+
 // ~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~ //
+
 body.home{
   .menu{
   background-color:transparent;
@@ -246,7 +350,7 @@ body.home{
 .menu-items { 
  float:right;
  text-align: right;
-width:50%;
+  width:50%;
 
     background: transparent;
     max-width: initial;
@@ -257,7 +361,7 @@ width:50%;
     a{
       color:$white; 
       text-transform:uppercase;
-      line-height: 35px;
+      line-height: 25px;
       font-size:18px;
       transition: 0.3s ease-out;
       
@@ -472,89 +576,7 @@ width:50%;
 }
 
 
-// ~~~~~~~~~~~~~~~ GLOBAL ~~~~~~~~~~~~~~~~~~ //
-.banner{
-    min-height:65px;
-    background-color:$purple;
-    width:100%;
-    position:fixed;
-    bottom:45px;
-    z-index:1;
 
-    .social{
-        width:100%;
-        display:flex;
-        align-items: center;
-
-      span{
-        width:20px;
-        height:20px;
-        display:block;
-        margin-right:20px;
-      }
-
-      .instagram{
-        background-image: url('/public/assets/esc_global_instagram-light.svg');
-        background-repeat: no-repeat;
-        background-size:100%;
-      }
-
-      .twitter{
-        background-image: url('/public/assets/esc_global_twitter-light.svg');
-        background-repeat: no-repeat;
-        background-size:100%;
-      }
-
-      .linkedin{
-        background-image: url('/public/assets/esc_global_linkedin-light.svg');
-        background-repeat: no-repeat;
-        background-size:100%;
-      }
-
-
-      .youtube{
-        background-image: url('/public/assets/esc_global_youtube-light.svg');
-        background-repeat: no-repeat;
-        background-size:100%;
-      }
-
-      .facebook{
-        background-image: url('/public/assets/esc_global_facebook-light.svg');
-        background-repeat: no-repeat;
-        background-size:100%;
-      }
-    }
-
-    .banner-meta{
-      color:$white;
-      display:block;
-      font-size:30px;
-      line-height:65px;
-      text-transform:uppercase;
-      text-align: center;
-      font-family: 'FSSinclairBold';
-    }
-
-    .button{
-      border:4px solid $white;
-      border-radius:0;
-      background-color: $purple;
-      color:$white;
-      text-transform:uppercase;
-      float:right;
-      min-width:140px;
-      font-family: 'FSSinclairBold';
-    }
-
-     .button:hover{
-      border:4px solid $white;
-      color:$purple;
-      background-color: $white;
-      transition: all 0.3s ease-in;
-    }
-
-    
-  }
 
 
   // ABOUT OVERIDES //
@@ -571,7 +593,7 @@ body.media_page{
   background:url('/public/assets/esc_global_graphic-01.svg');
   background-size:60%;
   background-attachment: fixed;
-  background-position: top -400px left;
+  background-position: bottom left;
   background-repeat: no-repeat;
 }
 
@@ -583,7 +605,7 @@ body.media_page, body.about{
   height:100vh;
   
   .main-content{
-    height:70vh;
+    height:calc(100vh - 350px);
     overflow:scroll;
     position:relative;
   }
@@ -596,7 +618,7 @@ body.media_page, body.about{
 }
 
 .article{
-  padding-bottom:200px;
+  padding-bottom:130px;
 
     h1{
     font-size:60px;
@@ -617,10 +639,10 @@ body.media_page, body.about{
 .title-container{
   position:fixed;
   top:240px;
-  width:35%;
+  width:40%;
   max-width:500px;
-  padding-bottom:165px;
   overflow:scroll;
+  // height:400px;
  
 
   span{
@@ -683,10 +705,6 @@ body.media_page, body.about{
 
 
 // ~~~~~~~~~~~~~~~ OUR TEAM ~~~~~~~~~~~~~~~~~~ //
-.spacer{
-  width: 100%;
-  height: 200px;
-}
 
 
 body.our_team{
@@ -770,18 +788,19 @@ body.our_team{
 
  body.newsletter,  body.media_access{
 
-  .spacer{display: none;}
-
-  .main-content {
-    margin-top:0;
-    padding-top: 240px;
-    height:100vh;
-}
 
   background-image: url(/public/assets/esc_global_graphic-03.svg);
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: bottom left;
+  min-height:100vh;
+
+  .title-container{
+    max-width:400px;
+  }
+
+
 
   h1{
     font-size:60px;
@@ -842,7 +861,7 @@ body.our_team{
     text-align: left;
     font-family: 'FSSinclairBold';
     font-size:18px;
-    width:200px;
+    width:155px;
     color:$dark-blue;
     line-height:20px;
     padding-top:8px;
@@ -913,15 +932,15 @@ body.legal{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left -200px top 50px;
-  overflow:hidden!important;
 
   .main-content{
     position:relative;
-    margin-top:0;
-    // overflow:scroll;
+    height:70vh;
+    // margin-top:230px;
+    overflow:scroll;
   }
 .article{
-  padding-top:250px;
+  // padding-top:250px;
   padding-bottom:100px;
 }
   .title-container{
@@ -1008,15 +1027,57 @@ body.blank{
 /////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
 
 
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\////////           1440               ////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+@media only screen and (max-height: 880px) {
+  .title-container{
+    position:fixed;
+    top:240px;
+    width:40%;
+    max-width:500px;
+    padding-bottom:165px;
+    overflow:scroll;
+    height:50%;
+  }
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+  .title-container{
+    position:fixed;
+    top:240px;
+    width:40%;
+    max-width:500px;
+    padding-bottom:165px;
+    overflow:scroll;
+
+
+   h1{
+    font-size:40px;
+    line-height:35px;
+    text-transform: uppercase;
+    margin-bottom:20px;
+    font-family: 'FSSinclairBold';
+  }
+
+
+  }
+
+}
+
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\////////           1240               ////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
 
 
 
 
-
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1240px) {
 
 section{
-  padding:5%;
+  padding: 0 5%;
 }
 
 footer{
@@ -1083,13 +1144,13 @@ body.home{
 
 
   .title-container{
-  position:fixed;
-  top:240px;
-  width:50%;
-  max-width:500px;
-  padding-bottom:165px;
-  overflow:scroll;
-  height:400px;
+    position:fixed;
+    top:240px;
+    width:40%;
+    max-width:450px;
+    padding-bottom:165px;
+    overflow:scroll;
+    height:50%;
 
 
    h1{
@@ -1108,13 +1169,13 @@ body.home{
   //~~~~~~~~~~~~ NEWSLETTER ~~~~~~~~~~~`//
  body.newsletter,  body.media_access{
 
-    background:none;
 
-  .main-content {
-    margin-top:0;
-    padding-top: 220px;
-    height:100vh;
-}
+
+  .newsletter-form{
+    margin-bottom:100px;
+  }
+
+  background:none;
 
 
   h3{
@@ -1254,26 +1315,23 @@ section{
     padding-top:0;
   }
 
+  li.active a{
+    color:$purple;
+  }
+ 
   a{
       line-height: 30px;     
     }
 
 
-      li:after{
-      visibility: hidden;
+      li.active:after{
+        color:$purple;
+        width:0;
       }
 
       li:hover:after{
-        visibility:hidden;
+        width:0;
       }
-
-
-      li:hover a{
-        visibility:hidden
-      }
-
-
-
 
   }
 
@@ -1283,7 +1341,10 @@ section{
 
 // ~~~~~~~~ HOME ~~~~~~~~~ //
 
-
+.landing{
+  min-height:calc(100vh - 160px);
+ 
+}
 .introduction{
 
   h1{
@@ -1324,11 +1385,16 @@ body.home{
 
 
       li:after{
-      visibility: hidden;
+      color:$purple;
+      width:0;
       }
+        
+    
+
+
 
       li:hover:after{
-        visibility:hidden;
+       width:0;
       }
 
 
@@ -1358,8 +1424,8 @@ body.home{
 
 // ~~~~~~~~~~~~~~~ MEDIA ~~~~~~~~~~~~~~~~~~ //
 .main-content{
-  margin-top:150px;
-  overflow:initial!important;
+  // margin-top:150px;
+  overflow:scroll!important;
 }
 .banner{
   height:80px;
@@ -1518,19 +1584,14 @@ body.newsletter, body.media_access{
 
     background:none;
 
-  .main-content{
+  // .main-content{
+  //   height:auto!important;
+  //   margin-bottom:0;
+  //   padding-top:180px;
+  // }
+.main-content{
     height:auto!important;
-    margin-bottom:0;
-    padding-top:180px;
-  }
-
-.spacer{
-  display: block;
-  height:100px;
 }
-
-
-
   h3{
     font-size:18px;
     font-family: 'FSSinclairMedium';
