@@ -93,6 +93,13 @@ html.is-animating .transition-fade {
 }
 
 
+.anchor {
+  position: relative;
+  top: -240px; /* your offset */
+}
+
+
+
 // NAVIGATION //
 
 
@@ -101,7 +108,7 @@ html.is-animating .transition-fade {
   height:200px;
   padding:50px 0;
   position:sticky;
-  max-width: 1440px;
+  max-width: 1344px;
   margin: 0 auto;
   top:0;
   z-index: 9;
@@ -183,9 +190,9 @@ html.is-animating .transition-fade {
 
 // SECTIONS //
 
-// .main-content{
-//   margin-top:240px;
-// }
+.main-content{
+  margin-top:40px;
+}
 
 footer.footer-banner{
   height:45px;
@@ -946,9 +953,9 @@ body.legal{
 
   .main-content{
     position:relative;
-    height:70vh;
+    // height:70vh;
     // margin-top:230px;
-    overflow:scroll;
+    // overflow:scroll;
         width: 100%;
   }
 .article{
@@ -1096,7 +1103,7 @@ body.blank{
 @media only screen and (max-width: 1240px) {
 
 .menu{
-  background-color:$white;
+  // background-color:$white;
   height:180px;
   padding: 50px 5%;
 }
