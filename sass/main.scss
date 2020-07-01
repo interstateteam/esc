@@ -2,21 +2,21 @@
 
 @font-face {
   font-family: 'FSSinclairRegular';
-  src: url('/public/fonts/FSSinclairWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/public/fonts/FSSinclairWeb-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+  src: url('../fonts/FSSinclairWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/FSSinclairWeb-Regular.woff') format('woff'), /* Pretty Modern Browsers */
 }
 
 @font-face {
   font-family: 'FSSinclairMedium';
-  src: url('/public/fonts/FSSinclairWeb-Medium.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/public/fonts/FSSinclairWeb-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+  src: url('../fonts/FSSinclairWeb-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/FSSinclairWeb-Medium.woff') format('woff'), /* Pretty Modern Browsers */
 }
 
 
 @font-face {
   font-family: 'FSSinclairBold';
-  src: url('/public/fonts/FSSinclairWeb-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/public/fonts/FSSinclairWeb-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+  src: url('../fonts/FSSinclairWeb-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/FSSinclairWeb-Bold.woff') format('woff'), /* Pretty Modern Browsers */
 }
 
 
@@ -638,6 +638,15 @@ body.media_page, body.about{
     margin-bottom:20px;
     font-family: 'FSSinclairBold';
   }
+
+  h2{
+    font-size:30px;
+    line-height:30px;
+    font-family: 'FSSinclairBold';
+    text-transform:uppercase;
+    margin-bottom:20px;
+  }
+
 }
 
 .image-container{
