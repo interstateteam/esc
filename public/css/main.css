@@ -573,6 +573,10 @@ body.media_page .main-content, body.about .main-content {
   padding-bottom: 130px;
 }
 
+.article p {
+  margin-bottom: 20px !important;
+}
+
 .article h1 {
   font-size: 60px;
   line-height: 45px;
@@ -582,11 +586,46 @@ body.media_page .main-content, body.about .main-content {
 }
 
 .article h2 {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 20px;
   font-family: 'FSSinclairBold';
   text-transform: uppercase;
+  margin: 40px 0 20px 0 !important;
+}
+
+.article ul {
+  list-style: none;
+  /* Remove default bullets */
+  margin-bottom: 40px;
+}
+
+.article ul li::before {
+  content: "\2043";
+  color: #7364FF;
+  font-family: 'FSSinclairBold';
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.article ul > li {
+  font-size: 18px;
+  color: #182733;
   margin-bottom: 20px;
+  font-family: 'FSSinclairMedium';
+}
+
+.article blockquote {
+  font-size: 18px;
+  color: #182733;
+  font-style: italic;
+  margin: 30px 0;
+}
+
+.article b {
+  font-size: 18px;
+  color: #182733;
+  font-family: 'FSSinclairBold';
 }
 
 .image-container {
@@ -723,6 +762,7 @@ body.newsletter, body.media_access {
 
 body.newsletter .title-container, body.media_access .title-container {
   max-width: 400px;
+  height: initial;
 }
 
 body.newsletter h1, body.media_access h1 {
@@ -742,7 +782,7 @@ body.newsletter h3, body.media_access h3 {
   font-size: 18px;
   font-family: 'FSSinclairMedium';
   text-decoration: underline;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 body.newsletter span, body.media_access span {
@@ -781,7 +821,7 @@ body.newsletter .label, body.media_access .label {
   text-transform: uppercase;
   text-align: left;
   font-family: 'FSSinclairBold';
-  font-size: 18px;
+  font-size: 16px;
   width: 155px;
   color: #182733;
   line-height: 20px;
@@ -951,6 +991,12 @@ body.blank .button:hover {
     text-transform: uppercase;
     margin-bottom: 20px;
     font-family: 'FSSinclairBold';
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1408px) {
+  body.media_access .container {
+    max-width: 1200px;
   }
 }
 
