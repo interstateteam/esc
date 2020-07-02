@@ -1751,6 +1751,12 @@ body.blank .button:hover {
     padding-top: 0;
     padding-bottom: 50px;
   }
+  body.mission .menu {
+    background: transparent !important;
+  }
+  body.mission section {
+    padding: 50px 5% !important;
+  }
 }
 
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
