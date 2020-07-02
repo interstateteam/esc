@@ -1,7 +1,7 @@
-
 main.min.css.map
 main.css.map
 package-lock.json
 .DS_Store
 node_modules/.DS_Store
 node_modules/bulma/.DS_Store
+public/.DS_Store
