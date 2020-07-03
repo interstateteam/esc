@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Our Team | ESCape</title>
-    <meta name="description" content="">
+    <title>Meet our Team | eSC</title>
+    <meta name="description" content="Discover more about our founders and ambassadors, including inspirational motorsport figureheads Lucas di Grassi and Alex Wurz.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
@@ -22,9 +22,9 @@
                 <div class="logo"></div>
             </a>
             <ul class="menu-items">
+                <li class="menu-item"><a href="/public/mission.html">Mission</a></li>
                 <li class="menu-item"><a href="/public/media.html">Media</a></li>
                 <li class="menu-item active"><a href="/public/our-team.html">Our Team</a></li>
-                <li class="menu-item"><a href="/public/mission.html">Mission</a></li>
             </ul>
         </nav>
 
@@ -40,13 +40,20 @@
                     <div class="team">
                         <img src="assets/placeholder.jpg" alt="">
                         <h2>KHALIL BESCHIR</h2>
-                        <h3>eSkootr Championship™ COO</h3>
+                        <h3 data-key="sameHeights">eSkootr Championship™ COO</h3>
+                            <div class="profiles">
+                                <a href="https://www.instagram.com/khalilracing/">
+                                    <span class="instagram"></span>
+                                </a>
+                                <a href="https://twitter.com/khalilracing">
+                                    <span class="twitter"></span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/khalil-beschir-29a0a515/">
+                                    <span class="linkedin"></span>
+                                </a>
+                            </div>
                         <p>Lebanese entrepreneur Khalil competed professionally in the A1 GP series between 2005 and ’08. He has developed
                         motorsport’s infrastructure in the Middle East, working with the FIA to identify and nurture young driver talent.</p>
-                        <div class="profiles">
-                            <span class="instagram"></span>
-                            <span class="linkedin"></span>
-                        </div>
                     </div>
                 </div>
 
@@ -54,14 +61,22 @@
                     <div class="team">
                         <img src="assets/placeholder.jpg" alt="">
                         <h2>LUCAS DI GRASSI</h2>
-                        <h3>Team role title</h3>
+                        <h3 data-key="sameHeights">Team role title</h3>
+                        <div class="profiles">
+                            <a href="https://www.instagram.com/lucasdigrassi/">
+                                <span class="instagram"></span>
+                            </a>
+                            <a href="https://twitter.com/LucasdiGrassi">
+                                <span class="twitter"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/lucasdigrassi/">
+                                <span class="linkedin"></span>
+                            </a>
+                        </div>
                         <p>One of the leading lights in electric series Formula E, Brazilian Lucas keenly understands the social, political and
                         financial conversations that straddle the automotive world. He is a passionate advocate for greater sustainability in
                         both motorsport and global mobility.</p>
-                        <div class="profiles">
-                            <span class="instagram"></span>
-                            <span class="linkedin"></span>
-                        </div>
+
                     </div>
                 </div>
             
@@ -69,14 +84,15 @@
                     <div class="team">
                         <img src="assets/placeholder.jpg" alt="">
                         <h2>HRAG SARKISSIAN</h2>
-                        <h3>eSkootr Championship™ CEO</h3>
+                        <h3 data-key="sameHeights">eSkootr Championship™ CEO</h3>
+                        <div class="profiles">
+                            <a href="https://www.linkedin.com/in/hrag-sarkissian-12682b4/">
+                                <span class="linkedin"></span>
+                            </a>
+                        </div>
                         <p>Born in New York, Lebanese-Armenian Hrag has successfully grown an extensive portfolio of innovation-led businesses. His
                         experience in motorsport and sports marketing helps him to leverage the benefits of sustainable technology and
                         micro-mobility.</p>
-                        <div class="profiles">
-                            <span class="instagram"></span>
-                            <span class="linkedin"></span>
-                        </div>
                     </div>
                 </div>
 
@@ -85,14 +101,21 @@
                     <div class="team">
                         <img src="assets/placeholder.jpg" alt="">
                         <h2>ALEX WURZ</h2>
-                        <h3>Team role title</h3>
+                        <h3 data-key="sameHeights">Team role title</h3>
+                        <div class="profiles">
+                            <a href="https://www.instagram.com/wurz_alex/">
+                                <span class="instagram"></span>
+                            </a>
+                            <a href="https://twitter.com/alex_wurz">
+                                <span class="twitter"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/alex-wurz-089a1967/">
+                                <span class="linkedin"></span>
+                            </a>
+                        </div>
                         <p>Ex-Grand Prix driver, and two-time winner of the legendary Le Mans 24 Hours, Alex is chairman of Formula 1’s drivers’
                         association, the GPDA. He also operates an internationally renowned business focused on road safety, driver training and
                         track design.</p>
-                        <div class="profiles">
-                            <span class="instagram"></span>
-                            <span class="linkedin"></span>
-                        </div>
                     </div>
                 </div>
 
@@ -137,7 +160,7 @@
     
             <ul>
                 <li><a href="/public/privacy-policy.html">PRIVACY POLICY</a></li>
-                <li><a href="">COOKIE POLICY</a></li>
+                <li><a href="/public/cookie-policy.html">COOKIE POLICY</a></li>
             </ul>
     
     
@@ -153,13 +176,22 @@
 
 
     </main>
-
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script src="js/SwupBodyClassPlugin.min.js"></script>
     <script src="js/SwupHeadPlugin.min.js"></script>
     <script src="js/SwupScrollPlugin.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src="js/main.js" async defer></script>
+    <script type="text/javascript">
+        if ('addEventListener' in window) {
+            window.addEventListener('resize', function () {
+                sameHeights();
+            });
+            window.addEventListener('load', function () {
+                sameHeights();
+            });
+        }
+    </script>
     <script type="text/javascript" charset="UTF-8" src="http://chs03.cookie-script.com/s/c9cdbefd4d66826104886b88b243ff46.js"></script>
 </body>
 

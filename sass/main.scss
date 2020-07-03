@@ -802,7 +802,7 @@ body.our_team{
     h3{
           font-size:20px;
           line-height: 25px;
-          margin-bottom:20px;
+          margin-bottom:10px;
           font-family: 'FSSinclairMedium';
         
       }
@@ -810,29 +810,25 @@ body.our_team{
 
 
     .profiles{
-
+      margin-bottom: 10px;
       span{
         width:20px;
         height:20px;
         display:inline-block;
         margin-right:10px;
+        background-repeat: no-repeat;
+        background-size:100%;
       }
-
 
       .linkedin{
-        background-image: url('/public/assets/esc_global_linkedin-dark.svg');
-        background-repeat: no-repeat;
-        background-size:100%;
+        background-image: url('/public/assets/esc_global_linkedin-dark.svg');   
       }
-
       .instagram{
         background-image: url('/public/assets/esc_global_instagram-dark.svg');
-        background-repeat: no-repeat;
-        background-size:100%;
       }
-
-
-
+      .twitter{
+        background-image: url('/public/assets/esc_global_twitter-dark.svg');
+      }
     }
 
 
@@ -973,7 +969,7 @@ body.mission{
        position:relative;
 
         h3{
-        transform: rotate(-90deg) translate(-110px, -80px);
+        transform: rotate(-90deg) translate(-70px, -30px);
         top:0;
       }
 
