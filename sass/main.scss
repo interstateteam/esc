@@ -134,7 +134,6 @@ nav {
 nav.fade-in{
 
 background-color: white;
-height:150px;
 
     .menu{
         height:150px;
@@ -1044,6 +1043,10 @@ body.mission{
   padding:200px 0;
   margin-top:-225px;
 
+ 
+img {
+    image-orientation: from-image;
+}
   .link{
     margin:20px 0;
   } 
