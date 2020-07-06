@@ -872,7 +872,12 @@ body.mission{
   }
 
   .introduction{
+
+    h1{
+      font-size:100px;
+    }
     h1, h2{
+      
       color:$white!important;
       span{
         color:$green;
@@ -1034,6 +1039,8 @@ body.mission{
   h2{
     color:$white!important;
     font-size:60px;
+    line-height:45px;
+    margin-bottom:20px;
     font-family: 'FSSinclairBold';
   }
 
@@ -1041,6 +1048,7 @@ body.mission{
     color:$white!important;
     font-size:40px;
     line-height:45px;    
+    margin-bottom:20px;
   }
 
   p{
@@ -1616,7 +1624,7 @@ footer{
     line-height:25px;
     color:$white;
     font-family: 'FSSinclairMedium';
-    max-width: 250px;
+
     margin: 0 auto;
   }
 
@@ -1630,9 +1638,7 @@ footer{
 body.home{
 
 .banner{
-  height:80px;
-   padding:23px 5%; 
-   bottom:45px;  
+   padding:15px 5%; 
     .button{
           font-size:14px;
     }
@@ -1648,9 +1654,7 @@ body.home{
 // MEDIA //
 
 .banner{
-  height:80px;
-  padding:23px 5%; 
-  bottom:45px;  
+  padding:15px 5%; 
     .button{
           font-size:14px;
     }
@@ -1739,7 +1743,99 @@ body.about{
 
 
 
+body.mission{
 
+  .introduction{
+      margin-top: 15%;
+  }
+
+  section{padding:5%!important;}
+
+}
+
+
+}
+
+
+
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\////////           1110               ////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+
+
+
+
+
+@media only screen and (max-width: 1110px) {
+.logo{
+  max-width:150px;
+}
+
+
+
+body.mission{
+
+  .menu{
+    background:transparent!important;
+  }
+  section{
+    padding:50px 5%!important;
+  }
+
+  .landing_section{
+    height:100vh;
+  }
+
+  .introduction{
+
+  h1{
+       font-size:45px;
+  }
+}
+
+
+  .main-content{
+
+    .divider{
+      height:50px;
+    }
+
+
+    h2{
+      font-size:35px;
+      line-height: 30px;
+      margin-bottom:20px;
+    }
+
+    h3{
+      font-size:25px;
+      line-height:25px;
+      margin-bottom:15px;
+    }
+  }
+
+.block{
+  p{
+    left:50px;
+  }
+
+  &_1 h3{
+    transform:rotate(-90deg) translate(-70px, -30px);
+  }
+
+  &_2 h3{
+    transform:rotate(-90deg) translate(-80px, -35px);
+  }
+
+
+  &_3 h3{
+    transform:rotate(-90deg) translate(-60px, -15px);
+  }
+
+
+    &_4 h3{
+    transform:rotate(-90deg) translate(-110px, -70px);
+  }
 
 
 }
@@ -1748,10 +1844,106 @@ body.about{
 
 
 
+  .global-goals {
+
+    .title{
+      max-width: 90%;
+    }
+
+  h2{
+    font-size:35px;
+    line-height: 30px;
+    margin-bottom:15px;
+  }
+
+  h3{
+      font-size:25px;
+      line-height:30px;
+      margin-bottom:15px;
+  }
+
+
+  }
 
 
 
 
+  .purple_section {
+
+ 
+
+    h2{
+      font-size:35px;
+      line-height:30px;
+       margin-bottom:15px;
+    }
+
+
+  }
+
+  .ssa{
+
+    .divider{
+      height:50px;
+    }
+
+
+    p{
+     margin-bottom:15px!important;
+    }
+
+    h2{
+      font-size:35px;
+      line-height:30px;
+       margin-bottom:15px;
+    }
+
+  }
+
+  .contact{
+
+    h2{
+      font-size:35px;
+      line-height:30px;
+       margin-bottom:15px;
+    }
+
+     h3{
+      font-size:25px;
+      line-height:25px;
+       margin-bottom:15px;
+  }
+
+
+  }
+
+  
+}
+
+
+
+
+
+
+}
+
+
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\////////           960               ////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+
+
+
+
+
+@media only screen and (max-width: 960px) {
+
+  
+// ~~~~~~~~~~~~~~~ MISSION ~~~~~~~~~~~ //
+
+
+
+}
 
 
 
@@ -1783,7 +1975,7 @@ footer.footer-banner{
   height:80px;
   width:100%;
   background-color:$dark-purple;
-  position:fixed;
+  position:relative;
   bottom:0;
   z-index:99 ;
   padding:20px 5%;
@@ -1855,7 +2047,7 @@ section{
   }
  
   a{
-      line-height: 0;    
+      // line-height: 0;    
       font-size: 1em; 
     }
 
@@ -1944,7 +2136,9 @@ body.home{
   }
 
 
-
+footer.footer-banner{
+  position:fixed;
+}
 .banner{
   height:80px;
    padding:23px 5%; 
@@ -1972,7 +2166,8 @@ body.home{
 .banner{
   height:80px;
   padding:23px 5%; 
-  bottom:80px;  
+  bottom:0;
+  position: relative;  
     .button{
       font-size:16px;
       height:40px;
@@ -2280,20 +2475,40 @@ body.legal{
 
 
 
-
-// ~~~~~~~~~~~~~~~ MISSION ~~~~~~~~~~~ //
-
+// ~~~~ MISSION ~~~ //
 body.mission{
+  .introduction {
 
-  .menu{
-    background:transparent!important;
+    h1{
+      font-size:30px;
+    }
+      h2{
+        font-size:18px;
+      }
+
   }
-  section{
-    padding:50px 5%!important;
+
+  .purple-section{
+       .quicklinks{
+      flex-direction: column;
+
+    }
   }
+
+
 }
 
-  
+
+// ~~~~~~~ //
+
+
+
+ .reverse-columns {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+
+
 }
 
 
