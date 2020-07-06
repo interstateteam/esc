@@ -4,14 +4,18 @@
   font-family: 'FSSinclairRegular';
   src: url('../fonts/FSSinclairWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/FSSinclairWeb-Regular.woff') format('woff'),/* Pretty Modern Browsers */
-      url('../fonts/FSSinclairWeb-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */ 
+      url('../fonts/FSSinclairWeb-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */ 
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
   font-family: 'FSSinclairMedium';
   src: url('../fonts/FSSinclairWeb-Medium.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/FSSinclairWeb-Medium.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/FSSinclairWeb-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */ 
+       url('../fonts/FSSinclairWeb-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */ 
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -19,7 +23,10 @@
   font-family: 'FSSinclairBold';
   src: url('../fonts/FSSinclairWeb-Bold.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/FSSinclairWeb-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/FSSinclairWeb-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */ 
+       url('../fonts/FSSinclairWeb-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */ 
+        
+    font-weight: normal;
+    font-style: normal;
 }
 
 
