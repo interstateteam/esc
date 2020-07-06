@@ -2022,16 +2022,16 @@ body.blank .button:hover {
   body.mission .purple_section .quicklinks .safety {
     border-right: 0;
     width: 100%;
-    max-height: 50px;
+    max-height: 140px;
   }
   body.mission .purple_section .quicklinks .sustainability {
     border-right: 0;
     width: 100%;
-    max-height: 50px;
+    max-height: 140px;
   }
   body.mission .purple_section .quicklinks .accessibility {
     width: 100%;
-    max-height: 50px;
+    max-height: 140px;
   }
   body.mission .purple_section .quicklinks, body.mission .purple_section .quicklinks .sustainability {
     width: 100%;
