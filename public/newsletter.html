@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sign up to our newsletter | ESC</title>
+    <title>Sign up to our newsletter | eSC</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
@@ -47,7 +47,11 @@
 
 
                     <div class="column is-12-tablet is-offset-1-widescreen  is-6-widescreen">
-                        <form action="/success.html" class="newsletter-form">
+                        <form action="https://live.us10.list-manage.com/subscribe/post?u=aa05b926a3875f86f7a48d41d&amp;id=96d69a89b7"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+                            novalidate>
+
+                        <!-- <form action="/success.html" class="newsletter-form"> -->
                         <h3 class="">* All marked fields are required</h3>
                             <div class="field is-horizontal">
                                 <div class="field-label is-normal">
@@ -57,7 +61,7 @@
                                 <div class="field-body">
                                     <div class="field">
                                         <p class="control is-expanded">
-                                            <input class="input" type="email" required placeholder="johnsmith@gmail.com">
+                                            <input class="input" type="email" name="EMAIL" id="mce-EMAIL" required placeholder="johnsmith@gmail.com">
                                             <span class="underline "></span>
                                         </p>
                                     </div>
@@ -72,19 +76,22 @@
                                     <div class="field">
                                         <p class="control is-expanded">
                                             Please select all the ways you would like to hear from WES Management Ltd.:
-                                            <label class="checkbox"><input type="checkbox"> Email</label>
-                                            <label class="checkbox">                      <input type="checkbox">
-                                                Direct Mail
-                                            </label>
-                                            <label class="checkbox">
-                                                <input type="checkbox">
-                                                Customised Online Advertising
-                                            </label>
+                                        <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+                                            <label class="checkbox subfield" for="gdpr_41033"><input type="checkbox" id="gdpr_41033" name="gdpr[41033]"
+                                                    value="Y" class="av-checkbox "><span>Email</span> </label><label class="checkbox subfield"
+                                                for="gdpr_41037"><input type="checkbox" id="gdpr_41037" name="gdpr[41037]" value="Y"
+                                                    class="av-checkbox "><span>Direct Mail</span> </label><label class="checkbox subfield"
+                                                for="gdpr_41041"><input type="checkbox" id="gdpr_41041" name="gdpr[41041]" value="Y"
+                                                    class="av-checkbox "><span>Customized Online Advertising</span> </label>
+                                        </fieldset>
                                         </p>
 
-                                        <button class="button disabled">
-                                            Sign up to our newsletter
-                                        </button>
+                                        <input type="submit" value=" Sign up to our newsletter" class="button disabled" name="subscribe" id="mc-embedded-subscribe">
+                                           
+                                       
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script
+    type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
 
 
                                     </div>
@@ -138,7 +145,9 @@
     <script src="js/SwupScrollPlugin.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src="/js/main.js" async defer></script>
-    <script type="text/javascript" charset="UTF-8" src="http://chs03.cookie-script.com/s/c9cdbefd4d66826104886b88b243ff46.js"></script>
+        <!--Start Cookie Script-->
+        <script type="text/javascript" charset="UTF-8" src="//cookie-script.com/s/c9cdbefd4d66826104886b88b243ff46.js"></script>
+        <!--End Cookie Script-->
 </body>
 
 </html>
