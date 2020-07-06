@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "FSSinclairRegular" !important;
+  font-family: "FSSinclairRegular", Sans-Serif !important;
   margin-bottom: 110px;
   padding: 0;
 }
@@ -43,7 +43,7 @@ a:hover {
 }
 
 b {
-  font-family: "FSSinclairBold" !important;
+  font-family: "FSSinclairBold", Sans-Serif !important;
 }
 
 .spacer {
@@ -144,7 +144,7 @@ nav.fade-in .menu li a {
   line-height: 25px;
   font-size: 18px;
   transition: 0.3s ease-out;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
 }
 
 .menu-items li:hover {
@@ -200,7 +200,7 @@ footer.footer-banner .copyright span {
   line-height: 45px;
   display: inline-block;
   font-size: 12px;
-  font-family: 'FSSinclairMedium';
+  font-family: 'FSSinclairMedium', Sans-Serif;
   color: #fff;
 }
 
@@ -217,12 +217,12 @@ footer.footer-banner ul > li {
 footer.footer-banner ul > li a {
   color: #fff;
   text-decoration: underline;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   font-size: 12px;
 }
 
 #cookiescript_injected, #cookiescript_header {
-  font-family: "FSSinclairRegular" !important;
+  font-family: "FSSinclairRegular", Sans-Serif !important;
 }
 
 #cookiescript_readmore {
@@ -231,7 +231,7 @@ footer.footer-banner ul > li a {
 
 #cookiescript_accept, #cookiescript_reject, #cookiescript_save, #cookiescript_badgetext {
   border-radius: 0px !important;
-  font-family: "FSSinclairBold" !important;
+  font-family: "FSSinclairBold", Sans-Serif !important;
 }
 
 #cookiescript_accept {
@@ -305,7 +305,7 @@ footer.footer-banner ul > li a {
   line-height: 65px;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
 }
 
 .banner .button {
@@ -316,7 +316,7 @@ footer.footer-banner ul > li a {
   text-transform: uppercase;
   float: right;
   min-width: 140px;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
 }
 
 .banner .button:hover {
@@ -456,7 +456,7 @@ body.home .banner .banner-meta {
   text-transform: uppercase;
   color: #182733;
   text-align: center;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
 }
 
 body.home .banner .button {
@@ -467,7 +467,7 @@ body.home .banner .button {
   text-transform: uppercase;
   float: right;
   min-width: 140px;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
 }
 
 body.home .banner .button:hover {
@@ -504,13 +504,13 @@ body.home .banner .button:hover {
 .introduction h1 {
   font-size: 130px;
   color: #fff;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
 }
 
 .introduction h2 {
   font-size: 25px;
   color: #fff;
-  font-family: 'FSSinclairMedium';
+  font-family: 'FSSinclairMedium', Sans-Serif;
   max-width: 650px;
   margin: 0 auto;
 }
@@ -522,7 +522,7 @@ body.home .banner .button:hover {
   color: #fff;
   border-radius: 0;
   margin-top: 50px;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   padding: 20px 30px;
   transition: all 0.3s ease-out;
 }
@@ -580,13 +580,13 @@ body.media_page .main-content, body.about .main-content {
   line-height: 45px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
 }
 
 .article h2 {
   font-size: 18px;
   line-height: 20px;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   text-transform: uppercase;
   margin: 40px 0 20px 0 !important;
 }
@@ -600,7 +600,7 @@ body.media_page .main-content, body.about .main-content {
 .article ul li::before {
   content: "\2043";
   color: #7364FF;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
@@ -610,7 +610,7 @@ body.media_page .main-content, body.about .main-content {
   font-size: 18px;
   color: #182733;
   margin-bottom: 20px;
-  font-family: 'FSSinclairMedium';
+  font-family: 'FSSinclairMedium', Sans-Serif;
 }
 
 .article blockquote {
@@ -623,7 +623,7 @@ body.media_page .main-content, body.about .main-content {
 .article b {
   font-size: 18px;
   color: #182733;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
 }
 
 .image-container {
@@ -645,12 +645,12 @@ body.media_page .main-content, body.about .main-content {
   display: block;
   font-weight: 700;
   color: #7364FF;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
 }
 
 .title-container ul > li {
   color: #7364FF;
-  font-family: 'FSSinclairMedium';
+  font-family: 'FSSinclairMedium', Sans-Serif;
 }
 
 .title-container h1 {
@@ -658,14 +658,14 @@ body.media_page .main-content, body.about .main-content {
   line-height: 45px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
 }
 
 .title-container h2 {
   font-size: 25px;
   line-height: 20px;
   margin-bottom: 30px;
-  font-family: 'FSSinclairMedium';
+  font-family: 'FSSinclairMedium', Sans-Serif;
 }
 
 .title-container .button {
@@ -677,7 +677,7 @@ body.media_page .main-content, body.about .main-content {
   font-size: 14px;
   padding: 20px 30px;
   margin-bottom: 30px;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   transition: all 0.3s ease-out;
 }
 
@@ -716,7 +716,7 @@ body.our_team .team img {
 body.our_team .team h2 {
   font-size: 25px;
   line-height: 30px;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   text-transform: uppercase;
   margin: 20px 0 5px 0 !important;
 }
@@ -725,7 +725,7 @@ body.our_team .team h3 {
   font-size: 20px;
   line-height: 25px;
   margin-bottom: 10px;
-  font-family: 'FSSinclairMedium';
+  font-family: 'FSSinclairMedium', Sans-Serif;
 }
 
 body.our_team .team .profiles {
@@ -790,7 +790,7 @@ body.mission .introduction h1, body.mission .introduction h2 {
 
 body.mission .introduction h1 span, body.mission .introduction h2 span {
   color: #5AEDB7;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
 }
 
 body.mission .main-content {
@@ -812,7 +812,7 @@ body.mission .main-content h2 {
   font-size: 60px;
   line-height: 65px;
   text-transform: uppercase;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   color: #7364FF !important;
 }
 
@@ -832,7 +832,7 @@ body.mission .block h3 {
   text-transform: uppercase;
   font-size: 40px;
   color: #fff !important;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   text-align: right;
 }
 
@@ -899,7 +899,7 @@ body.mission .global-goals .link {
 
 body.mission .global-goals a {
   color: #5AEDB7;
-  font-family: 'FSSinclairMedium';
+  font-family: 'FSSinclairMedium', Sans-Serif;
   transition: all 0.3s ease-out;
 }
 
@@ -933,7 +933,7 @@ body.mission .global-goals h2 {
   font-size: 60px;
   line-height: 45px;
   margin-bottom: 20px;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
 }
 
 body.mission .global-goals h3 {
@@ -961,7 +961,7 @@ body.mission .global-goals .more-info .info {
 body.mission .global-goals .more-info .info transform:translate(0, 100px) p {
   display: block;
   color: #fff !important;
-  font-family: "FSSinclairMedium" !important;
+  font-family: "FSSinclairMedium", Sans-Serif !important;
 }
 
 body.mission .purple_section {
@@ -972,7 +972,7 @@ body.mission .purple_section {
 body.mission .purple_section h2 {
   color: #fff !important;
   font-size: 60px;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   text-transform: uppercase;
   line-height: 45px;
   margin-bottom: 30px;
@@ -1004,7 +1004,7 @@ body.mission .purple_section .quicklinks .safety, body.mission .purple_section .
 body.mission .purple_section .quicklinks .safety span, body.mission .purple_section .quicklinks .sustainability span, body.mission .purple_section .quicklinks .accessibility span {
   display: block;
   text-transform: uppercase;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   color: #182733;
   font-size: 30px;
   text-align: center;
@@ -1044,7 +1044,7 @@ body.mission .ssa h2 {
   line-height: 65px;
   color: #182733 !important;
   text-transform: uppercase;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   margin-bottom: 20px;
 }
 
@@ -1063,7 +1063,7 @@ body.mission .contact h2 {
   line-height: 65px;
   color: #fff !important;
   text-transform: uppercase;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
 }
 
 body.mission .contact p {
@@ -1076,7 +1076,7 @@ body.mission .contact li {
 
 body.mission .contact a {
   color: #5AEDB7;
-  font-family: 'FSSinclairMedium';
+  font-family: 'FSSinclairMedium', Sans-Serif;
   font-size: 18px;
 }
 
@@ -1087,7 +1087,7 @@ body.mission .contact a {
 
 .scroll span {
   display: block;
-  font-family: 'FSSinclairMedium';
+  font-family: 'FSSinclairMedium', Sans-Serif;
   color: #fff;
   font-size: 16px;
 }
@@ -1122,7 +1122,7 @@ body.newsletter .title-container, body.media_access .title-container {
 body.newsletter h1, body.media_access h1 {
   font-size: 60px;
   line-height: 45px;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   margin-bottom: 30px;
 }
 
@@ -1134,7 +1134,7 @@ body.newsletter h2, body.media_access h2 {
 
 body.newsletter h3, body.media_access h3 {
   font-size: 18px;
-  font-family: 'FSSinclairMedium';
+  font-family: 'FSSinclairMedium', Sans-Serif;
   text-decoration: underline;
   margin-bottom: 20px;
 }
@@ -1145,7 +1145,7 @@ body.newsletter span, body.media_access span {
 }
 
 body.newsletter span a, body.media_access span a {
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   text-transform: uppercase;
   color: #7364FF;
   text-decoration: underline;
@@ -1160,7 +1160,7 @@ body.newsletter .input, body.media_access .input {
   box-shadow: none;
   background-color: transparent;
   font-size: 25px;
-  font-family: 'FSSinclairRegular';
+  font-family: 'FSSinclairRegular', Sans-Serif;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 10px;
@@ -1173,7 +1173,7 @@ body.newsletter .input, body.media_access .input {
 body.newsletter .label, body.media_access .label {
   text-transform: uppercase;
   text-align: left;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   font-size: 16px;
   width: 155px;
   color: #182733;
@@ -1185,7 +1185,7 @@ body.newsletter .button, body.media_access .button {
   border-radius: 0;
   border: 4px solid #7364FF;
   color: #7364FF;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   text-transform: uppercase;
   min-height: 50px;
   font-size: 14px;
@@ -1229,7 +1229,7 @@ body.newsletter span.required, body.media_access span.required {
 }
 
 body.newsletter .title-container span, body.media_access .title-container span {
-  font-family: 'FSSinclairRegular';
+  font-family: 'FSSinclairRegular', Sans-Serif;
   font-weight: initial;
 }
 
@@ -1259,7 +1259,7 @@ body.legal .title-container ul > li > a {
 }
 
 body.legal h3 {
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   margin-bottom: 20px;
   font-size: 18px;
 }
@@ -1287,7 +1287,7 @@ body.blank .title-container ul > li > a {
 }
 
 body.blank h4 {
-  font-family: 'FSSinclairRegular';
+  font-family: 'FSSinclairRegular', Sans-Serif;
   font-size: 25px;
   line-height: 30px;
 }
@@ -1296,7 +1296,7 @@ body.blank .button {
   border-radius: 0;
   border: 4px solid #7364FF;
   color: #7364FF;
-  font-family: 'FSSinclairBold';
+  font-family: 'FSSinclairBold', Sans-Serif;
   text-transform: uppercase;
   padding: 20px 30px;
   font-size: 14px;
@@ -1353,11 +1353,11 @@ body.blank .button:hover {
     font-size: 18px;
   }
   .introduction h1 {
-    font-size: 35px !important;
+    font-size: 25px;
   }
   .introduction h2 {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 
@@ -1390,7 +1390,7 @@ body.blank .button:hover {
     line-height: 35px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    font-family: 'FSSinclairBold';
+    font-family: 'FSSinclairBold', Sans-Serif;
   }
 }
 
@@ -1421,7 +1421,7 @@ body.blank .button:hover {
     font-size: 20px;
     line-height: 25px;
     color: #fff;
-    font-family: 'FSSinclairMedium';
+    font-family: 'FSSinclairMedium', Sans-Serif;
     margin: 0 auto;
   }
   .introduction .button {
@@ -1459,7 +1459,7 @@ body.blank .button:hover {
     line-height: 30px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    font-family: 'FSSinclairBold';
+    font-family: 'FSSinclairBold', Sans-Serif;
   }
   body.about {
     background-size: 100%;
@@ -1480,7 +1480,7 @@ body.blank .button:hover {
   }
   body.newsletter h3, body.media_access h3 {
     font-size: 18px;
-    font-family: 'FSSinclairMedium';
+    font-family: 'FSSinclairMedium', Sans-Serif;
     text-decoration: underline;
     margin-bottom: 30px;
   }
@@ -1640,7 +1640,7 @@ body.blank .button:hover {
     line-height: initial;
     display: block;
     font-size: 12px;
-    font-family: 'FSSinclairMedium';
+    font-family: 'FSSinclairMedium', Sans-Serif;
     color: #fff;
   }
   footer.footer-banner ul {
@@ -1654,7 +1654,7 @@ body.blank .button:hover {
   footer.footer-banner ul > li a {
     color: #fff;
     text-decoration: underline;
-    font-family: 'FSSinclairBold';
+    font-family: 'FSSinclairBold', Sans-Serif;
     font-size: 12px;
   }
   section {
@@ -1704,7 +1704,7 @@ body.blank .button:hover {
     font-size: 20px;
     line-height: 25px;
     color: #fff;
-    font-family: 'FSSinclairMedium';
+    font-family: 'FSSinclairMedium', Sans-Serif;
     max-width: 250px;
     margin: 0 auto;
   }
@@ -1779,7 +1779,7 @@ body.blank .button:hover {
     position: relative;
   }
   body.media_page h3, body.about h3 {
-    font-family: 'FSSinclairBold';
+    font-family: 'FSSinclairBold', Sans-Serif;
     margin-bottom: 20px;
     font-size: 18px;
   }
@@ -1787,7 +1787,7 @@ body.blank .button:hover {
     display: none;
   }
   .article {
-    margin-bottom: 5%;
+    padding-bottom: 5%;
   }
   .article h1 {
     font-size: 35px;
@@ -1810,24 +1810,24 @@ body.blank .button:hover {
   .title-container span {
     display: block;
     color: #7364FF;
-    font-family: 'FSSinclairBold';
+    font-family: 'FSSinclairBold', Sans-Serif;
   }
   .title-container ul > li {
     color: #7364FF;
-    font-family: 'FSSinclairMedium';
+    font-family: 'FSSinclairMedium', Sans-Serif;
   }
   .title-container h1 {
     font-size: 35px;
     line-height: 30px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    font-family: 'FSSinclairBold';
+    font-family: 'FSSinclairBold', Sans-Serif;
   }
   .title-container h2 {
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 30px;
-    font-family: 'FSSinclairMedium';
+    font-family: 'FSSinclairMedium', Sans-Serif;
   }
   .title-container .button {
     width: 100%;
@@ -1883,7 +1883,7 @@ body.blank .button:hover {
   }
   body.newsletter h3, body.media_access h3 {
     font-size: 18px;
-    font-family: 'FSSinclairMedium';
+    font-family: 'FSSinclairMedium', Sans-Serif;
     text-decoration: underline;
     margin-bottom: 30px;
   }
@@ -1919,7 +1919,7 @@ body.blank .button:hover {
   body.newsletter h1, body.media_access h1 {
     font-size: 35px;
     line-height: 30px;
-    font-family: 'FSSinclairBold';
+    font-family: 'FSSinclairBold', Sans-Serif;
     margin-bottom: 20px;
     max-width: 80%;
   }
@@ -1939,7 +1939,7 @@ body.blank .button:hover {
     box-shadow: none;
     background-color: transparent;
     font-size: 20px;
-    font-family: 'FSSinclairRegular';
+    font-family: 'FSSinclairRegular', Sans-Serif;
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 10px;
@@ -1988,6 +1988,28 @@ body.blank .button:hover {
   }
   body.mission .purple_section .quicklinks, body.mission .purple_section .quicklinks .sustainability {
     width: 100%;
+  }
+  .scroll {
+    position: absolute;
+    bottom: 10%;
+  }
+  .scroll span {
+    display: block;
+    font-family: 'FSSinclairMedium', Sans-Serif;
+    color: #fff;
+    font-size: 16px;
+  }
+  .scroll span:after {
+    content: '';
+    display: block;
+    background-image: url("/public/assets/esc_global_down-arrow.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: calc(50% - 15px);
+    margin-top: 10px;
   }
   .reverse-columns {
     flex-direction: column-reverse;
