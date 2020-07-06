@@ -1019,7 +1019,7 @@ body.mission .purple_section .quicklinks .safety span, body.mission .purple_sect
   text-transform: uppercase;
   font-family: 'FSSinclairBold', Sans-Serif;
   color: #182733;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   position: relative;
   transition: all 0.3s ease-out;
@@ -1347,6 +1347,21 @@ body.blank .button:hover {
 }
 
 @media only screen and (max-height: 550px) {
+  body.home .footer-banner {
+    display: none;
+  }
+  body.home .banner {
+    bottom: 0 !important;
+  }
+  body.home .introduction .button {
+    display: none;
+  }
+  body.home .introduction h1 {
+    font-size: 35px !important;
+  }
+  nav.fade-in {
+    height: 120px;
+  }
   nav .menu {
     padding: 20px 5% !important;
     height: initial;
@@ -1361,20 +1376,35 @@ body.blank .button:hover {
     top: 140px !important;
   }
   .ssa .sticky {
-    top: 10px;
+    top: 130px !important;
   }
 }
 
 @media only screen and (max-height: 700px) {
+  body.our_team nav {
+    height: 100px;
+  }
+  .main-content {
+    margin-top: 0;
+  }
   body.mission .introduction {
-    transform: translate(0, -65px);
+    transform: translate(0, 0);
   }
   body.mission .introduction h1 {
-    font-size: 45px !important;
+    font-size: 45px;
   }
   body.mission .introduction h2 {
     font-size: 25px;
     line-height: 30px;
+  }
+  body.mission .scroll {
+    display: none;
+  }
+  body.mission nav.fade-in .menu .logo {
+    transform: translate(0);
+  }
+  body.mission nav.fade-in .menu .menu-items {
+    transform: translate(0);
   }
 }
 
@@ -1578,7 +1608,10 @@ body.blank .button:hover {
     height: 100vh;
   }
   body.mission .introduction h1 {
-    font-size: 45px;
+    font-size: 35px;
+  }
+  body.mission .introduction h2 {
+    font-size: 20px;
   }
   body.mission .main-content .divider {
     height: 50px;
@@ -2030,6 +2063,7 @@ body.blank .button:hover {
   }
   body.mission .introduction h2 {
     font-size: 18px;
+    max-width: 80%;
   }
   body.mission .purple_section .quicklinks {
     flex-direction: column !important;
