@@ -1643,8 +1643,16 @@ body.mission{
 
   body.mission{
     .introduction {
+
+      transform: translate(0, 0);
+
+
     h1{
-         font-size: 30px!important;
+         font-size: 25px!important;
+    }
+
+    h2{
+      font-size:18px;
     }
 
   }

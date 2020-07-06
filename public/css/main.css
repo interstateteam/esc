@@ -1343,8 +1343,14 @@ body.blank .button:hover {
 }
 
 @media only screen and (max-height: 700px) and (max-width: 600px) {
+  body.mission .introduction {
+    transform: translate(0, 0);
+  }
   body.mission .introduction h1 {
-    font-size: 30px !important;
+    font-size: 25px !important;
+  }
+  body.mission .introduction h2 {
+    font-size: 18px;
   }
   .introduction h1 {
     font-size: 35px !important;
