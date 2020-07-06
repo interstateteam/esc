@@ -182,7 +182,7 @@ nav.fade-in .menu li a {
 }
 
 .main-content {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 footer.footer-banner {
@@ -1772,7 +1772,7 @@ body.blank .button:hover {
     display: none;
   }
   .main-content {
-    overflow: scroll !important;
+    overflow: initital !important;
     width: 100%;
     height: initial !important;
   }
