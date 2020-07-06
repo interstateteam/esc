@@ -1613,7 +1613,7 @@ nav .menu{
     }
 
 
-    
+
 
 }
 
@@ -2178,6 +2178,38 @@ body.mission{
 
 @media only screen and (max-width: 780px) {
 
+  body.our_team{
+    nav{
+      height:130px;
+    }
+  }
+
+  nav.fade-in{
+  height:130px;
+  background-color: white;
+
+    .menu{
+  
+
+        .logo{max-width:150px; transition: all 0.2s ease-in;  background-image:url('/public/assets/esc_logo_colour.svg'); transform: translate(0, -35px);}
+
+        .menu-items{
+    transform:translate(0, -30px);
+  }
+
+
+        li{
+          a{
+            color:$dark-blue!important;
+          }
+        }
+
+    }
+  }  
+
+
+  
+
 .spacer{
 
   height:180px;
@@ -2712,7 +2744,21 @@ body.legal{
 
 
 // ~~~~ MISSION ~~~ //
+
+
 body.mission{
+
+
+
+
+
+.menu-items li.active a{
+  color:white;
+}
+
+
+
+
   .introduction {
 
     h1{

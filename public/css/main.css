@@ -1619,6 +1619,25 @@ body.blank .button:hover {
 }
 
 @media only screen and (max-width: 780px) {
+  body.our_team nav {
+    height: 130px;
+  }
+  nav.fade-in {
+    height: 130px;
+    background-color: white;
+  }
+  nav.fade-in .menu .logo {
+    max-width: 150px;
+    transition: all 0.2s ease-in;
+    background-image: url("/public/assets/esc_logo_colour.svg");
+    transform: translate(0, -35px);
+  }
+  nav.fade-in .menu .menu-items {
+    transform: translate(0, -30px);
+  }
+  nav.fade-in .menu li a {
+    color: #182733 !important;
+  }
   .spacer {
     height: 180px;
   }
@@ -1961,6 +1980,9 @@ body.blank .button:hover {
   body.legal .article {
     padding-top: 0;
     padding-bottom: 50px;
+  }
+  body.mission .menu-items li.active a {
+    color: white;
   }
   body.mission .introduction h1 {
     font-size: 30px;
