@@ -71,13 +71,17 @@ html.is-animating .transition-fade {
   /* your offset */
 }
 
+body.our_team nav {
+  height: 200px;
+}
+
 nav {
   --ease: all 500ms ease;
   position: sticky;
   top: 0;
   z-index: 1;
   transition: var(--ease);
-  height: 200px;
+  height: 150px;
 }
 
 nav .menu {
@@ -112,7 +116,6 @@ nav.fade-in .menu li a {
   float: right;
   text-align: right;
   width: 100%;
-  background: white;
   max-width: 300px;
   border-radius: 30px;
 }
