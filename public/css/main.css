@@ -753,6 +753,10 @@ body.mission .landing_section {
   align-items: center;
 }
 
+body.mission .introduction h1 {
+  font-size: 100px;
+}
+
 body.mission .introduction h1, body.mission .introduction h2 {
   color: #fff !important;
 }
@@ -896,6 +900,8 @@ body.mission .global-goals .title h3 {
 body.mission .global-goals h2 {
   color: #fff !important;
   font-size: 60px;
+  line-height: 45px;
+  margin-bottom: 20px;
   font-family: 'FSSinclairBold';
 }
 
@@ -903,6 +909,7 @@ body.mission .global-goals h3 {
   color: #fff !important;
   font-size: 40px;
   line-height: 45px;
+  margin-bottom: 20px;
 }
 
 body.mission .global-goals p {
@@ -1338,16 +1345,13 @@ body.blank .button:hover {
     line-height: 25px;
     color: #fff;
     font-family: 'FSSinclairMedium';
-    max-width: 250px;
     margin: 0 auto;
   }
   .introduction .button {
     width: 100%;
   }
   body.home .banner {
-    height: 80px;
-    padding: 23px 5%;
-    bottom: 45px;
+    padding: 15px 5%;
   }
   body.home .banner .button {
     font-size: 14px;
@@ -1356,9 +1360,7 @@ body.blank .button:hover {
     display: none;
   }
   .banner {
-    height: 80px;
-    padding: 23px 5%;
-    bottom: 45px;
+    padding: 15px 5%;
   }
   .banner .button {
     font-size: 14px;
@@ -1416,6 +1418,97 @@ body.blank .button:hover {
   body.newsletter span.required, body.media_access span.required {
     background-color: red;
   }
+  body.mission .introduction {
+    margin-top: 15%;
+  }
+  body.mission section {
+    padding: 5% !important;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .logo {
+    max-width: 150px;
+  }
+  body.mission .menu {
+    background: transparent !important;
+  }
+  body.mission section {
+    padding: 50px 5% !important;
+  }
+  body.mission .landing_section {
+    height: 100vh;
+  }
+  body.mission .introduction h1 {
+    font-size: 45px;
+  }
+  body.mission .main-content .divider {
+    height: 50px;
+  }
+  body.mission .main-content h2 {
+    font-size: 35px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  body.mission .main-content h3 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+  body.mission .block p {
+    left: 50px;
+  }
+  body.mission .block_1 h3 {
+    transform: rotate(-90deg) translate(-70px, -30px);
+  }
+  body.mission .block_2 h3 {
+    transform: rotate(-90deg) translate(-80px, -35px);
+  }
+  body.mission .block_3 h3 {
+    transform: rotate(-90deg) translate(-60px, -15px);
+  }
+  body.mission .block_4 h3 {
+    transform: rotate(-90deg) translate(-110px, -70px);
+  }
+  body.mission .global-goals .title {
+    max-width: 90%;
+  }
+  body.mission .global-goals h2 {
+    font-size: 35px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  body.mission .global-goals h3 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  body.mission .purple_section h2 {
+    font-size: 35px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  body.mission .ssa .divider {
+    height: 50px;
+  }
+  body.mission .ssa p {
+    margin-bottom: 15px !important;
+  }
+  body.mission .ssa h2 {
+    font-size: 35px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  body.mission .contact h2 {
+    font-size: 35px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  body.mission .contact h3 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
 }
 
 @media only screen and (max-width: 780px) {
@@ -1426,7 +1519,7 @@ body.blank .button:hover {
     height: 80px;
     width: 100%;
     background-color: #6158D6;
-    position: fixed;
+    position: relative;
     bottom: 0;
     z-index: 99;
     padding: 20px 5%;
@@ -1482,7 +1575,6 @@ body.blank .button:hover {
     color: #7364FF;
   }
   .menu-items a {
-    line-height: 0;
     font-size: 1em;
   }
   .menu-items li.active:after {
@@ -1534,6 +1626,9 @@ body.blank .button:hover {
   body.home .menu-items li:hover a {
     visibility: hidden;
   }
+  body.home footer.footer-banner {
+    position: fixed;
+  }
   body.home .banner {
     height: 80px;
     padding: 23px 5%;
@@ -1554,7 +1649,8 @@ body.blank .button:hover {
   .banner {
     height: 80px;
     padding: 23px 5%;
-    bottom: 80px;
+    bottom: 0;
+    position: relative;
   }
   .banner .button {
     font-size: 16px;
@@ -1757,11 +1853,18 @@ body.blank .button:hover {
     padding-top: 0;
     padding-bottom: 50px;
   }
-  body.mission .menu {
-    background: transparent !important;
+  body.mission .introduction h1 {
+    font-size: 30px;
   }
-  body.mission section {
-    padding: 50px 5% !important;
+  body.mission .introduction h2 {
+    font-size: 18px;
+  }
+  body.mission .purple-section .quicklinks {
+    flex-direction: column;
+  }
+  .reverse-columns {
+    flex-direction: column-reverse;
+    display: flex;
   }
 }
 
