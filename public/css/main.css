@@ -559,7 +559,7 @@ body.media_page, body.about {
 }
 
 body.media_page .main-content, body.about .main-content {
-  height: calc(100vh - 350px);
+  height: calc(100vh - 250px);
   overflow: scroll;
   position: relative;
   width: 100%;
@@ -1327,6 +1327,9 @@ body.blank .button:hover {
   .title-container {
     top: 140px !important;
   }
+  .ssa .sticky {
+    top: 10px;
+  }
 }
 
 @media only screen and (max-height: 700px) {
@@ -1339,9 +1342,6 @@ body.blank .button:hover {
   body.mission .introduction h2 {
     font-size: 25px;
     line-height: 30px;
-  }
-  body.mission .ssa .sticky {
-    top: 10px;
   }
 }
 
@@ -1404,9 +1404,6 @@ body.blank .button:hover {
 }
 
 @media only screen and (max-width: 1240px) {
-  nav {
-    height: 180px;
-  }
   nav.menu {
     height: 180px;
     padding: 50px 5%;
