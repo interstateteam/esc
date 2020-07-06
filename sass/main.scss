@@ -1609,33 +1609,55 @@ nav .menu{
 body.mission{
 
   .introduction{
-    transform: translate(0, -65px);
+      transform: translate(0, -65px);
 
     h1{
-        font-size: 45px!important;
-  } 
+          font-size: 45px!important;
+    } 
 
-  h2{
-    font-size:25px;
-    line-height:30px;
+    h2{
+      font-size:25px;
+      line-height:30px;
+    }
+
   }
 
 
-  
+
+
+
+    .ssa{
+
+      .sticky{
+        top:10px;
+      }
+
+    }
+
+  }
+
 }
-  .ssa{
 
-  .sticky{
-    top:10px;
+
+@media only screen and (max-height:700px) and (max-width:600px) {
+
+  .introduction{
+
+    h1{
+          font-size: 35px!important;
+    } 
+
+    h2{
+      font-size:25px;
+      line-height:30px;
+    }
+
   }
-
-  }
-
-  }
-
 
 
 }
+
+
 
 
 @media only screen and (max-height: 880px) {

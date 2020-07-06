@@ -1342,6 +1342,16 @@ body.blank .button:hover {
   }
 }
 
+@media only screen and (max-height: 700px) and (max-width: 600px) {
+  .introduction h1 {
+    font-size: 35px !important;
+  }
+  .introduction h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
 @media only screen and (max-height: 880px) {
   .title-container {
     position: fixed;
