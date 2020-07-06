@@ -1171,37 +1171,49 @@ img {
           color:$dark-blue;
           font-size:30px;
           text-align: center;
-
+          position:relative;
+          transition:all 0.3s ease-out;
        
         }
 
-        // span:after{
-        //   content:'';
-        //   display:block;
-        //   background:url('/public/assets/esc_global_down-arrow.svg');
-        //   background-repeat: no-repeat;
-        //   height:30px;
-        //   width:30px; 
-        // }
+        span:after{
+          content:'';
+          display:block;
+          background:url('/public/assets/esc_global_down-arrow_blue.svg');
+          background-repeat: no-repeat;
+          height:30px;
+          width:30px; 
+          position: absolute;
+          left: calc(50% - 15px);
+          transition:all 0.3s ease-out;
+        }
+       
+
+        
 
       }
 
       .safety:hover, .sustainability:hover, .accessibility:hover{
             background-color:$white;
-            color:$purple;
+     
             transition:all 0.3s ease-in;
+
+            span{
+                     color:$purple!important;
+                      transition:all 0.3s ease-in;
+            }
+
+           span:after{
+            background:url('/public/assets/esc_global_down-arrow_purple.svg');
+            background-repeat: no-repeat;
+            transition:all 0.3s ease-in;
+         }
+
       }
-
-
-
 
       .safety, .sustainability{
         border-right:1px solid $white;
       }
-
- 
-
-
 
 
     }
@@ -1799,6 +1811,7 @@ footer{
 
     .button{
       width:100%;
+      max-width:250px;
     }
 
 }

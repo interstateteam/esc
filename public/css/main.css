@@ -1011,11 +1011,35 @@ body.mission .purple_section .quicklinks .safety span, body.mission .purple_sect
   color: #182733;
   font-size: 30px;
   text-align: center;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+body.mission .purple_section .quicklinks .safety span:after, body.mission .purple_section .quicklinks .sustainability span:after, body.mission .purple_section .quicklinks .accessibility span:after {
+  content: '';
+  display: block;
+  background: url("/public/assets/esc_global_down-arrow_blue.svg");
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: calc(50% - 15px);
+  transition: all 0.3s ease-out;
 }
 
 body.mission .purple_section .quicklinks .safety:hover, body.mission .purple_section .quicklinks .sustainability:hover, body.mission .purple_section .quicklinks .accessibility:hover {
   background-color: #fff;
-  color: #7364FF;
+  transition: all 0.3s ease-in;
+}
+
+body.mission .purple_section .quicklinks .safety:hover span, body.mission .purple_section .quicklinks .sustainability:hover span, body.mission .purple_section .quicklinks .accessibility:hover span {
+  color: #7364FF !important;
+  transition: all 0.3s ease-in;
+}
+
+body.mission .purple_section .quicklinks .safety:hover span:after, body.mission .purple_section .quicklinks .sustainability:hover span:after, body.mission .purple_section .quicklinks .accessibility:hover span:after {
+  background: url("/public/assets/esc_global_down-arrow_purple.svg");
+  background-repeat: no-repeat;
   transition: all 0.3s ease-in;
 }
 
@@ -1426,6 +1450,7 @@ body.blank .button:hover {
   }
   .introduction .button {
     width: 100%;
+    max-width: 250px;
   }
   body.home .banner {
     padding: 15px 5%;
