@@ -71,7 +71,7 @@ html.is-animating .transition-fade {
   /* your offset */
 }
 
-nav {
+body.team nav {
   --ease: all 500ms ease;
   position: sticky;
   top: 0;
@@ -80,9 +80,26 @@ nav {
   height: 200px;
 }
 
-nav .menu {
+body.team nav .menu {
   width: 100%;
   height: 200px;
+  padding: 50px 0;
+  max-width: 1344px;
+  margin: 0 auto;
+  z-index: 9;
+}
+
+nav {
+  --ease: all 500ms ease;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: var(--ease);
+  height: 160px;
+}
+
+nav .menu {
+  width: 100%;
   padding: 50px 0;
   max-width: 1344px;
   margin: 0 auto;
