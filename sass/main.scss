@@ -101,7 +101,11 @@ html.is-animating .transition-fade {
 
 
 
-
+body.our_team{
+  nav{
+    height:200px;
+  }
+}
 nav {
 
   --ease: all 500ms ease;
@@ -110,7 +114,7 @@ nav {
     top: 0;
     z-index: 1;
     transition: var(--ease);
-        height:200px;
+        height:150px;
 
     .menu{
 
@@ -157,7 +161,7 @@ background-color: white;
     float:right;
     text-align: right;
     width:100%;
-    background: white;
+    // background: white;
     max-width: 300px;
     border-radius: 30px;
 
