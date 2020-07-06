@@ -102,6 +102,16 @@ html.is-animating .transition-fade {
 
 
 // NAVIGATION //
+html:not([data-scroll='0']) {
+  .menu{
+    background-color: blue!important;
+
+    .logo{max-width:100px; transition: all 0.2s ease-in;}
+  }
+
+
+
+}
 
 
 .menu{
@@ -185,6 +195,7 @@ html.is-animating .transition-fade {
   background-repeat:no-repeat;
   background-size:100%;
   display:inline-block;
+  transition: all 0.2s ease-out;
 }
 
 

@@ -71,6 +71,15 @@ html.is-animating .transition-fade {
   /* your offset */
 }
 
+html:not([data-scroll='0']) .menu {
+  background-color: blue !important;
+}
+
+html:not([data-scroll='0']) .menu .logo {
+  max-width: 100px;
+  transition: all 0.2s ease-in;
+}
+
 .menu {
   width: 100%;
   height: 200px;
@@ -149,6 +158,7 @@ html.is-animating .transition-fade {
   background-repeat: no-repeat;
   background-size: 100%;
   display: inline-block;
+  transition: all 0.2s ease-out;
 }
 
 .main-content {
