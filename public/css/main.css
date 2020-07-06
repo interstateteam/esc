@@ -24,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: "FSSinclairRegular", Sans-Serif !important;
 }
 
 body {
