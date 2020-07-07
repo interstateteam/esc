@@ -737,7 +737,7 @@ body.media_page, body.about{
     color:$dark-blue;
     // font-family: 'FSSinclairMedium';
     font-style: italic;
-    margin:30px 0;
+    margin:30px 0 0 0;
   }
 
   b{
@@ -854,7 +854,7 @@ body.our_team{
       line-height:30px;
       font-family: 'FSSinclairBold', Sans-Serif;
       text-transform:uppercase;
-      margin:20px 0 5px 0!important;
+      margin:20px 0 0 !important
     }
 
     h3{
