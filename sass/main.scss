@@ -1786,9 +1786,9 @@ nav.fade-in .menu .menu-items{
     top:240px;
     width:40%;
     max-width:500px;
-    padding-bottom:165px;
+    padding-bottom:0;
     overflow:scroll;
-    height:50%;
+    // height:50%;
   }
 }
 
@@ -1824,8 +1824,8 @@ nav {
     top:240px;
     width:40%;
     max-width:500px;
-    padding-bottom:165px;
-    overflow:scroll;
+    padding-bottom:0;
+    overflow:auto;
 
 
    h1{

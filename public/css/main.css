@@ -1458,9 +1458,8 @@ body.blank .button:hover {
     top: 240px;
     width: 40%;
     max-width: 500px;
-    padding-bottom: 165px;
+    padding-bottom: 0;
     overflow: scroll;
-    height: 50%;
   }
 }
 
@@ -1476,8 +1475,8 @@ body.blank .button:hover {
     top: 240px;
     width: 40%;
     max-width: 500px;
-    padding-bottom: 165px;
-    overflow: scroll;
+    padding-bottom: 0;
+    overflow: auto;
   }
   .title-container h1 {
     font-size: 40px;
