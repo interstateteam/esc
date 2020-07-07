@@ -1264,8 +1264,17 @@ img {
       margin-bottom:20px;
     }
 
+    a{
+      color:$purple;
+      font-family: 'FSSinclairMedium', Sans-Serif;
+    }
 
+    a:hover{
+      text-decoration: underline;
+      color:$purple;
+      font-family: 'FSSinclairMedium', Sans-Serif;
 
+    }
 
 
   }

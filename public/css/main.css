@@ -1089,6 +1089,17 @@ body.mission .ssa h2 {
   margin-bottom: 20px;
 }
 
+body.mission .ssa a {
+  color: #7364FF;
+  font-family: 'FSSinclairMedium', Sans-Serif;
+}
+
+body.mission .ssa a:hover {
+  text-decoration: underline;
+  color: #7364FF;
+  font-family: 'FSSinclairMedium', Sans-Serif;
+}
+
 body.mission .contact {
   background-image: url("/public/assets/esc_mission_contact-banner.jpg");
   background-repeat: no-repeat;
