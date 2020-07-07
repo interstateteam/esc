@@ -1,81 +1,50 @@
 
-// MENU SCROLL //
+// // MENU SCROLL //
 
-      let scrollpos = window.scrollY;
-      const header = document.querySelector("nav");
-      const header_height = header.offsetHeight;
+//       let scrollpos = window.scrollY;
+//       const header = document.querySelector("nav");
+//       const header_height = header.offsetHeight;
 
-      const add_class_on_scroll = () =>
-        header.classList.add("fade-in");
-      const remove_class_on_scroll = () =>
-        header.classList.remove("fade-in");
+//       const add_class_on_scroll = () =>
+//         header.classList.add("fade-in");
+//       const remove_class_on_scroll = () =>
+//         header.classList.remove("fade-in");
 
-      window.addEventListener("scroll", function () {
-        scrollpos = window.scrollY;
+//       window.addEventListener("scroll", function () {
+//         scrollpos = window.scrollY;
 
-        if (scrollpos >= 200) {
-          add_class_on_scroll();
-        } else {
-          remove_class_on_scroll();
-        }
+//         if (scrollpos >= 200) {
+//           add_class_on_scroll();
+//         } else {
+//           remove_class_on_scroll();
+//         }
 
-        console.log(scrollpos);
-      });
+//         console.log(scrollpos);
+//       });
 
 
   
-const options = {
-  plugins: [
-    new SwupBodyClassPlugin(),
-    new SwupHeadPlugin(),
-    new SwupGaPlugin(),
-    new SwupScrollPlugin({
-      animateScroll: false,
-      doScrollingRightAway: true,
-    }),
-  ],
+// const options = {
+//   plugins: [
+//     new SwupBodyClassPlugin(),
+//     new SwupHeadPlugin(),
+//     new SwupGaPlugin(),
+//     new SwupScrollPlugin({
+//       animateScroll: false,
+//       doScrollingRightAway: true,
+//     }),
+//   ],
   
-};
+// };
 
-const swup = new Swup(options);
+// const swup = new Swup(options);
 
-function init() {
+// function init() {
 
 AOS.init();
 
 
-
-  //  GOOGLE ANALYTICS // 
-
-  (function (i, s, o, g, r, a, m) {
-    i["GoogleAnalyticsObject"] = r;
-    (i[r] =
-      i[r] ||
-      function () {
-        (i[r].q = i[r].q || []).push(arguments);
-      }),
-      (i[r].l = 1 * new Date());
-    (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m);
-  })(
-    window,
-    document,
-    "script",
-    "https://www.google-analytics.com/analytics.js",
-    "ga"
-  );
-
-  ga("create", "UA-XXXXX-Y", "auto");
-  window.ga("set", "title", document.title);
-  window.ga("set", "page", window.location.pathname + window.location.search);
-  window.ga("send", "pageview");
-
-
-
-
-        // MENU SCROLL //
+       // MENU SCROLL //
 
         let scrollpos = window.scrollY;
         const header = document.querySelector("nav");
@@ -139,24 +108,24 @@ AOS.init();
 
           sameHeights();
         }
-      }
+      // }
 
 
-swup.on("contentReplaced", init);
-
-
-
+// swup.on("contentReplaced", init);
 
 
 
-function unload() {
 
 
-}
 
-swup.on("willReplaceContent", unload);
+// function unload() {
 
-AOS.init();
+
+// }
+
+// swup.on("willReplaceContent", unload);
+
+// AOS.init();
 
 
 
