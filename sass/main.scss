@@ -1571,6 +1571,7 @@ body.blank{
   overflow:hidden!important;
   height:100vh;
 
+
   .title-container{
     margin-top:100px;
 
@@ -2965,6 +2966,12 @@ body.mission .purple_section .quicklinks , body.mission .purple_section .quickli
 }
 
 
+body.blank{
+  .footer-banner{
+    position:fixed;
+    bottom:0;
+  }
+}
 
 // ~~~~~~~ //
 
