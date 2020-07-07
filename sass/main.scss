@@ -1528,7 +1528,7 @@ body.legal{
   background-size: 80%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: left -200px top 50px;
+  background-position: left top 50px;
 
   .main-content{
     position:relative;
@@ -1807,6 +1807,13 @@ nav.fade-in .menu .menu-items{
 
 @media only screen and (max-width: 1440px) {
 
+
+  body.blank{
+    .footer-banner{
+      position:fixed;
+      bottom:0;
+    }
+  }
 
   body.mission{
     .contact{
