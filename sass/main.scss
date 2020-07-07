@@ -1067,7 +1067,25 @@ img {
 }
   .link{
     margin:20px 0;
+    position:relative;
+    height:50px;
   } 
+
+  .link:after{
+    content:'';
+    display: inline-block;
+    height:20px;
+    width:20px;
+    background:url('/public/assets/esc_global_link-icon.svg');
+    background-repeat: no-repeat;
+    float:right;
+    margin-top:5px;
+    position:absolute;
+    top:0;
+    right:0;
+  }
+
+
 
 
   a{
@@ -1078,17 +1096,6 @@ img {
   a:hover{
     text-decoration: underline;
     transition: all 0.3s ease-in; 
-  }
-
-  a:after{
-    content:'';
-    display: inline-block;
-    height:20px;
-    width:20px;
-    background:url('/public/assets/esc_global_link-icon.svg');
-    background-repeat: no-repeat;
-    float:right;
-    margin-top:5px;
   }
 
 

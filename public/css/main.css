@@ -912,6 +912,22 @@ body.mission .global-goals img {
 
 body.mission .global-goals .link {
   margin: 20px 0;
+  position: relative;
+  height: 50px;
+}
+
+body.mission .global-goals .link:after {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url("/public/assets/esc_global_link-icon.svg");
+  background-repeat: no-repeat;
+  float: right;
+  margin-top: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 body.mission .global-goals a {
@@ -923,17 +939,6 @@ body.mission .global-goals a {
 body.mission .global-goals a:hover {
   text-decoration: underline;
   transition: all 0.3s ease-in;
-}
-
-body.mission .global-goals a:after {
-  content: '';
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  background: url("/public/assets/esc_global_link-icon.svg");
-  background-repeat: no-repeat;
-  float: right;
-  margin-top: 5px;
 }
 
 body.mission .global-goals .title {
