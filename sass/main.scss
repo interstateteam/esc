@@ -2,18 +2,23 @@
 
 @font-face {
   font-family: 'FSSinclairRegular';
-  src: url('../fonts/FSSinclairWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/FSSinclairWeb-Regular.woff') format('woff'),/* Pretty Modern Browsers */
-      url('../fonts/FSSinclairWeb-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */ 
+  src:url('../fonts/FSSinclairWeb-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../fonts/FSSinclairWeb-Regular.woff') format('woff'),/* Pretty Modern Browsers */ 
+      url('../fonts/FSSinclairWeb-Regular.woff2') format('woff2'); /* Super Modern Browsers */
+       
+      
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
   font-family: 'FSSinclairMedium';
-  src: url('../fonts/FSSinclairWeb-Medium.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/FSSinclairWeb-Medium.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/FSSinclairWeb-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */ 
+  
+  src:url('../fonts/FSSinclairWeb-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */ 
+      url('../fonts/FSSinclairWeb-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../fonts/FSSinclairWeb-Medium.woff2') format('woff2'); /* Super Modern Browsers */
+
+
     font-weight: normal;
     font-style: normal;
 }
@@ -21,10 +26,9 @@
 
 @font-face {
   font-family: 'FSSinclairBold';
-  src: url('../fonts/FSSinclairWeb-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/FSSinclairWeb-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/FSSinclairWeb-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */ 
-        
+  src:  url('../fonts/FSSinclairWeb-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */ 
+        url('../fonts/FSSinclairWeb-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/FSSinclairWeb-Bold.woff2') format('woff2'); /* Super Modern Browsers */
     font-weight: normal;
     font-style: normal;
 }
@@ -2516,13 +2520,13 @@ body.home{
 footer.footer-banner{
   position:fixed;
   padding:10px 5%;
-  bottom:80px;
+  bottom:0;
   height:65px;
 }
 .banner{
   height:80px;
    padding:23px 5%; 
-   bottom:0;  
+   bottom:65px;  
     .button{
       font-size:16px;
       height:40px;
