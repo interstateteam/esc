@@ -1802,7 +1802,7 @@ body.blank .button:hover {
     width: 0;
   }
   .landing {
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 500px);
     width: 100%;
   }
   .introduction h1 {
@@ -1843,7 +1843,7 @@ body.blank .button:hover {
     visibility: hidden;
   }
   body.home footer.footer-banner {
-    position: relative !important;
+    position: fixed;
     padding: 10px 5%;
     bottom: 80px;
     height: 65px;
@@ -2103,7 +2103,7 @@ body.blank .button:hover {
   }
   .scroll {
     position: absolute;
-    bottom: 10%;
+    bottom: 30%;
   }
   .scroll span {
     display: block;
