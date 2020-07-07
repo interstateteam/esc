@@ -914,6 +914,7 @@ body.mission .global-goals .link {
   margin: 20px 0;
   position: relative;
   height: 50px;
+  padding-right: 40px;
 }
 
 body.mission .global-goals .link:after {
