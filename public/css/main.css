@@ -118,7 +118,7 @@ nav.fade-in .menu {
 nav.fade-in .menu .logo {
   max-width: 150px;
   transition: all 0.2s ease-in;
-  background-image: url("/public/assets/esc_logo_colour.svg");
+  background-image: url("/assets/esc_logo_colour.svg");
   transform: translate(0, -18px);
 }
 
@@ -188,7 +188,7 @@ nav.fade-in .menu li a {
   width: 100%;
   max-width: 225px;
   height: 135px;
-  background-image: url("/public/assets/esc_logo_colour.svg");
+  background-image: url("/assets/esc_logo_colour.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   display: inline-block;
@@ -286,31 +286,31 @@ footer.footer-banner ul > li a {
 }
 
 .banner .social .instagram {
-  background-image: url("/public/assets/esc_global_instagram-light.svg");
+  background-image: url("/assets/esc_global_instagram-light.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .banner .social .twitter {
-  background-image: url("/public/assets/esc_global_twitter-light.svg");
+  background-image: url("/assets/esc_global_twitter-light.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .banner .social .linkedin {
-  background-image: url("/public/assets/esc_global_linkedin-light.svg");
+  background-image: url("/assets/esc_global_linkedin-light.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .banner .social .youtube {
-  background-image: url("/public/assets/esc_global_youtube-light.svg");
+  background-image: url("/assets/esc_global_youtube-light.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .banner .social .facebook {
-  background-image: url("/public/assets/esc_global_facebook-light.svg");
+  background-image: url("/assets/esc_global_facebook-light.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -411,7 +411,7 @@ body.home .menu-items .active:after {
 }
 
 body.home .logo {
-  background-image: url("/public/assets/esc_logo_white.svg");
+  background-image: url("/assets/esc_logo_white.svg");
 }
 
 body.home .banner {
@@ -437,31 +437,31 @@ body.home .banner .social span {
 }
 
 body.home .banner .social .instagram {
-  background-image: url("/public/assets/esc_global_instagram-dark.svg");
+  background-image: url("/assets/esc_global_instagram-dark.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 body.home .banner .social .twitter {
-  background-image: url("/public/assets/esc_global_twitter-dark.svg");
+  background-image: url("/assets/esc_global_twitter-dark.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 body.home .banner .social .linkedin {
-  background-image: url("/public/assets/esc_global_linkedin-dark.svg");
+  background-image: url("/assets/esc_global_linkedin-dark.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 body.home .banner .social .youtube {
-  background-image: url("/public/assets/esc_global_youtube-dark.svg");
+  background-image: url("/assets/esc_global_youtube-dark.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 body.home .banner .social .facebook {
-  background-image: url("/public/assets/esc_global_facebook-dark.svg");
+  background-image: url("/assets/esc_global_facebook-dark.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -552,7 +552,7 @@ body.home .banner .button:hover {
 }
 
 body.about {
-  background: url("/public/assets/esc_global_graphic-04.svg");
+  background: url("/assets/esc_global_graphic-04.svg");
   background-size: 50%;
   background-attachment: fixed;
   background-position: top left -200px;
@@ -560,7 +560,7 @@ body.about {
 }
 
 body.media_page {
-  background: url("/public/assets/esc_global_graphic-01.svg");
+  background: url("/assets/esc_global_graphic-01.svg");
   background-size: 60%;
   background-attachment: fixed;
   background-position: bottom left;
@@ -710,7 +710,7 @@ body.media_page .main-content, body.about .main-content {
 }
 
 body.our_team {
-  background-image: url(/public/assets/esc_global_graphic-02.svg);
+  background-image: url(/assets/esc_global_graphic-02.svg);
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -759,19 +759,19 @@ body.our_team .team .profiles span {
 }
 
 body.our_team .team .profiles .linkedin {
-  background-image: url("/public/assets/esc_global_linkedin-dark.svg");
+  background-image: url("/assets/esc_global_linkedin-dark.svg");
 }
 
 body.our_team .team .profiles .instagram {
-  background-image: url("/public/assets/esc_global_instagram-dark.svg");
+  background-image: url("/assets/esc_global_instagram-dark.svg");
 }
 
 body.our_team .team .profiles .twitter {
-  background-image: url("/public/assets/esc_global_twitter-dark.svg");
+  background-image: url("/assets/esc_global_twitter-dark.svg");
 }
 
 body.mission .logo {
-  background-image: url("/public/assets/esc_logo_white.svg");
+  background-image: url("/assets/esc_logo_white.svg");
 }
 
 body.mission .menu-items {
@@ -785,7 +785,7 @@ body.mission .menu-items a {
 body.mission .landing_section {
   height: calc(100vh - 55px);
   width: 100%;
-  background: url("/public/assets/esc_mission_banner.jpg");
+  background: url("/assets/esc_mission_banner.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -811,7 +811,7 @@ body.mission .introduction h1 span, body.mission .introduction h2 span {
 }
 
 body.mission .main-content {
-  background-image: url("/public/assets/esc_mission_graphic1.svg");
+  background-image: url("/assets/esc_mission_graphic1.svg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -922,7 +922,7 @@ body.mission .global-goals .link:after {
   display: inline-block;
   height: 20px;
   width: 20px;
-  background: url("/public/assets/esc_global_link-icon.svg");
+  background: url("/assets/esc_global_link-icon.svg");
   background-repeat: no-repeat;
   float: right;
   margin-top: 5px;
@@ -1038,7 +1038,7 @@ body.mission .purple_section .quicklinks .safety span, body.mission .purple_sect
 body.mission .purple_section .quicklinks .safety span:after, body.mission .purple_section .quicklinks .sustainability span:after, body.mission .purple_section .quicklinks .accessibility span:after {
   content: '';
   display: block;
-  background: url("/public/assets/esc_global_down-arrow_blue.svg");
+  background: url("/assets/esc_global_down-arrow_blue.svg");
   background-repeat: no-repeat;
   height: 30px;
   width: 30px;
@@ -1058,7 +1058,7 @@ body.mission .purple_section .quicklinks .safety:hover span, body.mission .purpl
 }
 
 body.mission .purple_section .quicklinks .safety:hover span:after, body.mission .purple_section .quicklinks .sustainability:hover span:after, body.mission .purple_section .quicklinks .accessibility:hover span:after {
-  background: url("/public/assets/esc_global_down-arrow_purple.svg");
+  background: url("/assets/esc_global_down-arrow_purple.svg");
   background-repeat: no-repeat;
   transition: all 0.3s ease-in;
 }
@@ -1068,7 +1068,7 @@ body.mission .purple_section .quicklinks .safety, body.mission .purple_section .
 }
 
 body.mission .ssa {
-  background-image: url("/public/assets/esc_mission_graphic2.svg");
+  background-image: url("/assets/esc_mission_graphic2.svg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1107,7 +1107,7 @@ body.mission .ssa a:hover {
 }
 
 body.mission .contact {
-  background-image: url("/public/assets/esc_mission_contact-banner.jpg");
+  background-image: url("/assets/esc_mission_contact-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1152,7 +1152,7 @@ body.mission .contact a {
 .scroll span:after {
   content: '';
   display: block;
-  background-image: url("/public/assets/esc_global_down-arrow.svg");
+  background-image: url("/assets/esc_global_down-arrow.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 30px;
@@ -1163,7 +1163,7 @@ body.mission .contact a {
 }
 
 body.newsletter, body.media_access {
-  background-image: url(/public/assets/esc_global_graphic-03.svg);
+  background-image: url(/assets/esc_global_graphic-03.svg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1295,7 +1295,7 @@ body.newsletter .title-container span, body.media_access .title-container span {
 }
 
 body.legal {
-  background-image: url("/public/assets/esc_global_graphic-03.svg");
+  background-image: url("/assets/esc_global_graphic-03.svg");
   background-size: 80%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1326,7 +1326,7 @@ body.legal h3 {
 }
 
 body.blank {
-  background-image: url("/public/assets/esc_global_graphic-03.svg");
+  background-image: url("/assets/esc_global_graphic-03.svg");
   background-size: 80%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1721,7 +1721,7 @@ body.blank .button:hover {
     display: block;
   }
   body.mission nav .menu .logo {
-    background-image: url("/public/assets/esc_logo_white.svg");
+    background-image: url("/assets/esc_logo_white.svg");
   }
   body.mission .contact {
     min-height: 40vh;
@@ -1736,7 +1736,7 @@ body.blank .button:hover {
   }
   nav.fade-in .menu .logo {
     transition: background-color 0.2s ease-in;
-    background-image: url("/public/assets/esc_logo_colour.svg") !important;
+    background-image: url("/assets/esc_logo_colour.svg") !important;
     transform: translate(0, -35px);
   }
   nav.fade-in .menu .menu-items {
@@ -1979,12 +1979,12 @@ body.blank .button:hover {
     margin-right: 10px;
   }
   body.our_team .team .profiles .linkedin {
-    background-image: url("/public/assets/esc_global_linkedin-dark.svg");
+    background-image: url("/assets/esc_global_linkedin-dark.svg");
     background-repeat: no-repeat;
     background-size: 100%;
   }
   body.our_team .team .profiles .instagram {
-    background-image: url("/public/assets/esc_global_instagram-dark.svg");
+    background-image: url("/assets/esc_global_instagram-dark.svg");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -2132,7 +2132,7 @@ body.blank .button:hover {
   .scroll span:after {
     content: '';
     display: block;
-    background-image: url("/public/assets/esc_global_down-arrow.svg");
+    background-image: url("/assets/esc_global_down-arrow.svg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 30px;
