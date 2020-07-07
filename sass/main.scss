@@ -32,6 +32,9 @@
 
 
 // ~~~~~~~~~~~~~~~ GLOBAL ~~~~~~~~~~~~~~~~~~ //
+.desktop-hide{
+  display:none;
+}
 
 // COLOURS //
 
@@ -1452,6 +1455,10 @@ img {
   font-family: 'FSSinclairMedium';
   line-height:50px;
   font-size:18px;
+
+  span{
+    margin-left:10px;
+  }
   }
 
   .underline{
@@ -1836,13 +1843,13 @@ nav {
 
 
 /////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
-/////////////////////\\\\\\\\\\\\\\\\\\\\////////           1240               ////////////////////////\\\\\\\\\\\\\\\/////////////////
+/////////////////////\\\\\\\\\\\\\\\\\\\\////////           1215              ////////////////////////\\\\\\\\\\\\\\\/////////////////
 /////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
 
 
 
 
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 1215px) {
 
 nav.menu{
   // background-color:$white;
@@ -1944,6 +1951,12 @@ body.about{
 }
   //~~~~~~~~~~~~ NEWSLETTER ~~~~~~~~~~~`//
  body.newsletter,  body.media_access{
+
+
+  footer.footer-banner{
+    bottom:0;
+    position:fixed;
+  }
 
 .title-container{
   position: initial;
@@ -2265,6 +2278,10 @@ body.mission{
 @media only screen and (max-width: 780px) {
 
 
+.desktop-hide{
+  display:block;
+}
+
   body.mission{
     .contact{
       min-height:40vh;
@@ -2414,7 +2431,7 @@ nav.menu{
 // ~~~~~~~~ HOME ~~~~~~~~~ //
 
 .landing{
-  min-height:calc(100vh - 500px);
+  min-height:calc(100vh - 200px);
   width:100%;
  
 }
@@ -2481,15 +2498,15 @@ body.home{
 
 
 footer.footer-banner{
-  position:fixed;
+  position:relative!important;
   padding:10px 5%;
-  bottom:0;
+  bottom:80px;
   height:65px;
 }
 .banner{
   height:80px;
    padding:23px 5%; 
-   bottom:65px;  
+   bottom:0;  
     .button{
       font-size:16px;
       height:40px;

@@ -23,8 +23,6 @@
       });
 
 
-
-
   
 const options = {
   plugins: [
@@ -42,6 +40,9 @@ const options = {
 const swup = new Swup(options);
 
 function init() {
+
+AOS.init();
+
 
 
   //  GOOGLE ANALYTICS // 
@@ -145,19 +146,17 @@ swup.on("contentReplaced", init);
 
 
 
+
+
+
+function unload() {
+
+
+}
+
+swup.on("willReplaceContent", unload);
+
 AOS.init();
-
-
-
-
-// function unload() {
-
-
-// }
-
-// swup.on("willReplaceContent", unload);
-
-
 
 
 
