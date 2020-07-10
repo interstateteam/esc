@@ -18,47 +18,25 @@ swup.on("contentReplaced", init);
 
 
 function init() {
-                  // AOS INIT BETWEEN SWUP PAGES //
-                  AOS.init();
+      // AOS INIT BETWEEN SWUP PAGES //
+      AOS.init();
 
-                  // MENU SCROLL INIT BETWEEN SWUP PAGES //
-                  new menuScroll();
+      // MENU SCROLL INIT BETWEEN SWUP PAGES //
+      new menuScroll();
 
-                  // Target all external links to _blank, simples.
-                  externalLinks();
+      // Target all external links to _blank, simples.
+      externalLinks();
 
-                  // ONLY LOAD THIS SCRIPT ON THE TEAM PAGE //
+      // ONLY LOAD THIS SCRIPT ON THE TEAM PAGE //
 
-                  // LOAD SAME HEIGHT SCRIPT ON INDIVIDUAL PAGE //
+      // LOAD SAME HEIGHT SCRIPT ON INDIVIDUAL PAGE //
 
 
-                  if (document.querySelector("#team")) {
-                      function sameHeights(selector) {
-                        var selector = selector || '[data-key="sameHeights"]',
-                          query = document.querySelectorAll(selector),
-                          elements = query.length,
-                          max = 0;
-                        if (elements) {
-                          while (elements--) {
-                            var element = query[elements];
-                            if (element.clientHeight > max) {
-                              max = element.clientHeight;
-                            }
-                          }
-                          elements = query.length;
-                          while (elements--) {
-                            var element = query[elements];
-                            element.style.height = max + "px";
-                          }
-                        }
+      if (document.querySelector("#team")) {
+          sameHeights();
 
-                        console.log("loaded!");
-                      }
-
-                      sameHeights();
- 
-                  }
-                }
+      }
+    }
 
 
 function unload() {
@@ -82,7 +60,7 @@ swup.on("willReplaceContent", unload);
 
 
 
-// ~~~~~~~~~~~~~~~~~~~ STOP, HAMMER TIME ~~~~~~~~~~~~~~~~~~~~ // 
+// ~~~~~~~~~~~~~~~~~~~ INITIAL PAGELOAD ~~~~~~~~~~~~~~~~~~~~ // 
 
 
 
@@ -136,3 +114,37 @@ externalLinks();
 AOS.init();
 
 
+
+// LOAD SAMEHEIGHTS SCRIPT IF LANDING ON INDIVIDUAL PAGES //
+
+function sameHeights(selector) {
+  var selector = selector || '[data-key="sameHeights"]',
+    query = document.querySelectorAll(selector),
+    elements = query.length,
+    max = 0;
+  if (elements) {
+    while (elements--) {
+      var element = query[elements];
+      if (element.clientHeight > max) {
+        max = element.clientHeight;
+      }
+    }
+    elements = query.length;
+    while (elements--) {
+      var element = query[elements];
+      element.style.height = max + "px";
+    }
+  }
+
+  console.log("loaded!");
+}
+
+
+if ("addEventListener" in window) {
+  window.addEventListener("resize", function () {
+    sameHeights();
+  });
+  window.addEventListener("load", function () {
+    sameHeights();
+  });
+}
