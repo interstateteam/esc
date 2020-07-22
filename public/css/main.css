@@ -86,10 +86,6 @@ html.is-animating .transition-fade {
   /* your offset */
 }
 
-body.our_team nav {
-  height: 200px;
-}
-
 nav {
   --ease: all 500ms ease;
   position: -webkit-sticky;
@@ -392,6 +388,10 @@ footer.footer-banner ul > li a {
 
 body.home nav .menu {
   background-color: transparent;
+}
+
+body.home nav .menu .logo {
+  max-width: 200px;
 }
 
 body.home h1, body.home h2, body.home h3, body.home h4, body.home h5 {
@@ -821,12 +821,6 @@ body.media_post .article a {
   font-family: "FSSinclairMedium", Sans-Serif !important;
 }
 
-body.media_ nav .menu .logo {
-  max-width: 166px;
-  -webkit-transform: translate(0, -18px);
-          transform: translate(0, -18px);
-}
-
 body.media_ .date {
   color: #7364FF;
   font-family: 'FSSinclairBold', Sans-Serif;
@@ -1076,7 +1070,7 @@ body.our_team {
 
 body.our_team .main-content {
   padding-bottom: 15%;
-  margin-top: 2%;
+  margin-top: 50px;
 }
 
 body.our_team .team {
@@ -2144,18 +2138,6 @@ body.blank .button:hover {
 }
 
 @media only screen and (max-width: 780px) {
-  body.media_ nav .menu .logo {
-    max-width: 150px;
-    -webkit-transform: initial;
-            transform: initial;
-  }
-  body.media_ nav.fade-in .menu .logo {
-    -webkit-transition: background-color 0.2s ease-in;
-    transition: background-color 0.2s ease-in;
-    background-image: url("/assets/esc_logo_colour.svg") !important;
-    -webkit-transform: translate(0, -35px) !important;
-            transform: translate(0, -35px) !important;
-  }
   body.media_ section {
     padding: 0;
   }
@@ -2171,18 +2153,6 @@ body.blank .button:hover {
   }
   body.media_ .main-content {
     padding: 0 5%;
-  }
-  body.media_post nav .menu .logo {
-    max-width: 150px;
-    -webkit-transform: initial;
-            transform: initial;
-  }
-  body.media_post nav.fade-in .menu .logo {
-    -webkit-transition: background-color 0.2s ease-in;
-    transition: background-color 0.2s ease-in;
-    background-image: url("/assets/esc_logo_colour.svg") !important;
-    -webkit-transform: translate(0, -35px) !important;
-            transform: translate(0, -35px) !important;
   }
   body.media_post .main-content {
     margin-top: 30px;
@@ -2221,6 +2191,15 @@ body.blank .button:hover {
   body.our_team nav {
     height: 130px;
   }
+  nav .menu .logo {
+    max-width: 150px;
+    -webkit-transform: translate(0, -35px) !important;
+            transform: translate(0, -35px) !important;
+  }
+  nav .menu .menu-items {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
   nav.fade-in {
     height: 130px;
     background-color: white;
@@ -2228,9 +2207,10 @@ body.blank .button:hover {
   nav.fade-in .menu .logo {
     -webkit-transition: background-color 0.2s ease-in;
     transition: background-color 0.2s ease-in;
+    max-width: 150px;
     background-image: url("/assets/esc_logo_colour.svg") !important;
-    -webkit-transform: translate(0, -35px);
-            transform: translate(0, -35px);
+    -webkit-transform: translate(0, -35px) !important;
+            transform: translate(0, -35px) !important;
   }
   nav.fade-in .menu .menu-items {
     -webkit-transform: translate(0, -30px);
@@ -2332,6 +2312,12 @@ body.blank .button:hover {
   }
   .introduction .button {
     width: 100%;
+  }
+  body.home nav .menu {
+    background-color: transparent;
+  }
+  body.home nav .menu .logo {
+    max-width: 150px;
   }
   body.home .media-banner a {
     text-align: center;

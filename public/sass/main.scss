@@ -120,11 +120,11 @@ html.is-animating .transition-fade {
 
 
 
-body.our_team{
-  nav{
-    height:200px;
-  }
-}
+// body.our_team{
+//   nav{
+//     height:200px;
+//   }
+// }
 nav {
 
   --ease: all 500ms ease;
@@ -444,6 +444,9 @@ ul{
 body.home{
 nav{  .menu{
   background-color:transparent;
+  .logo{
+    max-width: 200px;
+  }
   }
 }
 
@@ -933,14 +936,14 @@ body.media_post{
 
   body.media_{
 
-      nav{
-    .menu{
-      .logo{
-        max-width:166px;
-        transform: translate(0, -18px);
-      }
-    }
-  }
+  //     nav{
+  //   .menu{
+  //     .logo{
+  //       max-width:166px;
+  //       transform: translate(0, -18px);
+  //     }
+  //   }
+  // }
 
 
     .date{
@@ -1238,7 +1241,7 @@ body.our_team{
 
 .main-content {
   padding-bottom:15%;
-  margin-top:2%;
+  margin-top:50px;
 }
 
   
@@ -2709,25 +2712,6 @@ body.mission{
 @media only screen and (max-width: 780px) {
 
   body.media_{
-    nav{
-      .menu{
-        .logo{
-          max-width: 150px;
-          transform:initial;
-        }
-      }
-    }
-
-      nav.fade-in{
-          .menu{
-
-        .logo{ transition: background-color 0.2s ease-in;  background-image:url('/assets/esc_logo_colour.svg')!important; transform: translate(0, -35px)!important;}
-    }
-  }  
-
-
-
-
     section{padding:0;}
 
     .featured{
@@ -2752,21 +2736,7 @@ body.mission{
 
   body.media_post{
     // overflow-x: hidden;
-     nav{
-      .menu{
-        .logo{
-          max-width: 150px;
-          transform:initial;
-        }
-      }
-    }
-
-      nav.fade-in{
-          .menu{
-
-        .logo{ transition: background-color 0.2s ease-in;  background-image:url('/assets/esc_logo_colour.svg')!important; transform: translate(0, -35px)!important;}
-    }
-  }  
+ 
 
     .main-content{
       margin-top:30px;
@@ -2831,18 +2801,30 @@ body.mission{
     }
   }
   
-  nav.fade-in{
-  height:130px;
-  background-color: white;
 
-    .menu{
-  
+      nav{
+      .menu{
+        .logo{
+          max-width: 150px;
+           transform: translate(0, -35px)!important;
+        }
+          .menu-items{
+           transform:translate(0, -30px);
+          }
 
-        .logo{ transition: background-color 0.2s ease-in;  background-image:url('/assets/esc_logo_colour.svg')!important; transform: translate(0, -35px);}
+      }
+    }
 
+      nav.fade-in{
+        height:130px;
+        background-color: white;
+
+          .menu{
+
+        .logo{ transition: background-color 0.2s ease-in; max-width: 150px; background-image:url('/assets/esc_logo_colour.svg')!important; transform: translate(0, -35px)!important;}
         .menu-items{
-    transform:translate(0, -30px);
-  }
+           transform:translate(0, -30px);
+          }
 
 
         li{
@@ -2853,6 +2835,8 @@ body.mission{
 
     }
   }  
+
+
 
 
   
@@ -2993,6 +2977,14 @@ nav.menu{
 }
 
 body.home{
+
+  nav{  .menu{
+  background-color:transparent;
+  .logo{
+    max-width: 150px;
+  }
+  }
+}
 
   .media-banner{
     a{
