@@ -58,7 +58,7 @@ AOS.init();
         window.addEventListener("scroll", function () {
           scrollpos = window.scrollY;
 
-          if (scrollpos >= 200) {
+          if (scrollpos >= 50) {
             add_class_on_scroll();
           } else {
             remove_class_on_scroll();

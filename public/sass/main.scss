@@ -161,7 +161,7 @@ background-color: white;
     .menu{
         height:150px;
 
-        .logo{max-width:150px; transition: all 0.2s ease-in;  background-image:url('/assets/esc_logo_colour.svg'); transform: translate(0, -18px);}
+        .logo{max-width:165px; transition: all 0.2s ease-in;  background-image:url('/assets/esc_logo_colour.svg'); transform: translate(0, -18px);}
 
         li{
           a{
@@ -237,13 +237,14 @@ background-color: white;
   display:block;
   float:left;
   width:100%;
-  max-width:225px;
+  max-width:166px;
   height:135px;
   background-image:url('/assets/esc_logo_colour.svg');
   background-repeat:no-repeat;
   background-size:100%;
   display:inline-block;
   transition: all 0.2s ease-out;
+  transform:translate(0, -18px);
 }
 
 
@@ -707,9 +708,22 @@ body.media_page, body.media_post{
 
 body.media_post{
 
+  .main-content{
+    margin-top:50px;
+  }
+
+  nav{
+    .menu{
+      .logo{
+        max-width:166px;
+        transform: translate(0, -18px);
+      }
+    }
+  }
+
   .sticky-container{
     position: sticky;
-    top:200px;
+    top:180px;
   }
 
 
@@ -797,12 +811,32 @@ body.media_post{
   .banner{
 
     .button{
-        color:#fff;
-        border-color:#fff;
-        margin-bottom: 0;
-
-
+      border: 4px solid $white;
+      border-radius: 0;
+      background-color:$purple;
+      color: #fff;
+      text-transform: uppercase;
+      float: right;
+      min-width: 140px;
+      font-family: 'FSSinclairBold', Sans-Serif;
+      margin-bottom:0;
+      padding-bottom: calc(0.5em - 1px);
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-top: calc(0.5em - 1px);
+      font-size:1em!important;
     }
+
+    .button:hover{
+      border:4px solid $white;
+      background-color: $white;
+      color:$purple;
+      transition:all 0.3s ease-in;
+  }
+
+
+
+
   }
 
 
@@ -874,6 +908,15 @@ body.media_post{
     font-family: 'FSSinclairBold', Sans-Serif;
   }
 
+
+    a{
+      color:$dark-blue!important;
+      text-decoration:underline;
+      font-family: 'FSSinclairMedium', Sans-Serif!important;
+    }
+
+
+
 }
 
 
@@ -889,6 +932,16 @@ body.media_post{
 // MEDIA PAGE //
 
   body.media_{
+
+      nav{
+    .menu{
+      .logo{
+        max-width:166px;
+        transform: translate(0, -18px);
+      }
+    }
+  }
+
 
     .date{
       color:$purple;
@@ -921,7 +974,7 @@ body.media_post{
 
     .featured{
       background-color: $grey;
-      margin-top:80px;
+      margin-top:50px;
 
       .featured-title{
         padding:10%;
@@ -974,6 +1027,34 @@ body.media_post{
 
 
     }
+
+
+  .banner{
+
+    .button{
+      border: 4px solid $white;
+      border-radius: 0;
+      background-color:$purple;
+      color: #fff;
+      text-transform: uppercase;
+      float: right;
+      min-width: 140px;
+      font-family: 'FSSinclairBold', Sans-Serif;
+      margin-bottom:0;
+    }
+
+    .button:hover{
+      border:4px solid $white;
+      background-color: $white;
+      color:$purple;
+      transition:all 0.3s ease-in;
+  }
+
+
+
+
+  }
+
 
 
 
@@ -1950,9 +2031,27 @@ body.blank{
 /////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
 /////////////////////\\\\\\\\\\\\\\\\\\\\////////           WEIRD HEIGHTS               ////////////////////////\\\\\\\\\\\\\\\////////////
 /////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
+@media only screen and (max-height: 760px) {
 
+
+
+  body.media_post{
+
+    .sticky-container{
+      h1{
+        font-size:35px;
+        line-height: 30px;;
+      }
+    }
+
+  }
+
+
+}
 
 @media only screen and (max-height: 550px) {
+
+
 
     body.home{
 
@@ -2376,6 +2475,16 @@ body.mission{
 
 
 @media only screen and (max-width: 1110px) {
+
+  body.media_post{
+   
+    footer.footer-banner {
+      bottom:65px;
+    }
+
+  }
+
+
 .logo{
   max-width:150px;
 }
@@ -2577,21 +2686,6 @@ body.mission{
 }
 
 
-body.media_post{
-
-    footer.footer-banner{
-      bottom:75px;
-    }
-
-    .banner{
-      .button{
-
-        width:100px;
-      }
-    }
-
-}
-
 
 
 
@@ -2615,12 +2709,41 @@ body.media_post{
 @media only screen and (max-width: 780px) {
 
   body.media_{
+    nav{
+      .menu{
+        .logo{
+          max-width: 150px;
+          transform:initial;
+        }
+      }
+    }
+
+      nav.fade-in{
+          .menu{
+
+        .logo{ transition: background-color 0.2s ease-in;  background-image:url('/assets/esc_logo_colour.svg')!important; transform: translate(0, -35px)!important;}
+    }
+  }  
+
+
+
+
     section{padding:0;}
 
     .featured{
       margin-top:0;
+
+        .featured-title{
+          padding:10% 5%;
+          h1{
+            font-size:35px;
+            line-height:30px;
+          }
+      }
+
     }
 
+  
     .main-content{
       padding: 0 5%;
     }
@@ -2628,8 +2751,22 @@ body.media_post{
   }
 
   body.media_post{
-    overflow-x: hidden;
+    // overflow-x: hidden;
+     nav{
+      .menu{
+        .logo{
+          max-width: 150px;
+          transform:initial;
+        }
+      }
+    }
 
+      nav.fade-in{
+          .menu{
+
+        .logo{ transition: background-color 0.2s ease-in;  background-image:url('/assets/esc_logo_colour.svg')!important; transform: translate(0, -35px)!important;}
+    }
+  }  
 
     .main-content{
       margin-top:30px;
@@ -2786,9 +2923,12 @@ nav.menu{
 
   height:180px;
   padding: 30px 5%;
-}
-.logo{
-  width:45%;
+
+  .logo{
+    width:45%;
+    transform:initial;
+  }
+
 }
 
 .menu-items { 

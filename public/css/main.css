@@ -119,7 +119,7 @@ nav.fade-in .menu {
 }
 
 nav.fade-in .menu .logo {
-  max-width: 150px;
+  max-width: 165px;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   background-image: url("/assets/esc_logo_colour.svg");
@@ -195,7 +195,7 @@ nav.fade-in .menu li a {
   display: block;
   float: left;
   width: 100%;
-  max-width: 225px;
+  max-width: 166px;
   height: 135px;
   background-image: url("/assets/esc_logo_colour.svg");
   background-repeat: no-repeat;
@@ -203,6 +203,8 @@ nav.fade-in .menu li a {
   display: inline-block;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  -webkit-transform: translate(0, -18px);
+          transform: translate(0, -18px);
 }
 
 .main-content {
@@ -628,10 +630,20 @@ body.media_page, body.media_post {
   background-repeat: no-repeat;
 }
 
+body.media_post .main-content {
+  margin-top: 50px;
+}
+
+body.media_post nav .menu .logo {
+  max-width: 166px;
+  -webkit-transform: translate(0, -18px);
+          transform: translate(0, -18px);
+}
+
 body.media_post .sticky-container {
   position: -webkit-sticky;
   position: sticky;
-  top: 200px;
+  top: 180px;
 }
 
 body.media_post .date {
@@ -716,9 +728,28 @@ body.media_post .button:hover {
 }
 
 body.media_post .banner .button {
+  border: 4px solid #fff;
+  border-radius: 0;
+  background-color: #7364FF;
   color: #fff;
-  border-color: #fff;
+  text-transform: uppercase;
+  float: right;
+  min-width: 140px;
+  font-family: 'FSSinclairBold', Sans-Serif;
   margin-bottom: 0;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  font-size: 1em !important;
+}
+
+body.media_post .banner .button:hover {
+  border: 4px solid #fff;
+  background-color: #fff;
+  color: #7364FF;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 body.media_post .article {
@@ -784,6 +815,18 @@ body.media_post .article b {
   font-family: 'FSSinclairBold', Sans-Serif;
 }
 
+body.media_post .article a {
+  color: #182733 !important;
+  text-decoration: underline;
+  font-family: "FSSinclairMedium", Sans-Serif !important;
+}
+
+body.media_ nav .menu .logo {
+  max-width: 166px;
+  -webkit-transform: translate(0, -18px);
+          transform: translate(0, -18px);
+}
+
 body.media_ .date {
   color: #7364FF;
   font-family: 'FSSinclairBold', Sans-Serif;
@@ -815,7 +858,7 @@ body.media_ .image-container:after {
 
 body.media_ .featured {
   background-color: #F8F8F9;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 body.media_ .featured .featured-title {
@@ -857,6 +900,26 @@ body.media_ .main-content .wrapper h3 {
   font-size: 25px;
   line-height: 25px;
   font-family: 'FSSinclairMedium', Sans-Serif;
+}
+
+body.media_ .banner .button {
+  border: 4px solid #fff;
+  border-radius: 0;
+  background-color: #7364FF;
+  color: #fff;
+  text-transform: uppercase;
+  float: right;
+  min-width: 140px;
+  font-family: 'FSSinclairBold', Sans-Serif;
+  margin-bottom: 0;
+}
+
+body.media_ .banner .button:hover {
+  border: 4px solid #fff;
+  background-color: #fff;
+  color: #7364FF;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 body.media_page, body.about {
@@ -1715,6 +1778,13 @@ body.blank .button:hover {
   transition: all 0.3s ease-in;
 }
 
+@media only screen and (max-height: 760px) {
+  body.media_post .sticky-container h1 {
+    font-size: 35px;
+    line-height: 30px;
+  }
+}
+
 @media only screen and (max-height: 550px) {
   body.home .footer-banner {
     display: none;
@@ -1952,6 +2022,9 @@ body.blank .button:hover {
 }
 
 @media only screen and (max-width: 1110px) {
+  body.media_post footer.footer-banner {
+    bottom: 65px;
+  }
   .logo {
     max-width: 150px;
   }
@@ -2068,26 +2141,48 @@ body.blank .button:hover {
     line-height: 25px;
     margin-bottom: 15px;
   }
-  body.media_post footer.footer-banner {
-    bottom: 75px;
-  }
-  body.media_post .banner .button {
-    width: 100px;
-  }
 }
 
 @media only screen and (max-width: 780px) {
+  body.media_ nav .menu .logo {
+    max-width: 150px;
+    -webkit-transform: initial;
+            transform: initial;
+  }
+  body.media_ nav.fade-in .menu .logo {
+    -webkit-transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
+    background-image: url("/assets/esc_logo_colour.svg") !important;
+    -webkit-transform: translate(0, -35px) !important;
+            transform: translate(0, -35px) !important;
+  }
   body.media_ section {
     padding: 0;
   }
   body.media_ .featured {
     margin-top: 0;
   }
+  body.media_ .featured .featured-title {
+    padding: 10% 5%;
+  }
+  body.media_ .featured .featured-title h1 {
+    font-size: 35px;
+    line-height: 30px;
+  }
   body.media_ .main-content {
     padding: 0 5%;
   }
-  body.media_post {
-    overflow-x: hidden;
+  body.media_post nav .menu .logo {
+    max-width: 150px;
+    -webkit-transform: initial;
+            transform: initial;
+  }
+  body.media_post nav.fade-in .menu .logo {
+    -webkit-transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
+    background-image: url("/assets/esc_logo_colour.svg") !important;
+    -webkit-transform: translate(0, -35px) !important;
+            transform: translate(0, -35px) !important;
   }
   body.media_post .main-content {
     margin-top: 30px;
@@ -2195,8 +2290,10 @@ body.blank .button:hover {
     height: 180px;
     padding: 30px 5%;
   }
-  .logo {
+  nav.menu .logo {
     width: 45%;
+    -webkit-transform: initial;
+            transform: initial;
   }
   .menu-items {
     width: 50%;
