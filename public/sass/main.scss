@@ -1052,13 +1052,21 @@ body.media_post{
           font-size: 25px;
           line-height: 25px;
           font-family: 'FSSinclairMedium', Sans-Serif;
-          
+          text-decoration: none;
+          display: inline;
+          box-shadow: 
+            0 -1px 0 0 white inset, 
+            0 -2px 0 0 transparent inset ;  
+            
+          transition: all .3s ease-in;
+         
         }
       }
 
-
-
       }
+
+
+
 
       .post-container:hover{
           transition:all 0.3s ease-in;
@@ -1074,7 +1082,11 @@ body.media_post{
           background-size: 110%;
 
         }
-
+  
+          h3 {
+            transition: all .3s ease-out;
+            box-shadow:  0 -1px 0 0 white inset, 0 -4px 0 0 $purple inset ;
+          }
 
       }
 
