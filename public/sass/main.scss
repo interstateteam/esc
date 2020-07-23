@@ -49,6 +49,7 @@ $dark-blue:#182733;
 $white:#fff;
 $black: #000;
 $grey: #F8F8F9;
+$dark-grey: #eeeeee;
 
 
 html {
@@ -978,6 +979,17 @@ body.media_post{
     .featured{
       background-color: $grey;
       margin-top:50px;
+      transition: all 0.3s ease-out;
+
+      .featured-image{
+        position: relative;
+        width:100%;
+        padding-bottom: 51.72%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+        transition: all 0.3s ease-out;
+      }
 
       .featured-title{
         padding:10%;
@@ -993,20 +1005,39 @@ body.media_post{
     }
 
 
+    .featured:hover{
+      background-color: $dark-grey;
+      transition: all 0.3s ease-in;
+
+        .featured-image{
+          position: relative;
+          width:100%;
+          padding-bottom: 51.72%;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 110%;
+      }
+   
+      }
+
+
     .main-content{
   
 
       padding-bottom: 100px;
 
-    h2{
-        text-transform:uppercase;
-        color:$purple!important;
-        font-family: 'FSSinclairBold', Sans-Serif;
-        font-size: 20px;
-        margin-bottom:40px;
-      }
-      
-      .wrapper{
+      .post-container{
+        .image{
+          position: relative;
+          width:100%;
+          padding-bottom: 51.72%;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 100%;
+          transition:all 0.3s ease-out;
+        }
+
+        .wrapper{
 
         display:block;
         margin-bottom: 40px;
@@ -1024,6 +1055,40 @@ body.media_post{
           
         }
       }
+
+
+
+      }
+
+      .post-container:hover{
+          transition:all 0.3s ease-in;
+          display: block;
+          cursor:pointer;
+
+        .image{
+          position: relative;
+          width:100%;
+          padding-bottom: 51.72%;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 110%;
+
+        }
+
+
+      }
+
+
+
+    h2{
+        text-transform:uppercase;
+        color:$purple!important;
+        font-family: 'FSSinclairBold', Sans-Serif;
+        font-size: 20px;
+        margin-bottom:40px;
+      }
+      
+ 
 
 
 
