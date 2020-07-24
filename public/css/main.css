@@ -73,6 +73,10 @@ b {
   margin-right: 10px;
 }
 
+.caption span {
+  display: block;
+}
+
 .spacer {
   width: 100%;
   height: 235px;
