@@ -88,6 +88,20 @@ b{
     font-family: 'FSSinclairBold', Sans-Serif!important;
 }
 
+.question{
+    font-family: 'FSSinclairMedium', Sans-Serif!important;
+}
+
+.question:before{  
+  content:'Q';
+  font-family: 'FSSinclairBold', Sans-Serif!important;
+  font-size:65px;
+  line-height: 50px;
+  float:left;
+  margin-right:10px;
+}
+
+
 // SPACER //
 
 .spacer{
