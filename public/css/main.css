@@ -228,6 +228,7 @@ nav.fade-in .menu li a {
   font-size: 12px;
   font-family: "FSSinclairBold", Sans-Serif !important;
   color: #fff !important;
+  margin-bottom: 0 !important;
 }
 
 .media-banner a {
