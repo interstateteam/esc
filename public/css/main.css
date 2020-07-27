@@ -854,8 +854,8 @@ body.media_ .featured .featured-title h1 {
 }
 
 body.media_ .featured .featured-title p {
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 18px !important;
+  line-height: 25px !important;
 }
 
 body.media_ .featured:hover {
