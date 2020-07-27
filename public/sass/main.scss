@@ -760,8 +760,8 @@ body.media_post{
 
   h1{
     font-family: 'FSSinclairMedium', Sans-Serif;
-    font-size:40px;
-    line-height:40px;
+        font-size: 50px;
+    line-height: 45px;
     margin:20px 0 30px 0;
   }
 
@@ -1014,7 +1014,7 @@ body.media_post{
       }
 
       .featured-title{
-        padding: 5% 5% 5% 10%;
+        padding: 5% 0% 5% 10%;
         display: block;
           h1{
             font-family: 'FSSinclairMedium', Sans-Serif;
@@ -2183,7 +2183,7 @@ body.blank{
     .sticky-container{
       h1{
         font-size:35px;
-        line-height: 30px;;
+        line-height: 30px;
       }
     }
 
@@ -2897,7 +2897,7 @@ body.media_{
       margin-top:0;
 
         .featured-title{
-          padding:10% 5%;
+          padding:5%;
           h1{
              font-size:25px;
             line-height:25px;
