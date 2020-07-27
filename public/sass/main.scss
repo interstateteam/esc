@@ -2834,9 +2834,44 @@ body.mission{
 
 
 }
+@media only screen and (min-width: 770px) and (max-width: 800px) {
+body.media_{
+    nav{
+      height:200px;
+    }
 
+    .featured{
+      padding:5%;
+    }
+  }
 
+}
 
+@media only screen and (max-width: 1020px) {
+
+body.media_{
+
+  .featured{
+
+    .featured-image{
+      margin-top:10%;
+    }
+    .featured-title{
+      padding: 5% 5% 5% 10%;
+
+      h1{
+        font-size:25px;
+        line-height:25px;
+      }
+    }
+  }
+
+  .is-vcentered{
+    align-items: flex-start!important;
+  }
+}
+
+}
 
 /////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
 /////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
@@ -2852,6 +2887,11 @@ body.mission{
 @media only screen and (max-width: 780px) {
 
   body.media_{
+
+    nav{
+      height: 120px;
+    }
+
     section{padding:0;}
 
     .featured{
@@ -2860,8 +2900,8 @@ body.mission{
         .featured-title{
           padding:10% 5%;
           h1{
-            font-size:35px;
-            line-height:30px;
+             font-size:25px;
+            line-height:25px;
           }
       }
 

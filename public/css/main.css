@@ -2136,7 +2136,35 @@ body.blank .button:hover {
   }
 }
 
+@media only screen and (min-width: 770px) and (max-width: 800px) {
+  body.media_ nav {
+    height: 200px;
+  }
+  body.media_ .featured {
+    padding: 5%;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  body.media_ .featured .featured-image {
+    margin-top: 10%;
+  }
+  body.media_ .featured .featured-title {
+    padding: 5% 5% 5% 10%;
+  }
+  body.media_ .featured .featured-title h1 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  body.media_ .is-vcentered {
+    align-items: flex-start !important;
+  }
+}
+
 @media only screen and (max-width: 780px) {
+  body.media_ nav {
+    height: 120px;
+  }
   body.media_ section {
     padding: 0;
   }
@@ -2147,8 +2175,8 @@ body.blank .button:hover {
     padding: 10% 5%;
   }
   body.media_ .featured .featured-title h1 {
-    font-size: 35px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 25px;
   }
   body.media_ .main-content {
     padding: 0 5%;
