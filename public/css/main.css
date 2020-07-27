@@ -842,7 +842,7 @@ body.media_ .featured .featured-image {
 }
 
 body.media_ .featured .featured-title {
-  padding: 10% 20% 10% 10%;
+  padding: 5% 5% 5% 10%;
   display: block;
 }
 
@@ -2148,9 +2148,6 @@ body.blank .button:hover {
 @media only screen and (max-width: 1020px) {
   body.media_ .featured .featured-image {
     margin-top: 10%;
-  }
-  body.media_ .featured .featured-title {
-    padding: 5% 5% 5% 10%;
   }
   body.media_ .featured .featured-title h1 {
     font-size: 25px;
