@@ -1762,6 +1762,24 @@ body.blank .button:hover {
   transition: all 0.3s ease-in;
 }
 
+@media only screen and (min-width: 1024px) {
+  body.media_ .container {
+    max-width: initial !important;
+  }
+}
+
+@media only screen and (min-width: 1216px) {
+  body.media_ .container {
+    max-width: 1152px !important;
+  }
+}
+
+@media only screen and (min-width: 1408px) {
+  body.media_ .container {
+    max-width: 1344px !important;
+  }
+}
+
 @media only screen and (max-height: 760px) {
   body.media_post .sticky-container h1 {
     font-size: 35px;
