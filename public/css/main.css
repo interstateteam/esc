@@ -799,7 +799,7 @@ body.media_post .article a {
 body.media_ .date {
   color: #7364FF;
   font-family: 'FSSinclairBold', Sans-Serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 body.media_ .image-container {
@@ -842,15 +842,20 @@ body.media_ .featured .featured-image {
 }
 
 body.media_ .featured .featured-title {
-  padding: 10%;
+  padding: 10% 20% 10% 10%;
   display: block;
 }
 
 body.media_ .featured .featured-title h1 {
   font-family: 'FSSinclairMedium', Sans-Serif;
-  font-size: 50px;
-  line-height: 45px;
+  font-size: 40px;
+  line-height: 40px;
   margin: 20px 0 30px 0;
+}
+
+body.media_ .featured .featured-title p {
+  font-size: 18px;
+  line-height: 18px;
 }
 
 body.media_ .featured:hover {
