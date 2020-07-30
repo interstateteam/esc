@@ -796,6 +796,22 @@ body.media_post .article a {
   font-family: "FSSinclairMedium", Sans-Serif !important;
 }
 
+body.media_post .article .video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  margin: 2rem 0;
+}
+
+body.media_post .article .video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 body.media_ .date {
   color: #7364FF;
   font-family: 'FSSinclairBold', Sans-Serif;
