@@ -2337,9 +2337,6 @@ nav {
 /////////////////////\\\\\\\\\\\\\\\\\\\\////////           1215              ////////////////////////\\\\\\\\\\\\\\\/////////////////
 /////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
 
-
-
-
 @media only screen and (max-width: 1215px) {
 
 nav.menu{
@@ -2470,13 +2467,6 @@ body.about{
     text-decoration: underline;
     margin-bottom:30px;
   }
-
-
-  // .button{
-  //   width:100%;
-  // }
-
-
   .required{
     color:red!important;
     display:block!important;
@@ -2490,20 +2480,15 @@ body.about{
   span.required{
     background-color:red;
   }
-
-
  }
 
-
-
-
 body.mission{
-
   .introduction{
-      margin-top: 15%;
+    margin-top: 15%;
   }
-
-  section{padding:5%!important;}
+  section{
+    padding:5%!important;
+  }
 
 }
 
@@ -2515,10 +2500,6 @@ body.mission{
 /////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
 /////////////////////\\\\\\\\\\\\\\\\\\\\////////           1110               ////////////////////////\\\\\\\\\\\\\\\/////////////////
 /////////////////////\\\\\\\\\\\\\\\\\\\\//////////////////\\\\\\\\\\\\\\\\\\\\\\////////////////////////\\\\\\\\\\\\\\\/////////////////
-
-
-
-
 
 @media only screen and (max-width: 1110px) {
 
@@ -2546,9 +2527,6 @@ body.home{
   padding:5px 5%;
 }
 
-
-
-
 }
   footer.footer-banner{
   height:50px;
@@ -2565,11 +2543,6 @@ body.home{
 }
 
 body.mission{
-
-
-
-
-
 
   nav.menu{
     background:transparent!important;
@@ -2632,24 +2605,15 @@ body.mission{
   &_3 h3{
     transform:rotate(-90deg) translate(-60px, -15px);
   }
-
-
     &_4 h3{
     transform:rotate(-90deg) translate(-110px, -70px);
   }
-
-
 }
 
-
-
-
   .global-goals {
-
     .title{
       max-width: 90%;
     }
-
 
   h2{
     font-size:35px;
@@ -2669,31 +2633,18 @@ body.mission{
       p{
       margin-bottom: 0!important;
     }
-    
-
 }
-
-
-
-
   }
 
-
   .purple_section {
-
- 
-
     h2{
       font-size:35px;
       line-height:30px;
        margin-bottom:15px;
     }
-
-
   }
 
   .ssa{
-
     .divider{
       height:0;
     }
@@ -2702,17 +2653,14 @@ body.mission{
     p{
      margin-bottom:15px!important;
     }
-
     h2{
       font-size:35px;
       line-height:30px;
        margin-bottom:15px;
     }
-
   }
 
   .contact{
-
     h2{
       font-size:35px;
       line-height:30px;
@@ -2723,18 +2671,9 @@ body.mission{
       font-size:25px;
       line-height:25px;
        margin-bottom:15px;
-  }
-
-
-  }
-
-  
+    }
+  }  
 }
-
-
-
-
-
 
 }
 @media only screen and (min-width: 770px) and (max-width: 800px) {
@@ -2742,7 +2681,6 @@ body.media_{
     nav{
       height:200px;
     }
-
     .featured{
       padding:5%;
     }
@@ -2751,23 +2689,18 @@ body.media_{
 }
 
 @media only screen and (max-width: 1020px) {
-
 body.media_{
-
   .featured{
-
     .featured-image{
       margin-top:10%;
     }
     .featured-title{
-
       h1{
         font-size:25px;
         line-height:25px;
       }
     }
   }
-
   .is-vcentered{
     align-items: flex-start!important;
   }
