@@ -636,8 +636,8 @@ body.media_post .date {
 
 body.media_post h1 {
   font-family: 'FSSinclairMedium', Sans-Serif;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 50px;
+  line-height: 45px;
   margin: 20px 0 30px 0;
 }
 
@@ -796,6 +796,22 @@ body.media_post .article a {
   font-family: "FSSinclairMedium", Sans-Serif !important;
 }
 
+body.media_post .article .video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  margin: 2rem 0;
+}
+
+body.media_post .article .video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 body.media_ .date {
   color: #7364FF;
   font-family: 'FSSinclairBold', Sans-Serif;
@@ -842,15 +858,22 @@ body.media_ .featured .featured-image {
 }
 
 body.media_ .featured .featured-title {
-  padding: 5% 5% 5% 10%;
+  padding: 5% 0% 5% 10%;
   display: block;
 }
 
 body.media_ .featured .featured-title h1 {
   font-family: 'FSSinclairMedium', Sans-Serif;
   font-size: 40px;
-  line-height: 40px;
+  line-height: 42px;
   margin: 20px 0 30px 0;
+  background-size: 0px 3px;
+  background-position: 0px 90%;
+  transition: background-size 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #7364FF 0%, #7364FF 100%);
+  overflow: visible;
+  display: inline;
 }
 
 body.media_ .featured .featured-title p {
@@ -870,6 +893,10 @@ body.media_ .featured:hover .featured-image {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 110%;
+}
+
+body.media_ .featured:hover .featured-title h1 {
+  background-size: 100% 3px;
 }
 
 body.media_ .main-content {
@@ -903,7 +930,12 @@ body.media_ .main-content .post-container .wrapper h3 {
   font-family: 'FSSinclairMedium', Sans-Serif;
   text-decoration: none;
   display: inline;
-  box-shadow: 0 -1px 0 0 white inset,  0 -2px 0 0 transparent inset;
+  background-size: 0px 3px;
+  background-position: 0px 90%;
+  transition: background-size 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #7364FF 0%, #7364FF 100%);
+  overflow: visible;
   transition: all .3s ease-in;
 }
 
@@ -923,8 +955,7 @@ body.media_ .main-content .post-container:hover .image {
 }
 
 body.media_ .main-content .post-container:hover h3 {
-  transition: all .3s ease-out;
-  box-shadow: 0 -1px 0 0 white inset, 0 -4px 0 0 #7364FF inset;
+  background-size: 100% 3px;
 }
 
 body.media_ .main-content h2 {
@@ -2168,8 +2199,11 @@ body.blank .button:hover {
   body.media_ .featured {
     margin-top: 0;
   }
+  body.media_ .featured .featured-image {
+    margin-top: 0;
+  }
   body.media_ .featured .featured-title {
-    padding: 10% 5%;
+    padding: 5%;
   }
   body.media_ .featured .featured-title h1 {
     font-size: 25px;
