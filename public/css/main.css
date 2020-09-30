@@ -229,6 +229,10 @@ nav.fade-in .menu li a {
   font-family: "FSSinclairBold", Sans-Serif !important;
   color: #fff !important;
   margin-bottom: 0 !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 70%;
 }
 
 .media-banner a {
