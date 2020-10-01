@@ -236,18 +236,19 @@ background-color: white;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width:70%;
-
-
+    width:80%;
   }
 
   a{
-    float:right;
-    text-align: right;
     line-height:45px;
     color:$white;
     text-decoration: underline;
     font-family: 'FSSinclairBold', Sans-Serif;
+  }
+
+  a.read-latest{
+    float:right;
+    text-align: right;
   }
 
   a:hover{
