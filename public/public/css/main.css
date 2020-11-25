@@ -3211,7 +3211,7 @@ body.qa .section6 {
 
 @media screen and (max-width: 1040px) {
   body.qa .section6 {
-    padding: 50px 0 200px 0;
+    padding: 50px 0 300px 0;
   }
   body.qa .section6 .container {
     padding: 0 5%;
@@ -3221,7 +3221,7 @@ body.qa .section6 {
 @media screen and (max-width: 990px) {
   body.qa .section6 {
     margin-top: 0;
-    padding: 50px 0 100px 0;
+    padding: 50px 0 200px 0;
   }
 }
 
