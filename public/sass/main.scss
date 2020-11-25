@@ -3848,16 +3848,16 @@ body.qa{
 
   .section6{
     margin-top:-10%;
-    padding: 0 0 100px 0;
-    @media screen and (max-width: 990px) {
-      margin-top:0;
-      padding:50px 0;
-    }
-
+    padding: 0 0 400px 0;
     @media screen and (max-width: 1040px) {
+      padding:50px 0 200px 0;
       .container{
         padding:0 5%;
       }
+    }
+    @media screen and (max-width: 990px) {
+      margin-top:0;
+      padding:50px 0 100px 0;
     }
 
     // @media screen and (min-width: 1440px) {

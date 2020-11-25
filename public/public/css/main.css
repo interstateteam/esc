@@ -3206,19 +3206,22 @@ body.qa .section5 .answer-block span, body.qa .section7 .answer-block span {
 
 body.qa .section6 {
   margin-top: -10%;
-  padding: 0 0 100px 0;
+  padding: 0 0 400px 0;
+}
+
+@media screen and (max-width: 1040px) {
+  body.qa .section6 {
+    padding: 50px 0 200px 0;
+  }
+  body.qa .section6 .container {
+    padding: 0 5%;
+  }
 }
 
 @media screen and (max-width: 990px) {
   body.qa .section6 {
     margin-top: 0;
-    padding: 50px 0;
-  }
-}
-
-@media screen and (max-width: 1040px) {
-  body.qa .section6 .container {
-    padding: 0 5%;
+    padding: 50px 0 100px 0;
   }
 }
 
