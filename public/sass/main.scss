@@ -4073,6 +4073,52 @@ padding:200px 0!important;
 
 
 
+.quote-image{
+  position:relative;
+  margin-top:100px;
+
+  blockquote{
+    position: absolute;
+    right: -10%;
+    top:-80px;
+    max-width:55%;
+    quotes:none!important;
+
+    @media screen and (max-width:990px) {
+
+          max-width:initial;
+          right:initial;
+          top:-80px;
+    }
+  }
+
+  blockquote:before{
+    content: ''!important;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background: url(/assets/quote_blue.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform:translate(0, 2px) rotate(180deg) scaleX(-1);
+    margin-right:3px;
+  }
+
+  blockquote:after {
+    content: ''!important;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background: url(/assets/quote_blue.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: translate(0, 2px) rotate(180deg);
+    margin-left:5px;
+}
+
+}
+
+
 
 
 
