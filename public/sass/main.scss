@@ -3916,6 +3916,9 @@ body.qa{
       font-size:22px;
       line-height:25px;
     }
+    p.white{
+      color:white!important;
+    }
     p:last-child{
       margin-bottom:0!important;
     }
@@ -4028,6 +4031,24 @@ body.qa{
 
 }
 
+
+
+
+.qa_purple-section{
+  padding:200px 5%!important; 
+  background: #7364FF;
+  @media screen  and (max-width:700px){
+    padding:50px 5%!important;
+  }
+}
+
+.qa-section5{
+padding:200px 0!important;
+
+@media screen  and (max-width:700px){
+  padding:50px 0 150px 0!important;
+}
+}
 
 @import "../../node_modules/bulma/bulma.sass";
 

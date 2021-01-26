@@ -3280,6 +3280,10 @@ body.qa .answer-block p {
   line-height: 25px;
 }
 
+body.qa .answer-block p.white {
+  color: white !important;
+}
+
 body.qa .answer-block p:last-child {
   margin-bottom: 0 !important;
 }
@@ -3395,6 +3399,27 @@ body.qa .push-down-block {
 @media screen and (max-width: 990px) {
   body.qa .push-down-block {
     margin-top: 150px;
+  }
+}
+
+.qa_purple-section {
+  padding: 200px 5% !important;
+  background: #7364FF;
+}
+
+@media screen and (max-width: 700px) {
+  .qa_purple-section {
+    padding: 50px 5% !important;
+  }
+}
+
+.qa-section5 {
+  padding: 200px 0 !important;
+}
+
+@media screen and (max-width: 700px) {
+  .qa-section5 {
+    padding: 50px 0 150px 0 !important;
   }
 }
 
