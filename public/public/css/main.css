@@ -2830,7 +2830,7 @@ body.qa section {
   padding: 0;
 }
 
-body.qa .qa_hero {
+body.qa .qa_hero, body.qa .qa_hero2 {
   height: 100%;
   width: 100%;
   min-height: calc(100vh - 290px);
@@ -2855,13 +2855,13 @@ body.qa .qa_hero {
 }
 
 @media screen and (max-width: 990px) {
-  body.qa .qa_hero {
+  body.qa .qa_hero, body.qa .qa_hero2 {
     min-height: calc(100vh - 250px);
   }
 }
 
 @media screen and (max-width: 990px) {
-  body.qa .qa_hero {
+  body.qa .qa_hero, body.qa .qa_hero2 {
     background: url("/assets/esc_q&a_hero-mobile.jpg");
     background-position: top center;
     background-repeat: no-repeat;
@@ -2869,7 +2869,7 @@ body.qa .qa_hero {
   }
 }
 
-body.qa .qa_hero h1 {
+body.qa .qa_hero h1, body.qa .qa_hero2 h1 {
   font-size: 130px;
   font-family: 'FSSinclairMedium';
   line-height: 130px;
@@ -2878,13 +2878,13 @@ body.qa .qa_hero h1 {
 }
 
 @media screen and (max-width: 990px) {
-  body.qa .qa_hero h1 {
+  body.qa .qa_hero h1, body.qa .qa_hero2 h1 {
     font-size: 50px;
     line-height: 50px;
   }
 }
 
-body.qa .qa_hero h2 {
+body.qa .qa_hero h2, body.qa .qa_hero2 h2 {
   font-family: 'FSSinclairRegular';
   font-size: 40px;
   line-height: 40px;
@@ -2892,20 +2892,20 @@ body.qa .qa_hero h2 {
 }
 
 @media screen and (max-width: 990px) {
-  body.qa .qa_hero h2 {
+  body.qa .qa_hero h2, body.qa .qa_hero2 h2 {
     font-size: 16px;
     line-height: 20px;
   }
 }
 
-body.qa .qa_hero span {
+body.qa .qa_hero span, body.qa .qa_hero2 span {
   color: white !important;
   font-size: 18px;
   margin-top: 50px;
   display: inline-block;
 }
 
-body.qa .qa_hero a {
+body.qa .qa_hero a, body.qa .qa_hero2 a {
   color: white;
   font-family: 'FSSinclairMedium';
   text-decoration: underline;
@@ -3404,7 +3404,11 @@ body.qa .push-down-block {
 
 .qa_purple-section {
   padding: 200px 5% !important;
-  background: #7364FF;
+  background-color: #7364FF;
+  background: url("/assets/background_purple.png") #7364FF;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 @media screen and (max-width: 700px) {
@@ -15770,5 +15774,21 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
+}
+
+.qa_hero2 {
+  background: url("/assets/esc_q&a_hero-desktop260121.png") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@media screen and (max-width: 990px) {
+  .qa_hero2 {
+    background: url("/assets/esc_q&a_hero-desktop260121.png");
+    background-position: top center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 /*# sourceMappingURL=main.css.map */
