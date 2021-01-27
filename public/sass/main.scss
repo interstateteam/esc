@@ -4096,11 +4096,11 @@ padding:200px 0!important;
     content: ''!important;
     display: inline-block;
     width: 30px;
-    height: 20px;
-    background: url(/assets/quote_blue.svg);
+    height: 22px;
+    background: url(/assets/quote_blue.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    transform:translate(0, 2px) rotate(180deg) scaleX(-1);
+    transform:translate(0, 2px);
     margin-right:3px;
   }
 
@@ -4108,11 +4108,11 @@ padding:200px 0!important;
     content: ''!important;
     display: inline-block;
     width: 30px;
-    height: 20px;
-    background: url(/assets/quote_blue.svg);
+    height: 22px;
+    background: url(/assets/quote_blue.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    transform: translate(0, 2px) rotate(180deg);
+    transform: translate(0, 2px)  scaleX(-1);
     margin-left:5px;
 }
 
