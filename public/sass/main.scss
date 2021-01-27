@@ -4106,16 +4106,15 @@ padding:200px 0!important;
     background: url(/assets/quote_blue.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    transform:translate(0, 2px);
-    margin-right:3px;
+    transform:translate(0, 0);
   }
 
   blockquote:after, blockquote.purple:after {
     content: ''!important;
     display: inline-block;
     width: 30px;
-    height: 22px;
-    background: url(/assets/quote_purple.svg);
+    height: 25px;
+    background: url(/assets/quote_blue.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     transform: translate(0, 2px)  scaleX(-1);
@@ -4124,12 +4123,20 @@ padding:200px 0!important;
 
 
 
-blockquote.purple:after, blockquote.purple:before {
+blockquote.purple:before {
   content: ''!important;
   background: url(/assets/quote_purple.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
+blockquote.purple:after {
+  content: ''!important;
+  background: url(/assets/quote_purple.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 
 
 }

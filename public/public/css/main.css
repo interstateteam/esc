@@ -15825,17 +15825,16 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background: url(/assets/quote_blue.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  -webkit-transform: translate(0, 2px);
-          transform: translate(0, 2px);
-  margin-right: 3px;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .quote-image blockquote:after, .quote-image blockquote.purple:after {
   content: "" !important;
   display: inline-block;
   width: 30px;
-  height: 22px;
-  background: url(/assets/quote_purple.svg);
+  height: 25px;
+  background: url(/assets/quote_blue.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   -webkit-transform: translate(0, 2px) scaleX(-1);
@@ -15843,7 +15842,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-left: 5px;
 }
 
-.quote-image blockquote.purple:after, .quote-image blockquote.purple:before {
+.quote-image blockquote.purple:before {
+  content: "" !important;
+  background: url(/assets/quote_purple.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.quote-image blockquote.purple:after {
   content: "" !important;
   background: url(/assets/quote_purple.svg);
   background-repeat: no-repeat;
