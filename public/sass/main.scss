@@ -4073,11 +4073,13 @@ padding:200px 0!important;
 
 
 
+
+
 .quote-image{
   position:relative;
   margin-top:100px;
 
-  blockquote{
+  blockquote, blockquote.purple{
     position: absolute;
     right: -50px;
     top:-80px;
@@ -4092,29 +4094,43 @@ padding:200px 0!important;
     }
   }
 
-  blockquote:before{
+  blockquote.purple{
+    color:#7364FF!important;
+  }
+
+  blockquote:before, blockquote.purple:before{
     content: ''!important;
     display: inline-block;
     width: 30px;
     height: 22px;
-    background: url(/assets/quote_blue.png);
+    background: url(/assets/quote_blue.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     transform:translate(0, 2px);
     margin-right:3px;
   }
 
-  blockquote:after {
+  blockquote:after, blockquote.purple:after {
     content: ''!important;
     display: inline-block;
     width: 30px;
     height: 22px;
-    background: url(/assets/quote_blue.png);
+    background: url(/assets/quote_purple.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     transform: translate(0, 2px)  scaleX(-1);
     margin-left:5px;
 }
+
+
+
+blockquote.purple:after, blockquote.purple:before {
+  content: ''!important;
+  background: url(/assets/quote_purple.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 
 }
 

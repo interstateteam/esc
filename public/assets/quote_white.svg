@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>eSC_Quote_Marks_Thin_Blue</title>
-    <g id="eSC_Quote_Marks_Thin_Blue" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-        <g id="Quote-Mark-1" transform="translate(19.500000, 20.000000) scale(-1, 1) rotate(-180.000000) translate(-19.500000, -20.000000) translate(4.000000, 9.000000)" stroke="#142832">
+    <title>eSC_Quote_Marks_Thin_White</title>
+    <g id="eSC_Quote_Marks_Thin_White" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Quote-Mark-1" transform="translate(19.500000, 20.000000) scale(-1, 1) rotate(-180.000000) translate(-19.500000, -20.000000) translate(4.000000, 9.000000)" stroke="#FFFFFF">
             <line x1="13.18174" y1="0.614965879" x2="13.18174" y2="21.6149659" id="Stroke-1"></line>
             <line x1="9.93174" y1="2.61496588" x2="9.93174" y2="21.6149659" id="Stroke-3"></line>
             <line x1="6.93174" y1="4.61496588" x2="6.93174" y2="21.6149659" id="Stroke-5"></line>
