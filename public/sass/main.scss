@@ -4073,6 +4073,7 @@ padding:200px 0!important;
 
 .quote-image{
   position:relative;
+  margin:50px 0;
   blockquote.text_align_right{
     position: absolute;
     right: -50px;
@@ -4092,16 +4093,23 @@ padding:200px 0!important;
     position: absolute;
     left: 0;
     top:0;
-    max-width:55%;
+    max-width:60%;
     quotes:none!important;
     margin:0!important;
 
-    @media screen and (max-width:990px) {
+    @media screen and (max-width:1216px) {
 
           max-width:initial;
           right:initial;
-          top:-80px;
+          top:0;
     }
+
+    @media screen and (max-width:990px) {
+
+      position:relative;
+}
+
+
   }
 
 

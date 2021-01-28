@@ -3445,6 +3445,7 @@ body.qa .push-down-block {
 
 .quote-image {
   position: relative;
+  margin: 50px 0;
 }
 
 .quote-image blockquote.text_align_right {
@@ -3467,16 +3468,22 @@ body.qa .push-down-block {
   position: absolute;
   left: 0;
   top: 0;
-  max-width: 55%;
+  max-width: 60%;
   quotes: none !important;
   margin: 0 !important;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1216px) {
   .quote-image blockquote.text_align_left {
     max-width: initial;
     right: initial;
-    top: -80px;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .quote-image blockquote.text_align_left {
+    position: relative;
   }
 }
 
