@@ -4140,10 +4140,11 @@ padding:200px 0!important;
     display: inline-block;
     width: 30px;
     height: 25px;
+    position: absolute;
     background: url(/assets/quote_blue.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    transform: translate(0, 2px)  scaleX(-1);
+    transform: translate(0, -2px)  scaleX(-1);
 }
 
 
@@ -4163,10 +4164,11 @@ padding:200px 0!important;
   display: inline-block;
   width: 30px;
   height: 25px;
+  position: absolute;
   background: url(/assets/quote_purple.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  transform: translate(0, 2px)  scaleX(-1);
+  transform: translate(0, -2px)  scaleX(-1);
 }
 
 .color_orange:before{
@@ -4186,10 +4188,11 @@ padding:200px 0!important;
   display: inline-block;
   width: 30px;
   height: 25px;
+  position: absolute;
   background: url(/assets/quote_orange.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  transform: translate(0, 2px)  scaleX(-1);
+  transform: translate(0, -2px)  scaleX(-1);
 }
 
 .color_white:before{
@@ -4209,10 +4212,11 @@ padding:200px 0!important;
   display: inline-block;
   width: 30px;
   height: 25px;
+  position: absolute;
   background: url(/assets/quote_white.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  transform: translate(0, 2px)  scaleX(-1);
+  transform: translate(0, -2px)  scaleX(-1);
 }
 
 

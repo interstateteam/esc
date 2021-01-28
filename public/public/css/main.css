@@ -3512,11 +3512,12 @@ body.qa .push-down-block {
   display: inline-block;
   width: 30px;
   height: 25px;
+  position: absolute;
   background: url(/assets/quote_blue.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  -webkit-transform: translate(0, 2px) scaleX(-1);
-          transform: translate(0, 2px) scaleX(-1);
+  -webkit-transform: translate(0, -2px) scaleX(-1);
+          transform: translate(0, -2px) scaleX(-1);
 }
 
 .quote-image .color_purple:before {
@@ -3536,11 +3537,12 @@ body.qa .push-down-block {
   display: inline-block;
   width: 30px;
   height: 25px;
+  position: absolute;
   background: url(/assets/quote_purple.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  -webkit-transform: translate(0, 2px) scaleX(-1);
-          transform: translate(0, 2px) scaleX(-1);
+  -webkit-transform: translate(0, -2px) scaleX(-1);
+          transform: translate(0, -2px) scaleX(-1);
 }
 
 .quote-image .color_orange:before {
@@ -3560,11 +3562,12 @@ body.qa .push-down-block {
   display: inline-block;
   width: 30px;
   height: 25px;
+  position: absolute;
   background: url(/assets/quote_orange.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  -webkit-transform: translate(0, 2px) scaleX(-1);
-          transform: translate(0, 2px) scaleX(-1);
+  -webkit-transform: translate(0, -2px) scaleX(-1);
+          transform: translate(0, -2px) scaleX(-1);
 }
 
 .quote-image .color_white:before {
@@ -3584,11 +3587,12 @@ body.qa .push-down-block {
   display: inline-block;
   width: 30px;
   height: 25px;
+  position: absolute;
   background: url(/assets/quote_white.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  -webkit-transform: translate(0, 2px) scaleX(-1);
-          transform: translate(0, 2px) scaleX(-1);
+  -webkit-transform: translate(0, -2px) scaleX(-1);
+          transform: translate(0, -2px) scaleX(-1);
 }
 
 .right_quote {
