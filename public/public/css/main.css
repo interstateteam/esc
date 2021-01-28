@@ -3427,6 +3427,164 @@ body.qa .push-down-block {
   }
 }
 
+.qa_hero2 {
+  background: url("/assets/esc_q&a_hero-desktop260121.jpg") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@media screen and (max-width: 990px) {
+  .qa_hero2 {
+    background: url("/assets/esc_q&a_hero-desktop260121.jpg");
+    background-position: top center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.quote-image {
+  position: relative;
+  margin-top: 100px;
+}
+
+.quote-image blockquote.text_align_right {
+  position: absolute;
+  right: -50px;
+  top: -80px;
+  max-width: 55%;
+  quotes: none !important;
+}
+
+@media screen and (max-width: 990px) {
+  .quote-image blockquote.text_align_right {
+    max-width: initial;
+    right: initial;
+    top: -80px;
+  }
+}
+
+.quote-image blockquote.text_align_left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 55%;
+  quotes: none !important;
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 990px) {
+  .quote-image blockquote.text_align_left {
+    max-width: initial;
+    right: initial;
+    top: -80px;
+  }
+}
+
+.quote-image .color_purple {
+  color: #7364FF !important;
+}
+
+.quote-image .color_white {
+  color: #fff !important;
+}
+
+.quote-image .color_blue:before {
+  content: "" !important;
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  background: url(/assets/quote_blue.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.quote-image .color_blue:after {
+  content: "" !important;
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background: url(/assets/quote_blue.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transform: translate(0, 2px) scaleX(-1);
+          transform: translate(0, 2px) scaleX(-1);
+}
+
+.quote-image .color_purple:before {
+  content: "" !important;
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  background: url(/assets/quote_purple.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.quote-image .color_purple:after {
+  content: "" !important;
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background: url(/assets/quote_purple.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transform: translate(0, 2px) scaleX(-1);
+          transform: translate(0, 2px) scaleX(-1);
+}
+
+.quote-image .color_orange:before {
+  content: "" !important;
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  background: url(/assets/quote_orange.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.quote-image .color_orange:after {
+  content: "" !important;
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background: url(/assets/quote_orange.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transform: translate(0, 2px) scaleX(-1);
+          transform: translate(0, 2px) scaleX(-1);
+}
+
+.quote-image .color_white:before {
+  content: "" !important;
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  background: url(/assets/quote_white.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.quote-image .color_white:after {
+  content: "" !important;
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background: url(/assets/quote_white.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transform: translate(0, 2px) scaleX(-1);
+          transform: translate(0, 2px) scaleX(-1);
+}
+
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
@@ -15774,115 +15932,5 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
-}
-
-.qa_hero2 {
-  background: url("/assets/esc_q&a_hero-desktop260121.jpg") !important;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
-@media screen and (max-width: 990px) {
-  .qa_hero2 {
-    background: url("/assets/esc_q&a_hero-desktop260121.jpg");
-    background-position: top center !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.quote-image {
-  position: relative;
-  margin-top: 100px;
-}
-
-.quote-image blockquote, .quote-image blockquote.purple {
-  position: absolute;
-  right: -50px;
-  top: -80px;
-  max-width: 55%;
-  quotes: none !important;
-}
-
-@media screen and (max-width: 990px) {
-  .quote-image blockquote, .quote-image blockquote.purple {
-    max-width: initial;
-    right: initial;
-    top: -80px;
-  }
-}
-
-.quote-image blockquote.purple {
-  color: #7364FF !important;
-}
-
-.quote-image blockquote.left_orange {
-  position: absolute;
-  left: 0;
-  top: 0;
-  max-width: 55%;
-  quotes: none !important;
-  margin: 0 !important;
-}
-
-@media screen and (max-width: 990px) {
-  .quote-image blockquote.left_orange {
-    max-width: initial;
-    right: initial;
-    top: -80px;
-  }
-}
-
-.quote-image blockquote:before, .quote-image blockquote.purple:before, .quote-image blockquote.left_orange:before {
-  content: "" !important;
-  display: inline-block;
-  width: 30px;
-  height: 22px;
-  background: url(/assets/quote_blue.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-}
-
-.quote-image blockquote:after, .quote-image blockquote.purple:after, .quote-image blockquote.left_orange:after {
-  content: "" !important;
-  display: inline-block;
-  width: 30px;
-  height: 25px;
-  background: url(/assets/quote_blue.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  -webkit-transform: translate(0, 2px) scaleX(-1);
-          transform: translate(0, 2px) scaleX(-1);
-}
-
-.quote-image blockquote.purple:before {
-  content: "" !important;
-  background: url(/assets/quote_purple.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.quote-image blockquote.purple:after {
-  content: "" !important;
-  background: url(/assets/quote_purple.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.quote-image blockquote.left_orange:before {
-  content: "" !important;
-  background: url(/assets/quote_orange.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.quote-image blockquote.left_orange:after {
-  content: "" !important;
-  background: url(/assets/quote_orange.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 /*# sourceMappingURL=main.css.map */

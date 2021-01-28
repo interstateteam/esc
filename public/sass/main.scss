@@ -4055,7 +4055,6 @@ padding:200px 0!important;
 }
 }
 
-@import "../../node_modules/bulma/bulma.sass";
 
 
 .qa_hero2{
@@ -4077,7 +4076,7 @@ padding:200px 0!important;
   position:relative;
   margin-top:100px;
 
-  blockquote, blockquote.purple{
+  blockquote.text_align_right{
     position: absolute;
     right: -50px;
     top:-80px;
@@ -4092,11 +4091,7 @@ padding:200px 0!important;
     }
   }
 
-  blockquote.purple{
-    color:#7364FF!important;
-  }
-
-  blockquote.left_orange{
+  blockquote.text_align_left{
     position: absolute;
     left: 0;
     top:0;
@@ -4114,7 +4109,17 @@ padding:200px 0!important;
 
 
 
-  blockquote:before, blockquote.purple:before, blockquote.left_orange:before{
+  .color_purple{
+    color:#7364FF!important;
+  }
+
+
+  .color_white{
+    color:#fff!important;
+  }
+
+
+  .color_blue:before{
     content: ''!important;
     display: inline-block;
     width: 30px;
@@ -4125,7 +4130,7 @@ padding:200px 0!important;
     transform:translate(0, 0);
   }
 
-  blockquote:after, blockquote.purple:after, blockquote.left_orange:after {
+  .color_blue:after{
     content: ''!important;
     display: inline-block;
     width: 30px;
@@ -4138,34 +4143,79 @@ padding:200px 0!important;
 
 
 
-blockquote.purple:before {
+.color_purple:before {
   content: ''!important;
+  display: inline-block;
+  width: 30px;
+  height: 22px;
   background: url(/assets/quote_purple.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+  transform:translate(0, 0);
 }
 
-blockquote.purple:after {
+.color_purple:after {
   content: ''!important;
+  display: inline-block;
+  width: 30px;
+  height: 25px;
   background: url(/assets/quote_purple.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+  transform: translate(0, 2px)  scaleX(-1);
 }
 
-blockquote.left_orange:before{
+.color_orange:before{
   content: ''!important;
+  display: inline-block;
+  width: 30px;
+  height: 22px;
   background: url(/assets/quote_orange.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+  transform:translate(0, 0);
 }
 
 
-blockquote.left_orange:after{
+.color_orange:after{
   content: ''!important;
+  display: inline-block;
+  width: 30px;
+  height: 25px;
   background: url(/assets/quote_orange.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+  transform: translate(0, 2px)  scaleX(-1);
+}
+
+.color_white:before{
+  content: ''!important;
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  background: url(/assets/quote_white.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform:translate(0, 0);
 }
 
 
+.color_white:after{
+  content: ''!important;
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background: url(/assets/quote_white.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform: translate(0, 2px)  scaleX(-1);
 }
+
+
+
+
+}
+
+
+
+@import "../../node_modules/bulma/bulma.sass";
