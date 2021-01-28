@@ -15817,7 +15817,24 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #7364FF !important;
 }
 
-.quote-image blockquote:before, .quote-image blockquote.purple:before {
+.quote-image blockquote.left_orange {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 55%;
+  quotes: none !important;
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 990px) {
+  .quote-image blockquote.left_orange {
+    max-width: initial;
+    right: initial;
+    top: -80px;
+  }
+}
+
+.quote-image blockquote:before, .quote-image blockquote.purple:before, .quote-image blockquote.left_orange:before {
   content: "" !important;
   display: inline-block;
   width: 30px;
@@ -15829,7 +15846,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
           transform: translate(0, 0);
 }
 
-.quote-image blockquote:after, .quote-image blockquote.purple:after {
+.quote-image blockquote:after, .quote-image blockquote.purple:after, .quote-image blockquote.left_orange:after {
   content: "" !important;
   display: inline-block;
   width: 30px;
@@ -15839,7 +15856,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-size: 100%;
   -webkit-transform: translate(0, 2px) scaleX(-1);
           transform: translate(0, 2px) scaleX(-1);
-  margin-left: 5px;
 }
 
 .quote-image blockquote.purple:before {
@@ -15852,6 +15868,20 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .quote-image blockquote.purple:after {
   content: "" !important;
   background: url(/assets/quote_purple.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.quote-image blockquote.left_orange:before {
+  content: "" !important;
+  background: url(/assets/quote_orange.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.quote-image blockquote.left_orange:after {
+  content: "" !important;
+  background: url(/assets/quote_orange.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
