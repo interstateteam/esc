@@ -3445,7 +3445,6 @@ body.qa .push-down-block {
 
 .quote-image {
   position: relative;
-  margin-top: 100px;
 }
 
 .quote-image blockquote.text_align_right {
@@ -3583,6 +3582,10 @@ body.qa .push-down-block {
   background-size: 100%;
   -webkit-transform: translate(0, 2px) scaleX(-1);
           transform: translate(0, 2px) scaleX(-1);
+}
+
+.right_quote {
+  margin-top: 100px !important;
 }
 
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */

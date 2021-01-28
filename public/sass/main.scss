@@ -4071,11 +4071,8 @@ padding:200px 0!important;
   }
 }
 
-
 .quote-image{
   position:relative;
-  margin-top:100px;
-
   blockquote.text_align_right{
     position: absolute;
     right: -50px;
@@ -4140,7 +4137,6 @@ padding:200px 0!important;
     background-size: 100%;
     transform: translate(0, 2px)  scaleX(-1);
 }
-
 
 
 .color_purple:before {
@@ -4214,6 +4210,11 @@ padding:200px 0!important;
 
 
 
+}
+
+
+.right_quote{
+  margin-top:100px!important;
 }
 
 
