@@ -3681,7 +3681,7 @@ body.mmwf .pin-bottom-right {
   bottom: 0;
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1400px) {
   body.mmwf .pin-bottom-right {
     position: initial;
   }
@@ -3692,35 +3692,40 @@ body.mmwf .pin-bottom-left {
   bottom: 0;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1400px) {
   body.mmwf .pin-bottom-left {
     position: initial;
   }
 }
 
-body.mmwf blockquote {
+body.mmwf .quote {
   quotes: none;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 30px;
-  line-height: 35px;
   color: #182733;
   position: relative;
-  margin-bottom: 35px;
 }
 
-body.mmwf blockquote:before {
+body.mmwf .quote:before {
   content: "" !important;
   display: inline-block;
   width: 30px;
-  height: 22px;
+  height: 24px;
   left: -40px;
   position: absolute;
   background: url(/assets/quote_orange.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  -webkit-transform: translate(0, -1px);
+          transform: translate(0, -1px);
+}
+
+@media screen and (max-width: 780px) {
+  body.mmwf .quote:before {
+    left: -23px;
+    width: 23px;
+    height: 18px;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 body.mmwf section {
@@ -3790,7 +3795,7 @@ body.mmwf section span.chapterNo {
 body.mmwf .featured-section {
   background: #FA6400;
   min-height: 100vh;
-  padding: 170px 0 170px 0 !important;
+  padding: 100px 0 170px 0 !important;
 }
 
 body.mmwf .featured-section h1 {

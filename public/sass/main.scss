@@ -4319,7 +4319,7 @@ span.anchor{
       position: absolute;
       bottom:0;
 
-      @media screen and (max-width:1260px) {
+      @media screen and (max-width:1400px) {
         position:initial;
         
       }
@@ -4329,35 +4329,36 @@ span.anchor{
     position: absolute;
     bottom:0;
 
-    @media screen and (max-width:990px) {
+    @media screen and (max-width:1400px) {
       position:initial;
     }
 }
 
 
-  blockquote{
+  .quote{
     quotes:none;
-    font-weight: 700;
-    font-style: italic;
-    font-size:30px;
-    line-height: 35px;
     color:$dark-blue;
     position: relative;
-    margin-bottom: 35px;
   }
 
 
-  blockquote:before{
+ .quote:before{
       content: ''!important;
       display: inline-block;
       width: 30px;
-      height: 22px;
+      height: 24px;
       left:-40px;
       position:absolute;
       background: url(/assets/quote_orange.svg);
       background-repeat: no-repeat;
       background-size: 100%;
-      transform:translate(0, 0);
+      transform:translate(0, -1px);
+      @media screen and (max-width:780px) {
+        left:-23px;
+        width: 23px;
+        height: 18px;
+        transform:translate(0, 0);
+      }
     }
     
     
@@ -4439,7 +4440,7 @@ span.anchor{
   .featured-section{
     background:$orange;
     min-height:100vh;
-    padding: 170px 0 170px 0!important;
+    padding: 100px 0 170px 0!important;
 
 
     h1{
