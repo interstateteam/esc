@@ -3698,7 +3698,7 @@ body.mmwf .pin-bottom-left {
   }
 }
 
-body.mmwf .quote {
+body.mmwf .quote, body.mmwf .endquote {
   quotes: none;
   color: #182733;
   position: relative;
@@ -3726,6 +3726,19 @@ body.mmwf .quote:before {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
+}
+
+body.mmwf .endquote:after {
+  content: "" !important;
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  background: url(/assets/quote_orange.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transform: translate(10px, -2px) scaleX(-1);
+          transform: translate(10px, -2px) scaleX(-1);
 }
 
 body.mmwf section {

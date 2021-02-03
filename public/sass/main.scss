@@ -4335,7 +4335,7 @@ span.anchor{
 }
 
 
-  .quote{
+  .quote, .endquote{
     quotes:none;
     color:$dark-blue;
     position: relative;
@@ -4362,17 +4362,17 @@ span.anchor{
     }
     
     
-  //  blockquote:after{
-  //     content: ''!important;
-  //     display: inline-block;
-  //     width: 30px;
-  //     height: 25px;
-  //     position: absolute;
-  //     background: url(/assets/quote_orange.svg);
-  //     background-repeat: no-repeat;
-  //     background-size: 100%;
-  //     transform: translate(0, -2px)  scaleX(-1);
-  //   }
+   .endquote:after{
+      content: ''!important;
+      display: inline-block;
+      width: 30px;
+      height: 25px;
+      position: absolute;
+      background: url(/assets/quote_orange.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      transform: translate(10px, -2px)  scaleX(-1);
+    }
 
 
   
